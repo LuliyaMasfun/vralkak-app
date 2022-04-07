@@ -1,0 +1,131 @@
+.main{
+    font-family: 'Outfit';
+    background: white;
+    display: grid;
+    height: 100vh;
+    margin: 0;
+    grid-auto-flow: row ;
+    grid-auto-rows: 10%;
+    grid-template-columns: unset; 
+    grid-template-rows: unset;
+    overflow:scroll;
+}
+
+.navbar{
+    display: grid;
+    z-index: 5;
+    grid-column: 1;
+    grid-row: 1;
+    background: white;
+
+    font-size: 22px;
+    font-weight: normal;
+    font-style: normal;
+
+    
+}
+.insideNavbar{
+    
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.firstPage{
+    display: grid;
+    background-color: #FF7E6C;
+    grid-column: 1;
+    grid-row: 2/10;
+
+}
+.secondPage{
+    display: grid;
+    grid-column: 1;
+    grid-row: 10/21;
+    background: #1E281E;
+    
+}
+
+.WelcomeText1{
+    z-index: 3;
+    margin-top: 60px;
+    margin-left: 32px;
+    font-size: 35px;
+    color: black;
+}
+
+.WelcomeText2{
+    z-index: 3;
+    margin-top: 45px;
+    margin-left: 32px;
+    margin-bottom: 980px;
+
+    color: black;
+}
+
+.eggImg{
+    z-index: 2;
+    width: 322px;
+    height: 253px;
+    position: absolute;
+    top: 480px;
+    left: -2px;
+
+}
+
+.eggShadowImg{
+    z-index: 1;
+    width: 322px;
+    height: 253px;
+    position: absolute;
+    top: 505px;
+    left: -2px;
+}
+
+.salladImg{
+    z-index: 2;
+    width: 190.76px;
+    height: 680.08px;
+    position: absolute;
+   top:100px;
+   right: 0px;
+}
+
+.salladShadowImg{
+    z-index: 1;
+    width: 190.76px;
+    height: 680.08px;
+    position: absolute;
+   top:120px;
+   right: 0px;
+}
+
+.firstPageButton{
+    z-index: 3;
+    color: white;
+    border: #1F1E1F solid 2px;
+    fill: #1F1E1F;
+    background: #1F1E1F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 635px;
+    left: 8.25%;
+    padding: 0px;
+    height: 50px;
+    width: 326px;
+    font-size: 17px;
+}
+
+
+
+
+@media only screen and (min-width : 600px) {
+    .main{
+        background: blue;
+    }
+    }
+
+    
