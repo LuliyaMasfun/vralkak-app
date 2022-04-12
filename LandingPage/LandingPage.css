@@ -44,7 +44,7 @@
     grid-row: 2/11;
 
 }
-.foodCard{
+#Ekonomen{
     display: grid;
     grid-column: 1;
     grid-row: 11/21;
@@ -53,6 +53,15 @@
     
     
 }
+
+ #Greta{
+    display: grid;
+    grid-column: 1;
+    grid-row: 21/31;
+    background-image: -webkit-linear-gradient(-120deg, #84B494 50%, #8CBF9D 50%);
+    
+    
+} 
 
 .WelcomeText1{
     z-index: 3;
