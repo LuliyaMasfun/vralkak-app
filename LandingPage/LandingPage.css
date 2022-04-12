@@ -1,6 +1,6 @@
 .main{
     font-family: 'Outfit';
-    background: white;
+    background: #FF7E6C;
     display: grid;
     height: 100vh;
     margin: 0;
@@ -21,29 +21,36 @@
     font-size: 22px;
     font-weight: normal;
     font-style: normal;
+    height: 60px;
+    position: relative;
+    
 
     
 }
 .insideNavbar{
     
-    margin: 20px;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 15px;
+    
 }
 
 .firstPage{
     display: grid;
     background-color: #FF7E6C;
     grid-column: 1;
-    grid-row: 2/10;
+    grid-row: 2/11;
 
 }
-.secondPage{
+.foodCard{
     display: grid;
     grid-column: 1;
-    grid-row: 10/21;
-    background: #1E281E;
+    grid-row: 11/21;
+    background-color: #013A6B;
+    background-image: -webkit-linear-gradient(-120deg, #0939BB 50%, #2652C9 50%);
+    
     
 }
 
@@ -53,6 +60,7 @@
     margin-left: 32px;
     font-size: 35px;
     color: black;
+    font-weight: 600;
 }
 
 .WelcomeText2{
@@ -116,16 +124,44 @@
     padding: 0px;
     height: 50px;
     width: 326px;
-    font-size: 17px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.textToChange::before{
+    
+    content: '...';
+    animation: animate infinite 8s;
+}
+
+@keyframes animate{
+    0%{
+        content: '...';
+    }
+    20%{
+        content: 'billig';
+    }
+    40%{
+        content: 'snabb';
+    }
+    60%{
+        content: 'ja';
+    }
+    80%{
+        content: 'student';
+    }
+    100%{
+        content: 'nu';
+    }
 }
 
 
 
 
 @media only screen and (min-width : 600px) {
-    .main{
-        background: blue;
+    .firstPage{
+        background: red;
     }
-    }
-
+    
+}
     
