@@ -30,7 +30,7 @@
     margin-left: 184px;
     margin-top: 341px;
     
-    
+}
 
 }
 
@@ -38,4 +38,115 @@
     position: absolute;
     margin-top: 72px;
     margin-left: 42px;
+}
+.textBelowPicture{
+    color: white;
+    font-size: 16px;
+    width: 326px;
+    height: 68px;
+    font-weight: normal;
+    position: absolute;
+    line-height: 24px;
+    margin-left: 32px;
+    margin-top: 433px;
+    
+}
+
+.ekonomLine{
+    border-bottom: solid 1px white;
+    width: 326px;
+    position: absolute;
+    margin-left: 32px;
+    margin-top: 521px;
+    
+}
+
+.foodDescription1{
+    position: absolute;
+    width: 316px;
+    height: 40px;
+    margin-left: 40px;
+    margin-top: 566px;
+}
+
+.pictureToDescription1{
+    position: relative;
+    margin-top: 6px;
+    
+    
+}
+
+.textToDescription1{
+    height: 40px;
+    width: 269px;
+    position: absolute;
+    margin-left: 18px;
+    color: white;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.foodDescription2{
+    position: absolute;
+    width: 316px;
+    height: 40px;
+    margin-left: 42px;
+    margin-top: 630px;
+}
+
+.pictureToDescription2{
+    position: relative;
+    margin-top: 6px;
+    
+    
+    
+}
+
+.textToDescription2{
+    height: 20px;
+    width: 164px;
+    position: absolute;
+    margin-left: 18px;
+    color: white;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.foodDescription3{
+    position: absolute;
+    width: 316px;
+    height: 40px;
+    margin-left: 42px;
+    margin-top: 674px;
+}
+
+.pictureToDescription3{
+    position: relative;
+    margin-top: 6px;
+   
+}
+
+.textToDescription3{
+    height: 20px;
+    width: 164px;
+    position: absolute;
+    margin-left: 18px;
+    color: white;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.ekonomenCallToAction{
+    border: solid 1px #1F1E1F;
+    background: #1F1E1F;
+    color: white;
+    width: 326px;
+    height: 50px;
+    position: absolute;
+    margin-left: 33px;
+    margin-top: 736px;
+    text-align: center;
+    
+    font-weight: 400;
+    font-size: 20px;
 }

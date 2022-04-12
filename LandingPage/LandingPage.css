@@ -48,9 +48,22 @@
     display: grid;
     grid-column: 1;
     grid-row: 11/21;
-    background-color: #013A6B;
-    background-image: -webkit-linear-gradient(-120deg, #0939BB 50%, #2652C9 50%);
     
+    background-image: -webkit-linear-gradient(-120deg, #0939BB 50%, #2652C9 50%);
+}
+
+#greta{
+   display: grid;
+   grid-column: 1;
+   grid-row: 21/31;
+    background-image: -webkit-linear-gradient(-120deg, #84B494 50%, #8CBF9D 50%);
+}
+
+#veganen{
+    display: grid;
+    grid-column: 1;
+    grid-row: 31/41;
+    background-image: -webkit-linear-gradient(-120deg, #D9C78A 50%, #E8D493 50%);
     
 }
 
@@ -88,7 +101,6 @@
     position: absolute;
     top: 480px;
     left: -2px;
-
 }
 
 .eggShadowImg{
@@ -114,8 +126,8 @@
     width: 190.76px;
     height: 680.08px;
     position: absolute;
-   top:120px;
-   right: 0px;
+    top:120px;
+    right: 0px;
 }
 
 .firstPageButton{
@@ -138,7 +150,6 @@
 }
 
 .textToChange::before{
-    
     content: '...';
     animation: animate infinite 8s;
 }
