@@ -1,0 +1,35 @@
+.foodCardName{
+    font-weight: 600;
+    color: white;
+    font-size: 36px;
+    width: 323px;
+    display: flex;
+    justify-content: center;
+    margin-top: 28px;
+}
+
+.ekonomenFood{
+    position: absolute;
+    margin-top: 94px;
+    margin-left: 66px;
+
+}
+
+.priceBorder{
+    color: white;
+    font-weight: 600;
+    font-size: 36px;
+    border: solid 1px #1F1E1F;
+    width: 174px;
+    height: 56px;
+    line-height: 48px;
+    text-align: center;
+    align-items: center;
+    background: #1F1E1F;
+    position: absolute;
+    margin-left: 184px;
+    margin-top: 341px;
+    
+    
+
+}
