@@ -171,7 +171,7 @@ background-image: -webkit-linear-gradient(-125deg, #3EA962 30%, #2CBB76 30%);
 
 .textToChange::before{
     content: '...';
-    animation: animate infinite 8s;
+    animation: animate 8s;
 }
 
 @keyframes animate{
@@ -179,10 +179,10 @@ background-image: -webkit-linear-gradient(-125deg, #3EA962 30%, #2CBB76 30%);
         content: '...';
     }
     20%{
-        content: 'billig';
+        content: 'gott';
     }
     40%{
-        content: 'snabb';
+        content: 'snabbt';
     }
     60%{
         content: 'ja';
