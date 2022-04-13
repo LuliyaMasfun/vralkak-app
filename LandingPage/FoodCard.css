@@ -11,9 +11,14 @@
 
 .ekonomenFood{
     position: absolute;
-    margin-top: 94px;
-    margin-left: 66px;
+    margin-top: 80px;
+    margin-left: 81px;   
+}
 
+.ekonomenShadow{
+    position: absolute;
+    margin-top: 82px;
+    margin-left: 98px
 }
 
 .priceBorder{
@@ -89,15 +94,14 @@
     position: absolute;
     width: 316px;
     height: 40px;
+    padding-top: 10px;
     margin-left: 32px;
     margin-top: 508px;
 }
 
 .pictureToDescription2{
     position: relative;
-    margin-top: 6px;
-    
-    
+    margin-top: 24px;
     
 }
 
@@ -106,6 +110,7 @@
     width: 164px;
     position: absolute;
     margin-left: 18px;
+    padding-top: 24px;
     color: white;
     font-weight: normal;
     font-size: 16px;
@@ -122,14 +127,15 @@
 
 .pictureToDescription3{
     position: relative;
-    margin-top: 6px;
+    margin-top: 24px;
    
 }
 
 .textToDescription3{
     height: 20px;
-    width: 164px;
+    width: 200px;
     position: absolute;
+    margin-top: 24px;
     margin-left: 18px;
     color: white;
     font-weight: normal;
@@ -146,7 +152,7 @@
 
 .pictureToDescription4{
     position: relative;
-    margin-top: 6px;
+    margin-top: 24px;
    
 }
 
@@ -154,6 +160,7 @@
     height: 20px;
     width: 178px;
     position: absolute;
+    margin-top: 24px;
     margin-left: 18px;
     color: white;
     font-weight: normal;
