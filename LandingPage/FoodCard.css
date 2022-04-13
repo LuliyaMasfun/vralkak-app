@@ -4,8 +4,9 @@
     font-size: 36px;
     width: 323px;
     display: flex;
-    justify-content: center;
-    margin-top: 28px;
+    justify-content: flex-start;
+    margin-top: 24px;
+    margin-left: 25px;
 }
 
 .ekonomenFood{
@@ -28,10 +29,15 @@
     background: #1F1E1F;
     position: absolute;
     margin-left: 184px;
-    margin-top: 341px;
+    margin-top: 272px;
     
 }
 
+#gretaFood{
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 81px;
+}
 .textBelowPicture{
     color: white;
     font-size: 16px;
@@ -41,7 +47,7 @@
     position: absolute;
     line-height: 24px;
     margin-left: 32px;
-    margin-top: 433px;
+    margin-top: 368px;
     
 }
 
@@ -50,7 +56,7 @@
     width: 326px;
     position: absolute;
     margin-left: 32px;
-    margin-top: 521px;
+    margin-top: 432px;
     
 }
 
@@ -58,8 +64,8 @@
     position: absolute;
     width: 316px;
     height: 40px;
-    margin-left: 40px;
-    margin-top: 566px;
+    margin-left: 32px;
+    margin-top: 456px;
 }
 
 .pictureToDescription1{
@@ -83,8 +89,8 @@
     position: absolute;
     width: 316px;
     height: 40px;
-    margin-left: 42px;
-    margin-top: 630px;
+    margin-left: 32px;
+    margin-top: 508px;
 }
 
 .pictureToDescription2{
@@ -109,9 +115,10 @@
     position: absolute;
     width: 316px;
     height: 40px;
-    margin-left: 42px;
-    margin-top: 674px;
+    margin-left: 32px;
+    margin-top: 572px;
 }
+
 
 .pictureToDescription3{
     position: relative;
@@ -129,7 +136,46 @@
     font-size: 16px;
 }
 
+.foodDescription4{
+    position: absolute;
+    width: 316px;
+    height: 40px;
+    margin-left: 32px;
+    margin-top: 628px;
+}
+
+.pictureToDescription4{
+    position: relative;
+    margin-top: 6px;
+   
+}
+
+.textToDescription4{
+    height: 20px;
+    width: 178px;
+    position: absolute;
+    margin-left: 18px;
+    color: white;
+    font-weight: normal;
+    font-size: 16px;
+}
+
 .ekonomenCallToAction{
+    border: solid 1px #1F1E1F;
+    background: #1F1E1F;
+    color: white;
+    width: 326px;
+    height: 50px;
+    position: absolute;
+    margin-left: 33px;
+    margin-top: 736px;
+    text-align: center;
+    
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.gretaCallToAction{
     border: solid 1px #1F1E1F;
     background: #1F1E1F;
     color: white;
