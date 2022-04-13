@@ -59,15 +59,20 @@
     background-image: -webkit-linear-gradient(-120deg, #3EA962, #3EA962 );
 }
 
-#veganen{
+#veganen {
     display: grid;
     grid-column: 1;
     grid-row: 31/41;
-    background-image: -webkit-linear-gradient(-120deg, #D9C78A 50%, #E8D493 50%);
-    
+    background-color: #CD4141;
+    background-image: -webkit-linear-gradient(-120deg, #CD4141 50%, #CD4141 50%);
 }
 
- 
+.tutorialCard{
+    display: grid;
+    grid-column: 1;
+    grid-row: 41/51;
+    background-color: #1F1E1F;
+}
 
 .WelcomeText1{
     z-index: 3;
