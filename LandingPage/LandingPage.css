@@ -144,7 +144,7 @@
 
 .textToChange::before{
     content: '...';
-    animation: animate infinite 8s;
+    animation: animate 8s;
 }
 
 @keyframes animate{
@@ -152,10 +152,10 @@
         content: '...';
     }
     20%{
-        content: 'billig';
+        content: 'gott';
     }
     40%{
-        content: 'snabb';
+        content: 'snabbt';
     }
     60%{
         content: 'ja';
