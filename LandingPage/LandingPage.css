@@ -80,7 +80,7 @@ background-image: -webkit-linear-gradient(-125deg, #3EA962 30%, #2CBB76 30%);
     background-color: #1F1E1F;
 }
 
-.WelcomeText1{
+.WelcomeText{
     z-index: 3;
     margin-top: 60px;
     margin-left: 32px;
@@ -180,8 +180,8 @@ background-image: -webkit-linear-gradient(-125deg, #3EA962 30%, #2CBB76 30%);
 }
 
 .textToChange::before{
-    content: '...';
-    animation: animate 8s;
+    content: 'nu';
+    animation: animate 10s;
 }
 
 @keyframes animate{
@@ -204,6 +204,8 @@ background-image: -webkit-linear-gradient(-125deg, #3EA962 30%, #2CBB76 30%);
         content: 'nu';
     }
 }
+
+
 
 
 
