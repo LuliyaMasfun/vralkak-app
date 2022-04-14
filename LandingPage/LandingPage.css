@@ -70,7 +70,7 @@ background-image: -webkit-linear-gradient(-125deg, #3EA962 30%, #2CBB76 30%);
     grid-column: 1;
     grid-row: 31/41;
     background-color: #CD4141;
-    background-image: -webkit-linear-gradient(-120deg, #CD4141 50%, #CD4141 50%);
+    background-image: -webkit-linear-gradient(-125deg, #CD4141 30%, #E35153 30%);
 }
 
 .tutorialCard{
