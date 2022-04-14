@@ -80,7 +80,7 @@ background-image: -webkit-linear-gradient(-125deg, #3EA962 30%, #2CBB76 30%);
     background-color: #1F1E1F;
 }
 
-.WelcomeText{
+.welcomeText{
     z-index: 3;
     margin-top: 60px;
     margin-left: 32px;
