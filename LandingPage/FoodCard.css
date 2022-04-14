@@ -84,6 +84,7 @@
     height: 40px;
     width: 269px;
     position: absolute;
+    margin-top: 10px;
     margin-left: 18px;
     color: white;
     font-weight: normal;
@@ -101,13 +102,17 @@
 
 .pictureToDescription2{
     position: relative;
+
+    margin-top: 6px;
+
     margin-top: 24px;
+
     
 }
 
 .textToDescription2{
     height: 20px;
-    width: 164px;
+    width: 300px;
     position: absolute;
     margin-left: 18px;
     padding-top: 24px;
@@ -135,7 +140,11 @@
     height: 20px;
     width: 200px;
     position: absolute;
+
+    margin-top: 5px;
+
     margin-top: 24px;
+
     margin-left: 18px;
     color: white;
     font-weight: normal;
@@ -158,9 +167,13 @@
 
 .textToDescription4{
     height: 20px;
-    width: 178px;
+    width: 300px;
     position: absolute;
+
+    margin-top: 8px;
+
     margin-top: 24px;
+
     margin-left: 18px;
     color: white;
     font-weight: normal;
@@ -196,3 +209,32 @@
     font-weight: 400;
     font-size: 20px;
 }
+
+.orderArrowRight{
+    position: relative;
+    margin-left: 250px;
+    margin-top: 610px;
+}
+
+.veganenCallToAction{
+    border: solid 1px #1F1E1F;
+    background: #1F1E1F;
+    color: white;
+    width: 326px;
+    height: 50px;
+    position: absolute;
+    margin-left: 33px;
+    margin-top: 736px;
+    text-indent: 2px;
+    
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.imgShadow{
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 81px;
+}
+
+
