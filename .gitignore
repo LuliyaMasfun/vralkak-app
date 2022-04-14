@@ -24,4 +24,4 @@ hs_err_pid*
 
 #Directory files and folders
 .idea
-
+.Ds_Store
