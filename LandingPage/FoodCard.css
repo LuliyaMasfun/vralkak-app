@@ -70,13 +70,13 @@
     width: 316px;
     height: 40px;
     margin-left: 32px;
-    margin-top: 456px;
+    margin-top: 456px;   
 }
 
 .pictureToDescription1{
     position: relative;
     margin-top: 6px;
-    
+    margin-left:2px;
     
 }
 
@@ -85,9 +85,9 @@
     width: 269px;
     position: absolute;
     margin-top: 10px;
-    margin-left: 18px;
+    margin-left: 14px;
     color: white;
-    font-weight: normal;
+    font-weight: 700;
     font-size: 16px;
 }
 
@@ -101,21 +101,19 @@
 }
 
 .pictureToDescription2{
-    position: relative;
-
-    margin-top: 6px;
-
-    margin-top: 24px;
-
+    position: absolute;
     
+    margin-top: 10px;
+    margin-right: 1px;
+
 }
 
 .textToDescription2{
     height: 20px;
     width: 300px;
     position: absolute;
-    margin-left: 18px;
-    padding-top: 24px;
+    margin-left: 43.5px;
+    padding-top: 5px;
     color: white;
     font-weight: normal;
     font-size: 16px;
@@ -133,6 +131,7 @@
 .pictureToDescription3{
     position: relative;
     margin-top: 24px;
+    margin-left: 2px;
    
 }
 
@@ -145,7 +144,7 @@
 
     margin-top: 24px;
 
-    margin-left: 18px;
+    margin-left: 15px;
     color: white;
     font-weight: normal;
     font-size: 16px;
@@ -159,13 +158,14 @@
     margin-top: 628px;
 }
 
-.pictureToDescription4{
+.pictureToDescriptionEkonomen{
     position: relative;
     margin-top: 24px;
+    margin-left: 6px;
    
 }
 
-.textToDescription4{
+.textToDescriptionEkonomen{
     height: 20px;
     width: 300px;
     position: absolute;
@@ -175,6 +175,73 @@
     margin-top: 24px;
 
     margin-left: 18px;
+    color: white;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.pictureToDescriptionEkonomen{
+    position: relative;
+    margin-top: 24px;
+    margin-left: 6px;
+   
+}
+
+.textToDescriptionEkonomen{
+    height: 20px;
+    width: 300px;
+    position: absolute;
+
+    margin-top: 8px;
+
+    margin-top: 24px;
+
+    margin-left: 18px;
+    color: white;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.pictureToDescriptionGreta{
+    position: relative;
+    margin-top: 20px;
+    margin-left: 1px;
+   
+}
+
+.textToDescriptionGreta{
+    height: 20px;
+    width: 300px;
+    position: absolute;
+
+    
+
+    margin-top: 24px;
+
+    margin-left: 13px;
+    color: white;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+
+.pictureToDescriptionVeganen{
+    position: relative;
+    margin-top: 24px;
+    margin-left: 4px;
+   
+}
+
+.textToDescriptionVeganen{
+    height: 20px;
+    width: 300px;
+    position: absolute;
+
+    margin-top: 8px;
+
+    margin-top: 24px;
+
+    margin-left: 16px;
     color: white;
     font-weight: normal;
     font-size: 16px;
@@ -205,15 +272,14 @@
     margin-left: 33px;
     margin-top: 736px;
     text-align: center;
-    
+    vertical-align: middle;
     font-weight: 400;
     font-size: 20px;
 }
 
 .orderArrowRight{
-    position: relative;
-    margin-left: 250px;
-    margin-top: 610px;
+    margin-left: 5px;
+   
 }
 
 .veganenCallToAction{

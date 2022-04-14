@@ -11,6 +11,11 @@
     overflow:scroll;
 }
 
+.titel{
+    font-size: 24px;
+    font-weight: 500;
+}
+
 .navbar{
     display: grid;
     z-index: 5;
