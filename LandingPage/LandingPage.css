@@ -180,7 +180,7 @@ background-image: -webkit-linear-gradient(-125deg, #3EA962 30%, #2CBB76 30%);
 }
 
 .textToChange::before{
-    content: 'nu';
+    content: 'Vrålkäk!';
     animation: animate 10s;
 }
 
@@ -188,20 +188,18 @@ background-image: -webkit-linear-gradient(-125deg, #3EA962 30%, #2CBB76 30%);
     0%{
         content: '...';
     }
-    20%{
-        content: 'gott';
+    25%{
+        content: 'god mat';
     }
-    40%{
-        content: 'snabbt';
+    
+    50%{
+        content: 'sparad tid';
     }
-    60%{
-        content: 'mycket';
-    }
-    80%{
-        content: 'student';
+    75%{
+        content: 'mer pengar över';
     }
     100%{
-        content: 'nu';
+        content: 'aptitretande aromer';
     }
 }
 
@@ -210,10 +208,10 @@ background-image: -webkit-linear-gradient(-125deg, #3EA962 30%, #2CBB76 30%);
 
 
 
-@media only screen and (min-width : 600px) {
+/* @media only screen and (min-width : 600px) {
     .firstPage{
         background: red;
     }
     
-}
+} */
     
