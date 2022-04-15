@@ -181,7 +181,7 @@ background-image: -webkit-linear-gradient(-125deg, #3EA962 30%, #2CBB76 30%);
 
 .textToChange::before{
     content: 'Vrålkäk!';
-    animation: animate 10s;
+    animation: animate 7s;
 }
 
 @keyframes animate{
