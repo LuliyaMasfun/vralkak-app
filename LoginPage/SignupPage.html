@@ -38,20 +38,20 @@
 
         <p class="emailNote">Email*</p>
         <input class="emailForm" type="text" id="emailForm">
-
+        <p class="errorCheckEmail"></p>
         <p class="passwordNote">Lösenord*</p>
         <input class="passwordForm" type="text" id="passwordForm">
-
+        <span id="errorCheckPassword"></span>
         <p class="confirmPasswordNote">Bekräfta lösenord*</p>
         <input class="confirmPasswordForm" type="text" id="confirmPasswordForm">
-
-        <button class="signUpSubmitButton1" type="button" onclick="location.href='success.html'">Skapa ett konto</button>
+        <p class="errorCheckConfirmedPassword"></p>
+        <button class="signUpSubmitButton1" type="button" onclick="fullvalidation()">Skapa ett konto</button>
       </div>
       
       
 
         </div>
-  </div>
+  
 
 
 
@@ -84,4 +84,6 @@
 
 
 </body>
+
+<script src="/LoginPage/SignUpPage.js"></script>
 </html>
