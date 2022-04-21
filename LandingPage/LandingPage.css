@@ -49,6 +49,12 @@
     grid-row: 2/11;
 
 }
+
+.companyLogo{
+   position: absolute;
+   left:260px;
+   top:17px;
+}
 #ekonomen{
     display: grid;
     grid-column: 1;
