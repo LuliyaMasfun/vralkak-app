@@ -36,6 +36,7 @@
     margin-left: 32px;
     margin-right: 32px;
     background: #e5e5e5;
+    padding-left: 10px;
     
 }
 
@@ -54,6 +55,7 @@
     margin-left: 32px;
     margin-right: 32px;
     background: #e5e5e5;
+    padding-left: 10px;
 }
 
 .passwordForm::placeholder{

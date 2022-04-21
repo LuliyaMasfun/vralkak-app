@@ -14,7 +14,10 @@
     height: 42px;
     border: solid 1px black;
     background-color: #e5e5e5;
+    padding-left: 10px;
 }
+
+
 
 .lastNameNote{
     position: absolute;
@@ -31,6 +34,8 @@
     height: 42px;
     border: solid 1px black;
     background-color: #e5e5e5;
+    padding-left: 10px;
+
 }
 
 .emailNote{
@@ -47,6 +52,7 @@
     width: 326px;
     height: 42px;
     border: solid 1px black;
+    padding-left: 10px;
 }
 
 .passwordNote{
@@ -63,6 +69,7 @@
     width: 326px;
     height: 42px;
     border: solid 1px black;
+    padding-left: 10px;
 }
 
 .confirmPasswordNote{
@@ -80,6 +87,7 @@
     height: 42px;
     border: solid 1px black;
     background-color: #e5e5e5;
+    padding-left: 10px;
 }
 
 .signUpSubmitButton1{
