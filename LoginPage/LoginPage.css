@@ -36,16 +36,21 @@
     margin-left: 32px;
     margin-right: 32px;
     background: #e5e5e5;
-    padding-left: 10px;
+    
     
 }
 
 .emailForm::placeholder{
   color: black;
   opacity: 1;
+margin-right: 10px;
+  
     
 }
 
+input{
+    padding-left: 10px;
+}
 .passwordForm{
     border: solid 1px black;
     width: 326px;
@@ -55,7 +60,7 @@
     margin-left: 32px;
     margin-right: 32px;
     background: #e5e5e5;
-    padding-left: 10px;
+    
 }
 
 .passwordForm::placeholder{
