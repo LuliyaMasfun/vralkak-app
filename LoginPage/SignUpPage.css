@@ -95,3 +95,25 @@
     font-weight: 500;
     border-color: black;
 }
+
+#errorCheckEmail{
+    position: absolute;
+    top: 265px;
+    left: 32px;
+    color: red;
+}
+
+#errorCheckPassword{
+    position: absolute;
+    top: 368px;
+    left: 32px;
+    color: red;
+
+}
+
+#errorCheckConfirmedPassword{
+    position: absolute;
+    top: 437px;
+    left: 32px;
+    color: red;
+}
