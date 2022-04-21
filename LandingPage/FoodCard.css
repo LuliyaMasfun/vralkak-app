@@ -277,6 +277,7 @@
     font-size: 20px;
 }
 
+
 .orderArrowRight1{
     position: absolute;
     top: 1595px;
@@ -294,6 +295,8 @@
 }
 
 
+
+
 .veganenCallToAction{
     border: solid 1px #1F1E1F;
     background: #1F1E1F;
@@ -307,6 +310,12 @@
     
     font-weight: 400;
     font-size: 20px;
+}
+
+.orderArrowRight{
+    position: relative;
+    padding-left: 240px;
+    padding-top: 610px
 }
 
 .imgShadow{

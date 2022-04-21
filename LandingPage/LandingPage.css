@@ -85,6 +85,12 @@ background-image: -webkit-linear-gradient(-125deg, #3EA962 30%, #2CBB76 30%);
     grid-row: 41/51;
     background-color: #1F1E1F;
 }
+.progressBar{
+    display: grid;
+    grid-column: 1;
+    grid-row: 51/61;
+    background-color:#fff;
+}
 
 .welcomeText{
     z-index: 3;
