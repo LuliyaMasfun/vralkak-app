@@ -1,0 +1,78 @@
+.pageTitle{
+    font-weight: 600;
+    color: white;
+    font-size: 36px;
+    width: 323px;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 89px;
+    margin-left: 44px;
+}
+
+.descText{
+    height: 40px;
+    width: 269px;
+    position: absolute;
+    margin-top: 142px;
+    margin-left: 44px;
+    color: white;
+    font-weight: lighter;
+    font-size: 16px;
+}
+.pictureToTutorial1{
+    margin-top: 55px;
+    margin-left: 160px;
+}
+.pictureToTutorial2{
+    margin-top: 60px;
+    margin-left: 143px;
+}
+.pictureToTutorial3{
+    margin-top: 60px;
+    margin-left: 163px;
+}
+.textToTutorial1{
+    color: white;
+    font-size: 20px;
+    width: 194px;
+    height: 24px;
+    font-weight: bold;
+    margin-top: 180px;
+    margin-left: -110px;
+    position: absolute;    
+}
+.textToTutorial2{
+    color: white;
+    font-size: 20px;
+    width: 194px;
+    height: 24px;
+    font-weight: bold;
+    margin-top: 160px;
+    margin-left: -95px;
+    position: absolute;    
+}
+.textToTutorial3{
+    color: white;
+    font-size: 20px;
+    width: 194px;
+    height: 24px;
+    font-weight: bold;
+    margin-top: 160px;
+    margin-left: -110px;
+    position: absolute;    
+}
+
+.tutorialDescription1{
+    padding-top: 25px;
+}
+.tutorialDescription2{
+    padding-top: 35px;
+}
+.tutorialDescription3{
+    padding-top: 35px;
+}
+
+.logoTutorial{
+    padding-top: 75px;
+    padding-left: 137px;
+}

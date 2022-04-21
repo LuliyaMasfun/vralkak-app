@@ -257,8 +257,7 @@
     position: absolute;
     margin-left: 33px;
     margin-top: 736px;
-    text-align: center;
-    
+    text-indent: 2px;
     font-weight: 400;
     font-size: 20px;
 }
@@ -272,15 +271,15 @@
     position: absolute;
     margin-left: 33px;
     margin-top: 736px;
-    text-align: center;
-    vertical-align: middle;
+    text-indent: 2px;
     font-weight: 400;
     font-size: 20px;
 }
 
 .orderArrowRight{
-    margin-left: 5px;
-   
+    position: relative;
+    padding-left: 240px;
+    padding-top: 610px
 }
 
 .veganenCallToAction{
