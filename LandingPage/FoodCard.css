@@ -257,10 +257,10 @@
     position: absolute;
     margin-left: 33px;
     margin-top: 736px;
-    text-align: center;
-    
+    text-indent: 2px;
     font-weight: 400;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .gretaCallToAction{
@@ -272,11 +272,30 @@
     position: absolute;
     margin-left: 33px;
     margin-top: 736px;
-    text-align: center;
-    vertical-align: middle;
+    text-indent: 2px;
     font-weight: 400;
     font-size: 20px;
 }
+
+
+.orderArrowRight1{
+    position: absolute;
+    top: 1595px;
+    left: 230.5px;
+}
+.orderArrowRight2{
+    position: absolute;
+    top: 2440px;
+    left: 230.5px;
+}
+.orderArrowRight3{
+    position: absolute;
+    top: 3283px;
+    left: 230.5px;
+}
+
+
+
 
 .veganenCallToAction{
     border: solid 1px #1F1E1F;
