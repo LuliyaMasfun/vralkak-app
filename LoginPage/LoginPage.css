@@ -1,24 +1,13 @@
-.progressbar{
-    
-    background: white;
-    display: grid;
-   
-    height: 164px;
-    width: 390px;
-    position: absolute;
-    top: 59px;
-    
-    
-}
+
 
 .login {
     background-color: #e5e5e5;
     display: grid;
    
     position: absolute;
-    top: 223px;
-    height: 660px;
-    width: 390px;
+    top: 150px;
+    height: 788px;
+    width: 100%;
 }
 
 .loginHeading{
@@ -57,10 +46,11 @@
 }
 
 .passwordForm::placeholder{
-    color: black;
+    color: #1F1E1F;
     opacity: 1;
 }
 .forgetPassword{
+    padding-top: 10px;
     position: absolute;
     top: 223px;
     left: 240px;
@@ -126,6 +116,7 @@
 }
 
 .orText{
+    padding-top: 16px;
     display: flex;
     align-items: flex-end;
     position: absolute;
