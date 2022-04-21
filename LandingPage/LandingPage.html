@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="LandingPage.css">
     <link rel="stylesheet" href="FoodCard.css">
+    <link rel="stylesheet" href="TutorialCard.css">
+    <link rel="stylesheet" href="ProgressBar.css">
     <link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'>
     <title>Vrålkäk</title>
 </head>
+
+
 <body class="main">
     <div class="navbar">
         <div class="insideNavbar">
@@ -49,11 +53,9 @@
         <div class="foodDescription2"><img class="pictureToDescription2"src="/assets/pictureToDescriptionV2.png" alt="" srcset=""><span class="textToDescription2">Arnes chili con carne, Farmors lasagne, Bengans korvstroganoff</span></div>
         <div class="foodDescription3"><img class="pictureToDescription3"src="/assets/pictureToDescriptionV3.png" alt="" srcset=""><span class="textToDescription3">8 min tillagning per portion</span></div>
 
-        
-
         <div class="foodDescription4"><img class="pictureToDescriptionEkonomen" src="/assets/ekonomenDescription4.png" alt="" srcset=""><span class="textToDescriptionEkonomen">Prispressade varor</span></div>
-        <button class="ekonomenCallToAction"onclick="location.href='/orderPage/order.html'">Beställ <img class="orderArrowRight" src="/assets/Vector.png" alt="" srcset="">  </button>
-
+        <button class="ekonomenCallToAction"onclick="location.href='/orderPage/order.html'">Beställ</button>
+        <img class="orderArrowRight" src="/assets/Vector.png" >
     </div>
     
     <div class="foodCard" id="greta">
@@ -68,7 +70,8 @@
         <div class="foodDescription3"><img class="pictureToDescription3"src="/assets/pictureToDescriptionV3.png" alt="" srcset=""><span class="textToDescription3">Mat till 8 - 20 matlådor</span></div>
         <div class="foodDescription4"><img class="pictureToDescriptionGreta"src="/assets/gretaDescription4.png" alt="" srcset=""><span class="textToDescriptionGreta">Bara miljömärkta varor</span></div>
         
-        <button class="gretaCallToAction" onclick="location.href='/orderPage/order.html'">Beställ <img class="orderArrowRight" src="/assets/Vector.png" ></button>
+        <button class="gretaCallToAction" onclick="location.href='/orderPage/order.html'">Beställ</button>
+        <img class="orderArrowRight" src="/assets/Vector.png" >
         
     </div>
 
@@ -83,22 +86,41 @@
         <div class="foodDescription2"><img class="pictureToDescription2"src="/assets/pictureToDescriptionV2.png" alt="" srcset=""><span class="textToDescription2">Het vegansk chili, Zaras zucchinilasagne, Sonjas sojastroganoff</span></div> 
         <div class="foodDescription3"><img class="pictureToDescription3"src="/assets/pictureToDescriptionV3.png" srcset=""><span class="textToDescription3">8 min tillagning per portion</span></div>
         <div class="foodDescription4"><img class="pictureToDescriptionVeganen"src="/assets/pictureToDescriptionV4.png" alt="" srcset=""><span class="textToDescriptionVeganen">Helt fritt från animaliska produkter</span></div>
-        <button class="veganenCallToAction" onclick="location.href='/orderPage/order.html'">Beställ <img class="orderArrowRight" src="/assets/Vector.png" alt=""></button>
+        <button class="veganenCallToAction" onclick="location.href='/orderPage/order.html'">Beställ </button>
+        <img class="orderArrowRight" src="/assets/Vector.png" alt="">
        
      
     </div>
 
-    <!--
+  
     <div class="tutorialCard">
             <div class="pageTitle">Såhär funkar det</div>
-            <div class="underText">Kom igång med 3 enkla steg</div>
+            <div class="descText">Kom igång med 3 enkla steg</div>
             <div class="tutorialDescription1"><img class="pictureToTutorial1"src="/assets/tutorialImg1.png" srcset=""><span class="textToTutorial1">1. Beställ ditt vrålkäk</span></div>
             <div class="tutorialDescription2"><img class="pictureToTutorial2"src="/assets/tutorialImg2.png" alt="" srcset=""><span class="textToTutorial2">2. Släng ihop...</span></div> 
-            <div class="tutorialDescription3"><img class="pictureToTutorial3"src="/assets/tutorialImg3.png" srcset=""><span class="textToTutorial">3. Stapla upp i frysen!</span></div>
-            <img src="/assets/logoTutorial.png" alt="">
+            <div class="tutorialDescription3"><img class="pictureToTutorial3"src="/assets/tutorialImg3.png" srcset=""><span class="textToTutorial3">3. Stapla upp i frysen!</span></div>
+            <img class="logoTutorial"src="/assets/logoTutorial.png" alt="">
 
     </div>
-    -->
+    <div class="progressBar">
+        <div class="checkmark">
+            <span class="count step1"></span>
+            <span class="progressBarText1">Kasse</span>
+          </div>
+          <div class="count step2">
+            <span>2</span>
+            <span class="progressBarText1">Konto</span>
+          </div>
+          <div class="count step3">
+            <span>3</span>
+            <span class="progressBarText1">Leverans</span>
+          </div>
+          <div class="count">
+            <span>4</span>
+            <span class="progressBarText1">Betalning</span>
+          </div>
+    </div>
+
 
     
 
