@@ -1,0 +1,95 @@
+
+
+.firstPage{
+    display: grid;
+    background-color: #FFC4BB;
+    grid-column: 1;
+    grid-row: 2/11;
+    
+
+}
+
+.welcomeText{
+    z-index: 3;
+    margin-top: 60px;
+    margin-left: 32px;
+    font-size: 35px;
+    color: black;
+    font-weight: 600;
+}
+
+.WelcomeText2{
+    z-index: 3;
+    margin-top: 45px;
+    margin-left: 32px;
+    margin-bottom: 980px;
+
+    color: black;
+}
+
+.lunchBoxImg{
+    z-index: 2;
+    position: absolute;
+    margin-top: 116px;
+}
+
+.shadowFirstPage{
+    position: absolute;
+    top: 20px;
+    left:-180px;
+    width: 380px;
+    height: 600px;
+    z-index: 1;
+}
+
+.arrowDownFirstPage{
+    z-index: 5;
+    position: absolute;
+    margin-top: 657px;
+    margin-left: 163px;
+    opacity: 0.7;
+
+}
+
+.firstPageButton{
+    z-index: 3;
+    color: white;
+    border: #1F1E1F solid 2px;
+    fill: #1F1E1F;
+    background: #1F1E1F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 583px;
+    left: 8.25%;
+    padding: 0px;
+    height: 50px;
+    width: 326px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.textToChange::before{
+    content: 'Vrålkäk!';
+    animation: animate 7s;
+}
+
+@keyframes animate{
+    0%{
+        content: '...';
+    }
+    25%{
+        content: 'god mat';
+    }
+    
+    50%{
+        content: 'sparad tid';
+    }
+    75%{
+        content: 'mer pengar över';
+    }
+    100%{
+        content: 'aptitretande aromer';
+    }
+}

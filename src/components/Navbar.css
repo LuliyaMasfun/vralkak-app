@@ -1,0 +1,42 @@
+
+
+.titel{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.navbar{
+    
+    display: grid;
+    z-index: 3;
+    grid-column: 1;
+    grid-row: 1;
+    background: white;
+
+    font-size: 22px;
+    font-weight: normal;
+    font-style: normal;
+    height: 60px;
+    position: relative;
+    
+
+    
+}
+.insideNavbar{
+    
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+    
+}
+
+
+
+
+.companyLogo{
+   position: absolute;
+   left:260px;
+   top:17px;
+}
