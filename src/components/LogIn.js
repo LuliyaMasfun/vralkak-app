@@ -1,6 +1,7 @@
 import React from 'react'
 import './Login.css'
 import './Body.css'
+import { Link } from 'react-router-dom'
 
 export default function LogIn() {
   return (
@@ -18,7 +19,7 @@ export default function LogIn() {
         <p className="orText">eller</p>
         <div className="border2"></div>
     </div>
-    <button className="signUpSubmitButton" type="button" onclick="location.href='SignUpPage.html'">Skapa ett konto</button>
+    <Link to ="/signup" className="signUpSubmitButton">Skapa ett konto</Link>
     <p className="continueGuest"> Fortsätt som gäst </p>
 
       </div>

@@ -10,11 +10,11 @@
     position: absolute;
     top: 150px;
     left: 32px;
-    width: 155px;
+    width: 149px;
     height: 42px;
     border: solid 1px black;
     background-color: #e5e5e5;
-    padding-left: 10px;
+    
 }
 
 
@@ -30,11 +30,11 @@
     position: absolute;
     top: 150px;
     left: 203px;
-    width: 155px;
+    width: 149px;
     height: 42px;
     border: solid 1px black;
     background-color: #e5e5e5;
-    padding-left: 10px;
+    
 
 }
 
@@ -48,11 +48,11 @@
 .emailForm{
     position: absolute;
     top: 236px;
-    
-    width: 326px;
+    left: 32px;
+    width: 320px;
     height: 42px;
     border: solid 1px black;
-    padding-left: 10px;
+    
 }
 
 .passwordNote{
@@ -65,11 +65,11 @@
 .passwordForm{
     position: absolute;
     top: 325px;
-    
-    width: 326px;
+    left: 32px;
+    width: 320px;
     height: 42px;
     border: solid 1px black;
-    padding-left: 10px;
+    
 }
 
 .confirmPasswordNote{
@@ -83,11 +83,11 @@
     position: absolute;
     top: 380px;
     margin: 32px;
-    width: 326px;
+    width: 320px;
     height: 42px;
     border: solid 1px black;
     background-color: #e5e5e5;
-    padding-left: 10px;
+    
 }
 
 .signUpSubmitButton1{

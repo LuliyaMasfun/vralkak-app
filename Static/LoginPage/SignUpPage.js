@@ -2,7 +2,7 @@
 var namn = sessionStorage.getItem("UserName");
 document.getElementById("greetingUser").innerHTML ="Välkommen in, " + namn +"!";
 
-function fullvalidation(){
+    function fullvalidation(){
     validateEmail();
     validatePassword();
     checkIfPasswordMatch();
