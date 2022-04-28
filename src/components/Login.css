@@ -1,20 +1,9 @@
-.progressbar{
-    
-    background: white;
-    display: grid;
-   
-    height: 164px;
-    width: 390px;
-    position: absolute;
-    top: 59px;
-    
-    
-}
+
 
 .login {
     background-color: #e5e5e5;
     display: grid;
-   
+    
     position: absolute;
     top: 223px;
     height: 660px;

@@ -3,8 +3,8 @@ import StartPagePictureShadows from './assets/shadowFirstPage.svg';
 import StartPagePicture from './assets/startingPagePicture.png';
 import arrow from './assets/arrowDown.png';
 import './HomePage.css';
-import './Body.css'
-;
+import './Body.css';
+import Smooth from 'react-scroll'
 
 
 export default function HomePage() {
