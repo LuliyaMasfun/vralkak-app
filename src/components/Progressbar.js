@@ -2,7 +2,7 @@ import React from 'react'
 import './Progressbar.css'
 import './Body.css'
 
-export default function ProgressBar() {
+export default function Progressbar() {
   return (
     <div className="progress-bar">
     <div className="step">

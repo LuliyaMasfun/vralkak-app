@@ -5,14 +5,16 @@ import EkonomenCard from './EkonomenCard';
 import GretaCard from './GretaCard';
 import VeganenCard from './VeganenCard';
 
+
 export default function LandingPage() {
   return (
     <>
     <Navbar />
-    <HomePage/>
-    <EkonomenCard/>
-    <GretaCard/>
-    <VeganenCard/>
+    <HomePage />
+    <EkonomenCard />
+    <GretaCard />
+    <VeganenCard />
+    
     
     </>
   )

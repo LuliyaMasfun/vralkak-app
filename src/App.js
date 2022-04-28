@@ -1,22 +1,15 @@
 import React from 'react';
-import Navbar from './components/Navbar';
-import HomePage from './components/HomePage';
-import EkonomenCard from './components/EkonomenCard';
-import GretaCard from './components/GretaCard';
-import VeganenCard from './components/VeganenCard';
-import GuidePage from './components/GuidePage';
 
+import LandingPage from './components/LandingPage';
+import LoginPage from './components/LoginPage';
 function App() {
   return (
     <>
-    <Navbar />
-    <HomePage/>
-    <EkonomenCard/>
-    <GretaCard/>
-    <VeganenCard/>
+    <LoginPage/>  
+  
     
-    </>
-    
+   
+   </>
   )
 }
 

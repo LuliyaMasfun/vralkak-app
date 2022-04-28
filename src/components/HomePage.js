@@ -3,7 +3,8 @@ import StartPagePictureShadows from './assets/shadowFirstPage.svg';
 import StartPagePicture from './assets/startingPagePicture.png';
 import arrow from './assets/arrowDown.png';
 import './HomePage.css';
-import './Body.css';
+import './Body.css'
+;import { Outlet, Link } from "react-router-dom";
 
 export default function HomePage() {
   return (
@@ -15,7 +16,7 @@ export default function HomePage() {
 
         <button className="firstPageButton" onclick="location.href='#ekonomen'" type="button"><span className="buttonText">Hitta ditt studentkäk</span>  </button>
 
-        <img src={arrow} className="arrowDownFirstPage" onclick="location.href='#ekonomen'"/>
+       <img src={arrow} className="arrowDownFirstPage"/>
     
     </div>
   )
