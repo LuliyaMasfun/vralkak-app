@@ -5,6 +5,11 @@
     background-color: white;
     margin: -45px 0;
     user-select: none;
+    background: white;
+   
+   
+   
+    
   }
 .progress-bar .step{
     text-align: center;

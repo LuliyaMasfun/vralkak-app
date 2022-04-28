@@ -9,8 +9,8 @@ export default function LogIn() {
         Logga in
     </span>
     <div className="loginForm" id="loginForm">
-        <input className="emailForm" type="text" placeholder="  E-post" id="formEmail"/>
-        <input className="passwordForm" type="password" placeholder="  Lösenord" id="formPassword"/>
+        <input className="emailForm1" type="text" placeholder="  E-post" id="formEmail"/>
+        <input className="passwordForm1" type="password" placeholder="  Lösenord" id="formPassword"/>
         <p className="forgetPassword"> Glömt lösenord? </p>
         <button className="loginSubmitButton" type="button" onclick="location.href='success.html'">Logga in</button>
         <div className="option">

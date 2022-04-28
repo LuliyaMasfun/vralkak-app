@@ -5,7 +5,7 @@
     display: grid;
     
     position: absolute;
-    top: 223px;
+    top: 182px;
     height: 660px;
     width: 390px;
 }
@@ -16,7 +16,7 @@
     margin: 32px;
 }
 
-.emailForm{
+.emailForm1{
     border: solid 1px black;
     width: 326px;
     height: 49px;
@@ -40,7 +40,7 @@ margin-right: 10px;
 input{
     padding-left: 10px;
 }
-.passwordForm{
+.passwordForm1{
     border: solid 1px black;
     width: 326px;
     height: 49px;
