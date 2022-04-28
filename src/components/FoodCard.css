@@ -294,6 +294,9 @@ background-image: -webkit-linear-gradient(-125deg, #3EA962 30%, #2CBB76 30%);
     font-weight: 400;
     font-size: 20px;
     cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    line-height: 45px;
 }
 
 .gretaCallToAction{
@@ -309,6 +312,9 @@ background-image: -webkit-linear-gradient(-125deg, #3EA962 30%, #2CBB76 30%);
     font-weight: 400;
     font-size: 20px;
     cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    line-height: 45px;
 }
 
 
@@ -345,6 +351,9 @@ background-image: -webkit-linear-gradient(-125deg, #3EA962 30%, #2CBB76 30%);
     font-weight: 400;
     font-size: 20px;
     cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    line-height: 45px;
 }
 
 .orderArrowRight{

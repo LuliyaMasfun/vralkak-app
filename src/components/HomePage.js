@@ -4,7 +4,8 @@ import StartPagePicture from './assets/startingPagePicture.png';
 import arrow from './assets/arrowDown.png';
 import './HomePage.css';
 import './Body.css'
-;import { Outlet, Link } from "react-router-dom";
+;
+
 
 export default function HomePage() {
   return (

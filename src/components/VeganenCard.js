@@ -8,6 +8,7 @@ import imgDescription2 from './assets/pictureToDescriptionV2.png';
 import imgDescription3 from './assets/pictureToDescriptionV3.png';
 import imgDescription4 from './assets/pictureToDescriptionV4.png';
 import arrow from './assets/Vector.png';
+import { Link } from 'react-router-dom';
 
 export default function VeganenCard() {
   return (
@@ -22,8 +23,9 @@ export default function VeganenCard() {
         <div class="foodDescription2"><img class="pictureToDescription2"src={imgDescription2} /><span class="textToDescription2">Het vegansk chili, Zaras zucchinilasagne, Sonjas sojastroganoff</span></div> 
         <div class="foodDescription3"><img class="pictureToDescription3"src={imgDescription3} /><span class="textToDescription3">8 min tillagning per portion</span></div>
         <div class="foodDescription4"><img class="pictureToDescriptionVeganen"src={imgDescription4} /><span class="textToDescriptionVeganen">Helt fritt från animaliska produkter</span></div>
-
-        <button class="veganenCallToAction" onclick="location.href='/LoginPage/LoginPage.html'">Beställ</button>
+        <Link className="veganenCallToAction" to="/login">Beställ
+        
+        </Link>
         <img class="orderArrowRight3" src={arrow} />  
     </div>
   )

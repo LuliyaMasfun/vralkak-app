@@ -8,6 +8,9 @@ import imgDescription2 from './assets/pictureToDescriptionV2.png';
 import imgDescription3 from './assets/pictureToDescriptionV3.png';
 import imgDescription4 from './assets/ekonomenDescription4.png';
 import arrow from './assets/Vector.png';
+import { Link } from 'react-router-dom';
+
+
 
 export default function EkonomenCard() {
   return (
@@ -25,7 +28,9 @@ export default function EkonomenCard() {
 
     <div className="foodDescription4"><img className="pictureToDescriptionEkonomen" src={imgDescription4} /><span className="textToDescriptionEkonomen">Prispressade varor</span></div>
 
-    <button className="ekonomenCallToAction" onclick="location.href='/LoginPage/LoginPage.html'">Beställ</button>
+    <Link className="ekonomenCallToAction" to="/login">Beställ
+
+    </Link>
     <img className="orderArrowRight1" src={arrow} />   
     </div>
 

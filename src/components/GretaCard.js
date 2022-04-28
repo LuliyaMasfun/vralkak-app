@@ -8,6 +8,7 @@ import imgDescription2 from './assets/pictureToDescriptionV2.png';
 import imgDescription3 from './assets/pictureToDescriptionV3.png';
 import imgDescription4 from './assets/gretaDescription4.png';
 import arrow from './assets/Vector.png';
+import { Link} from 'react-router-dom';
 
 export default function GretaCard() {
   return (
@@ -23,8 +24,9 @@ export default function GretaCard() {
     <div className="foodDescription3"><img className="pictureToDescription3"src={imgDescription3} /><span className="textToDescription3">8 min tillagning per portion</span></div>
 
     <div className="foodDescription4"><img className="pictureToDescriptionEkonomen" src={imgDescription4} /><span className="textToDescriptionEkonomen">Prispressade varor</span></div>
-
-    <button className="gretaCallToAction" onclick="location.href='/LoginPage/LoginPage.html'">Beställ</button>
+    <Link className="gretaCallToAction" to="/login">Beställ
+    
+    </Link>
     <img className="orderArrowRight2" src={arrow} />   
     </div>
   )
