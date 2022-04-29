@@ -9,7 +9,7 @@ export default function SignupPage() {
     <Navbar />
     <Progressbar />
     <SignUp />
-    <script src="/LoginPage/validation.js"></script>
+    
     </>
   )
 }
