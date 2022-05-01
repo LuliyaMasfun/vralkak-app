@@ -4,7 +4,8 @@ import StartPagePicture from './assets/startingPagePicture.png';
 import arrow from './assets/arrowDown.png';
 import './HomePage.css';
 import './Body.css';
-import Smooth from 'react-scroll'
+import {Link} from 'react-scroll'
+
 
 
 export default function HomePage() {
@@ -17,7 +18,10 @@ export default function HomePage() {
 
         <button className="firstPageButton" onclick="location.href='#ekonomen'" type="button"><span className="buttonText">Hitta ditt studentkäk</span>  </button>
 
-       <img src={arrow} className="arrowDownFirstPage"/>
+      {/*<img src={arrow} className="arrowDownFirstPage"/> */} 
+      <Link className='SmoothScroller' to="ekonomen" smooth={true} duration={1000}>
+        <div className='ScrollerBall'></div>
+      </Link>
     
     </div>
   )
