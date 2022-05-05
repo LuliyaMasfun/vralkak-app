@@ -1,7 +1,7 @@
 
 
 .login {
-    background-color: #e5e5e5;
+    background-color: #F4F4F4;
     display: grid;
     
     position: absolute;
@@ -24,7 +24,7 @@
     top: 116px;
     margin-left: 32px;
     margin-right: 32px;
-    background: #e5e5e5;
+    background-color: white;
     
     
 }
@@ -48,7 +48,7 @@ input{
     top: 175px;
     margin-left: 32px;
     margin-right: 32px;
-    background: #e5e5e5;
+    background-color: white;
     
 }
 
@@ -84,7 +84,7 @@ input{
     border: solid 2px black;
     margin-left: 32px;
     margin-right: 32px;
-    background: #e5e5e5;
+    background-color: #F4F4F4;
     color: black;
     position: absolute;
     top: 384px;
