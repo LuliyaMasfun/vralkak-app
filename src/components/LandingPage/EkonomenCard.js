@@ -1,13 +1,13 @@
 import React from 'react'
-import './Body.css';
+import '../Body.css';
 import './FoodCard.css';
-import ekonomenShadow from './assets/shadowToEkonomen.png';
-import ekonomenFood from './assets/ekonomenFood.svg';
-import imgDescription1 from './assets/pictureToDescriptionV1.png';
-import imgDescription2 from './assets/pictureToDescriptionV2.png';
-import imgDescription3 from './assets/pictureToDescriptionV3.png';
-import imgDescription4 from './assets/ekonomenDescription4.png';
-import arrow from './assets/Vector.png';
+import ekonomenShadow from '../assets/shadowToEkonomen.png';
+import ekonomenFood from '../assets/ekonomenFood.svg';
+import imgDescription1 from '../assets/pictureToDescriptionV1.png';
+import imgDescription2 from '../assets/pictureToDescriptionV2.png';
+import imgDescription3 from '../assets/pictureToDescriptionV3.png';
+import imgDescription4 from '../assets/ekonomenDescription4.png';
+import arrow from '../assets/Vector.png';
 import { Link } from 'react-router-dom';
 
 
