@@ -44,9 +44,10 @@
 
 .arrowDownFirstPage{
     z-index: 5;
+    
     position: absolute;
-    margin-top: 657px;
-    margin-left: 163px;
+    top: 748px;
+    left: 165px;
     opacity: 0.7;
 
 }

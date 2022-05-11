@@ -1,5 +1,5 @@
 import React from 'react';
-import './Body.css';
+import '../Body.css';
 import './Guide.css';
 import GuidePicture1 from './assets/tutorialImg1.png';
 import GuidePicture2 from './assets/tutorialImg2.png';

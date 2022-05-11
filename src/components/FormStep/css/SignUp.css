@@ -1,16 +1,47 @@
+#signup{
+    background-color: #F4F4F4;
+    display: grid;
+    
+    position: absolute;
+    top: 145px;
+    height: 795px;
+    width: 390px;
+
+}
+
+.datePicker{
+    height: 48px;
+    width: 326px;
+    position: absolute;
+    top: 687px;
+    left: 32px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.loginHeading{
+    position: absolute;
+    top: 40px;
+    margin-left: 32px;
+    margin-top: 0px;
+}
+
 .firstNameNote{
     position: absolute;
-    top:112px;
+    top:104px;
     left: 32px;
     font-size: 16px;
+    
+    
 }
 
 
 .firstName{
     position: absolute;
-    top: 150px;
+    top: 144px;
     left: 32px;
-    width: 149px;
+    width: 320px;
     height: 42px;
     border: solid 1px black;
     background-color: white;
@@ -21,17 +52,17 @@
 
 .lastNameNote{
     position: absolute;
-    top: 112px;
-    left: 203px;
+    top: 208px;
+    left: 32px;
     font-size: 16px;
     
 }
 
 .lastName{
     position: absolute;
-    top: 150px;
-    left: 203px;
-    width: 149px;
+    top: 248px;
+    left: 32px;
+    width: 320px;
     height: 42px;
     border: solid 1px black;
     background-color: white;
@@ -41,14 +72,14 @@
 
 .emailNote{
     position: absolute;
-    top: 198px;
+    top: 308px;
     left: 32px;
     font-size: 16px;
 }
 
 .emailForm{
     position: absolute;
-    top: 236px;
+    top: 348px;
     left: 32px;
     width: 320px;
     height: 42px;
@@ -59,14 +90,14 @@
 
 .passwordNote{
     position: absolute;
-    top: 284px;
+    top: 408px;
     left: 32px;
     font-size: 16px;
 }
 
 .passwordForm{
     position: absolute;
-    top: 325px;
+    top: 448px;
     left: 32px;
     width: 320px;
     height: 42px;
@@ -77,15 +108,15 @@
 
 .confirmPasswordNote{
     position: absolute;
-    top: 370px;
+    top: 545px;
     left: 32px;
     font-size: 16px;
 }
 
 .confirmPasswordForm{
     position: absolute;
-    top: 380px;
-    margin: 32px;
+    top: 585px;
+    margin-left: 32px;
     width: 320px;
     height: 42px;
     border: solid 1px black;
@@ -94,29 +125,73 @@
 }
 
 .signUpSubmitButton1{
-    width: 326px;
+    width: 334px;
     height: 50px;
     margin-left: 32px;
-    margin-right: 32px;
+    
     background: black;
     color: white;
     position: absolute;
-    top: 492px;
+    top: 657px;
     font-size: 20px;
     font-weight: 500;
     border-color: black;
 }
 
+.signUpInfo{
+    position: absolute;
+    top: 520px;
+    left: 32px;
+}
+
+.infoText{
+    position: absolute;
+    top: 503.5px;
+    left: 60px;
+}
+
+#postNummerForm{
+    width: 140px;
+}
+
+#ortForm{
+    top: 448px;
+    right: 203px;
+    width: 140px;
+    right: 25px;
+}
+
+#ortNote{
+    top: 408px;
+    
+    left:210px;
+}
+
+
+#errorFirstName{
+    position: absolute;
+    color: red;
+    left: 32px;
+    top: 174px;
+}
+
+#errorLastName{
+    position: absolute;
+    color: red;
+    left: 32px;
+    top:  278px;
+}
+
 #errorCheckEmail{
     position: absolute;
-    top: 265px;
+    top: 380px;
     left: 32px;
     color: red;
 }
 
 #errorCheckPassword{
     position: absolute;
-    top: 368px;
+    top: 497px;
     left: 32px;
     color: red;
 

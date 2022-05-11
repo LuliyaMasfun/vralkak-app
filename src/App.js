@@ -1,12 +1,13 @@
 import React from 'react';
-
-import LandingPage from './components/LandingPage';
-import LoginPage from './components/LoginPage';
+import {login} from './components/FormStep/step/login'
+import {signup} from './components/FormStep/step/signup'
 import {Route, Link, Router} from 'react-router-dom';
-import EkonomenCard from './components/EkonomenCard';
-import GretaCard from './components/GretaCard';
-import VeganenCard from './components/VeganenCard';
-import SignupPage from './components/SignupPage';
+import LandingPage from './components/LandingPage';
+import EkonomenCard from './components/LandingPage/EkonomenCard'
+import GretaCard from './components/LandingPage/GretaCard'
+import VeganenCard from './components/LandingPage/VeganenCard'
+import { MulitStepForm } from './components/FormStep/MultiStepForm';
+
 
 
 
@@ -15,11 +16,11 @@ function App() {
     <>
      
     <Route exact path="/" component={LandingPage} />
-    <Route exact path="/login" component={LoginPage} />
+    
     <Route exact path="/ekonomen" component={EkonomenCard} />
     <Route exact path="/greta" component={GretaCard} />
     <Route exact path="/veganen" component={VeganenCard} />
-    <Route exact path="/signup" component={SignupPage} />
+    <Route exact path="/checkout" component={MulitStepForm} />
     
     </>
    

@@ -1,6 +1,6 @@
 import React from 'react'
 import './Progressbar.css'
-import './Body.css'
+import '../Body.css'
 
 export default function Progressbar() {
   return (
