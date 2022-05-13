@@ -6,6 +6,7 @@ import { Login } from './step/login';
 import { Review } from './step/review';
 import { Signup } from './step/signup';
 import { Submit } from './step/submit';
+import { Payment } from './step/payment';
 
 
 const defaultData = {
@@ -14,6 +15,8 @@ const defaultData = {
     lastName: '',
     email: '',
     password: '',
+    firstNameDelivery: '',
+    lastNameDelivery: '',
     address: '',
     city: '',
     zip: '',
@@ -29,6 +32,7 @@ const steps = [
     {id: 'login',},
     {id: 'signup',},
     {id: 'delivery',},
+    {id: 'payment',},
     {id: 'review',},
     {id: 'submit',},
 ]
@@ -37,10 +41,10 @@ export const MulitStepForm = () => {
     const [formData, setForm] = useForm(defaultData);
     const {step, navigation} = useStep({
         steps,
-        initialStep:3
+        initialStep:0
     });
 
-    const props = {formData, setForm, navigation};
+    const props = {formData, setForm, navigation, step};
 
     switch(step.id){
         case "checkout":
@@ -51,6 +55,8 @@ export const MulitStepForm = () => {
             return <Signup {...props} />;
         case "delivery":
             return <Delivery {...props} />;
+        case "payment":
+            return <Payment {...props} />;
         case "review":
             return <Review {...props} />;
         case "submit":
