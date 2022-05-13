@@ -7,8 +7,13 @@ import {Progressbar} from '../../Progressbar/Progressbar';
 import klarnaLogo from '../../assets/klarnalogos.svg';
 import cardLogos from '../../assets/cardpayment.svg';
 import swishLogo from '../../assets/Swish.svg';
-export const Payment = ({navigation}) => {
+
+
+export const Payment = ({formData,setForm,navigation}) => {
   const [show, setShow] = useState(true);
+
+  const {cardName, cardNumber, cardExpireDate, cardCVV} = formData;
+
 
   return (
     <>
@@ -102,7 +107,11 @@ export const Payment = ({navigation}) => {
             
           }}>Namn på kortet*</span>
 
-          <input type="text" style={{
+          <input 
+          name="cardName"
+          value={cardName}
+          onChange={setForm}
+          type="text" style={{
             width: "326px",
             height: "48px",
             position : "absolute",
@@ -121,7 +130,11 @@ export const Payment = ({navigation}) => {
           
           }}>Kortnummer*</span>
 
-<input type="text" style={{
+        <input 
+        name="cardNumber"
+        value={cardNumber}
+        onChange={setForm}
+        type="text" style={{
             width: "326px",
             height: "48px",
             position : "absolute",
@@ -138,7 +151,11 @@ export const Payment = ({navigation}) => {
             fontSize: "16px",
           }}>MM/ÅÅ*</span>
 
-          <input type="text"
+          <input 
+          name="cardExpireDate"
+          value={cardExpireDate}
+          onChange={setForm}
+          type="text"
           style={{
             width : "150px",
             height : "48px",
@@ -156,7 +173,11 @@ export const Payment = ({navigation}) => {
             fontSize: "16px",
           }}>CVV/CVC*</span>
 
-<input type="text"
+          <input 
+          name="cardCVV"
+          value={cardCVV}
+          onChange={setForm}
+          type="text"
           style={{
             width : "150px",
             height : "48px",

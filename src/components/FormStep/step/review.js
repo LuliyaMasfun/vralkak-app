@@ -25,6 +25,10 @@ export const Review = ({formData, navigation}) => {
     city,
     zip,
     phone,
+    cardName,
+    cardNumber,
+    cardExpireDate,
+    cardCVV
   } = formData;
 
   return (
@@ -127,8 +131,20 @@ export const Review = ({formData, navigation}) => {
       {'Postnummer': zip},
       {'Nummer': phone},
     ]} />
+
+    <RenderAccordion
+    summary= "Payment" go={go} details={[
+      {'Kort namn' : cardName},
+      {'Kortnummer': cardNumber},
+      {'MM/ÅÅ' : cardExpireDate},
+      {'CVV/CVC' : cardCVV}
+    ]} />
    
    </div>
+
+   
+   
+   
 
 
 

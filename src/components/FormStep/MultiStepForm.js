@@ -21,6 +21,10 @@ const defaultData = {
     city: '',
     zip: '',
     phone: '',
+    cardName: '',
+    cardNumber: '',
+    cardExpireDate: '',
+    cardCVV: '',
 };
 
 
