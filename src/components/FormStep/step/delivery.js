@@ -1,14 +1,16 @@
 import React,{useState} from 'react'
 import Navbar from '../../Navbar/Navbar'
-import Progressbar from '../../Progressbar/Progressbar';
+import {Progressbar} from '../../Progressbar/Progressbar';
 import sweFlag from '../../assets/sweflag.png'
 import DatePicker from 'react-date-picker';
 import 'react-datepicker/dist/react-datepicker.css';
 
 
-export const Delivery = () => {
+export const Delivery = ({formData, setForm, navigation}) => {
   
  const [selectedDate, setSelectedDate] = useState(null);
+ 
+ const {firstNameDelivery,lastNameDelivery, address, city,zip, phone} = formData;
 
   return (
     <>
@@ -19,7 +21,7 @@ export const Delivery = () => {
       backgroundColor: "#F4F4F4",
       display: "grid",
       position: "absolute",
-      top: "145px",
+      top: "163px",
       height: "1162px",
       width: "390px"
     }}> 
@@ -37,7 +39,11 @@ export const Delivery = () => {
           left: "32px",
         }} >Förnamn*</p>
 
-        <input style={{
+        <input 
+        name="firstNameDelivery"
+        value={firstNameDelivery}
+        onChange={setForm}
+        style={{
           width: "326px",
           height: "48px",
           position: "absolute",
@@ -54,7 +60,11 @@ export const Delivery = () => {
           left: "32px"
         }} >Efternamn*</p>
 
-        <input style={{
+        <input 
+        name="lastNameDelivery"
+        value={lastNameDelivery}
+        onChange={setForm}
+        style={{
           width: "326px",
           height: "48px",
           position: "absolute",
@@ -71,7 +81,11 @@ export const Delivery = () => {
         left: "32px"
       }}>Gatuaddress*</p>
 
-      <input style={{
+      <input 
+      name="address"
+      value={address}
+      onChange={setForm}
+      style={{
         width: "326px",
         height: "48px",
         position: "absolute",
@@ -88,7 +102,11 @@ export const Delivery = () => {
         left: "32px"
       }}>Postnummer*</p>
 
-      <input style={{
+      <input 
+      name="zip" 
+      value={zip}
+      onChange={setForm}
+      style={{
         width: "155px",
         height: "48px",
         position: "absolute",
@@ -105,7 +123,11 @@ export const Delivery = () => {
         left: "203px",
       }}>Ort*</p>
 
-      <input style={{
+      <input 
+      name="city" 
+      value={city}
+      onChange={setForm}
+      style={{
         width: "155px",
         height: "48px",
         position: "absolute",
@@ -129,7 +151,11 @@ export const Delivery = () => {
          top: "504px",
          left: "28px"
        }}/>
-      <input type="number" 
+      <input 
+      name="phone"
+      value={phone}
+      onChange={setForm}
+      type="number" 
       style={{
         width: "277px",
         height: "48px",
@@ -203,7 +229,9 @@ export const Delivery = () => {
       paddingLeft:"10px"
     }} />
 
-    <button style={{
+    <button 
+    onClick={()=>navigation.next()}
+    style={{
       width:"326px",
       height:"50px",
       position: "absolute",

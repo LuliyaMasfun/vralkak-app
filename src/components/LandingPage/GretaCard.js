@@ -24,7 +24,7 @@ export default function GretaCard() {
     <div className="foodDescription3"><img className="pictureToDescription3"src={imgDescription3} /><span className="textToDescription3">8 min tillagning per portion</span></div>
 
     <div className="foodDescription4"><img className="pictureToDescriptionEkonomen" src={imgDescription4} /><span className="textToDescriptionEkonomen">Prispressade varor</span></div>
-    <Link className="gretaCallToAction" to="/login">Beställ
+    <Link className="gretaCallToAction" to="/checkout">Beställ
     
     </Link>
     <img className="orderArrowRight2" src={arrow} />   

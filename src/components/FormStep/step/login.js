@@ -1,11 +1,12 @@
 import React from 'react'
 import '../css/Login.css'
 import '../../Body.css'
-import { Link } from 'react-router-dom'
 import Navbar from '../../Navbar/Navbar';
-import Progressbar from '../../Progressbar/Progressbar';
+import {Progressbar} from '../../Progressbar/Progressbar';
+import EmailIcon from '../../assets/mailIcon.png';
+import PasswordIcon from '../../assets/passwordIcon.png';
 
-export const Login = () => {
+export const Login = ({formData, setForm, navigation}) => {
   return (
     <>
     <Navbar />
@@ -14,9 +15,23 @@ export const Login = () => {
     <span className="loginHeading">
         Logga in
     </span>
-    <div className="loginForm" id="loginForm">
-        <input className="emailForm1" type="text" placeholder="  E-post" id="formEmail"/>
-        <input className="passwordForm1" type="password" placeholder="  Lösenord" id="formPassword"/>
+    
+    
+        <input className="emailForm1" type="text" placeholder="E-post" id="formEmail"/>
+
+<img style={{
+        position:"absolute",
+        top:"126px",
+        left: "48px"
+      }} src={EmailIcon} />
+        <input className="passwordForm1" type="password" placeholder="Lösenord" id="formPassword"/>
+
+        <img style={{
+        position:"absolute",
+        top:"193.69px",
+        left: "50px"
+      }} src={PasswordIcon} />
+
         <p className="forgetPassword"> Glömt lösenord? </p>
         <button className="loginSubmitButton" type="button" >Logga in</button>
         <div className="option">
@@ -24,11 +39,11 @@ export const Login = () => {
         <p className="orText">eller</p>
         <div className="border2"></div>
     </div>
-    <Link to ="/signup" className="signUpSubmitButton">Skapa ett konto</Link>
+    <button className="signUpSubmitButton" onClick={()=> navigation.next()}>Skapa ett konto</button>
     <p className="continueGuest"> Fortsätt som gäst </p>
 
       </div>
-</div>
+
 </>
   )
 }

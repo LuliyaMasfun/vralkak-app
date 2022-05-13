@@ -2,7 +2,7 @@ import React,{Component, useState} from 'react'
 import '../css/SignUp.css'
 import '../../Body.css'
 import Navbar from '../../Navbar/Navbar';
-import Progressbar from '../../Progressbar/Progressbar';
+import {Progressbar} from '../../Progressbar/Progressbar';
 import logo from '../../assets/VectorSignUpInfo.png';
 
 
@@ -29,25 +29,25 @@ export const Signup = ({formData, setForm, navigation}) => {
     
 
     function validation(){
-      emailValidation(email);
-      passwordValidation(password);
-      nameValidation(firstName, lastName)
+      //emailValidation(email);
+     // passwordValidation(password);
+    //  nameValidation(firstName, lastName)
       
 
-      if(nameValidation){
+      
         navigation.next();
-      }
+      
       
     }
 
     function nameValidation(firstName, lastName){
       if(firstName===""){
         setFirstNameError("Name must be provided")
-        return false;
+        return true;
       }
       if(lastName===""){
         setLastNameError("Name must be provided")
-        return false;
+        return true;
       }
       else{
         setFirstNameError("")
