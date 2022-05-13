@@ -1,16 +1,14 @@
 import React,{useState} from 'react'
 import Navbar from '../../Navbar/Navbar'
-import {Progressbar} from '../../Progressbar/Progressbar';
+import Progressbar from '../../Progressbar/Progressbar';
 import sweFlag from '../../assets/sweflag.png'
 import DatePicker from 'react-date-picker';
 import 'react-datepicker/dist/react-datepicker.css';
 
 
-export const Delivery = ({formData, setForm, navigation}) => {
+export const Delivery = () => {
   
  const [selectedDate, setSelectedDate] = useState(null);
- 
- const {firstNameDelivery,lastNameDelivery, address, city,zip, phone} = formData;
 
   return (
     <>
@@ -21,7 +19,7 @@ export const Delivery = ({formData, setForm, navigation}) => {
       backgroundColor: "#F4F4F4",
       display: "grid",
       position: "absolute",
-      top: "163px",
+      top: "145px",
       height: "1162px",
       width: "390px"
     }}> 
@@ -39,11 +37,7 @@ export const Delivery = ({formData, setForm, navigation}) => {
           left: "32px",
         }} >Förnamn*</p>
 
-        <input 
-        name="firstNameDelivery"
-        value={firstNameDelivery}
-        onChange={setForm}
-        style={{
+        <input style={{
           width: "326px",
           height: "48px",
           position: "absolute",
@@ -60,11 +54,7 @@ export const Delivery = ({formData, setForm, navigation}) => {
           left: "32px"
         }} >Efternamn*</p>
 
-        <input 
-        name="lastNameDelivery"
-        value={lastNameDelivery}
-        onChange={setForm}
-        style={{
+        <input style={{
           width: "326px",
           height: "48px",
           position: "absolute",
@@ -81,11 +71,7 @@ export const Delivery = ({formData, setForm, navigation}) => {
         left: "32px"
       }}>Gatuaddress*</p>
 
-      <input 
-      name="address"
-      value={address}
-      onChange={setForm}
-      style={{
+      <input style={{
         width: "326px",
         height: "48px",
         position: "absolute",
@@ -102,11 +88,7 @@ export const Delivery = ({formData, setForm, navigation}) => {
         left: "32px"
       }}>Postnummer*</p>
 
-      <input 
-      name="zip" 
-      value={zip}
-      onChange={setForm}
-      style={{
+      <input style={{
         width: "155px",
         height: "48px",
         position: "absolute",
@@ -123,11 +105,7 @@ export const Delivery = ({formData, setForm, navigation}) => {
         left: "203px",
       }}>Ort*</p>
 
-      <input 
-      name="city" 
-      value={city}
-      onChange={setForm}
-      style={{
+      <input style={{
         width: "155px",
         height: "48px",
         position: "absolute",
@@ -151,11 +129,7 @@ export const Delivery = ({formData, setForm, navigation}) => {
          top: "504px",
          left: "28px"
        }}/>
-      <input 
-      name="phone"
-      value={phone}
-      onChange={setForm}
-      type="number" 
+      <input type="number" 
       style={{
         width: "277px",
         height: "48px",
@@ -229,9 +203,7 @@ export const Delivery = ({formData, setForm, navigation}) => {
       paddingLeft:"10px"
     }} />
 
-    <button 
-    onClick={()=>navigation.next()}
-    style={{
+    <button style={{
       width:"326px",
       height:"50px",
       position: "absolute",

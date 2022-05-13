@@ -28,7 +28,7 @@ export default function EkonomenCard() {
 
     <div className="foodDescription4"><img className="pictureToDescriptionEkonomen" src={imgDescription4} /><span className="textToDescriptionEkonomen">Prispressade varor</span></div>
 
-    <Link className="ekonomenCallToAction" to="/checkout">Beställ
+    <Link className="ekonomenCallToAction" to="/login">Beställ
 
     </Link>
     <img className="orderArrowRight1" src={arrow} />   

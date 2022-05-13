@@ -5,7 +5,7 @@
     display: grid;
     
     position: absolute;
-    top: 163px;
+    top: 145px;
     height: 700px;
     width: 390px;
 }
@@ -13,63 +13,53 @@
 .loginHeading{
     font-weight: 600;
     font-size:36px;
-
-    position: absolute;
-    top: 40px;
-    
+    margin: 32px;
 }
 
 .emailForm1{
     border: solid 1px black;
     width: 326px;
-    height: 48px;
+    height: 49px;
     position: absolute;
-    top: 110px;
+    top: 116px;
     margin-left: 32px;
     margin-right: 32px;
     background-color: white;
-    box-sizing: border-box;
-    border: 1px solid black;
     
     
 }
 
-.emailForm1::placeholder{
+.emailForm::placeholder{
   color: black;
   opacity: 1;
-  font-family: 'Outfit';
-  font-size:16px;
-  font-weight: normal;
-    padding-left: 40px;
+margin-right: 10px;
+  
+    
 }
 
-
+input{
+    padding-left: 10px;
+}
 .passwordForm1{
     border: solid 1px black;
     width: 326px;
-    height: 48px;
+    height: 49px;
     position: absolute;
-    top: 182px;
+    top: 175px;
     margin-left: 32px;
     margin-right: 32px;
     background-color: white;
-    box-sizing: border-box;
-    border: 1px solid black;
     
 }
 
-.passwordForm1::placeholder{
-    font-family: 'Outfit';
+.passwordForm::placeholder{
     color: black;
-  opacity: 1;
-  padding-left: 40px;
-  font-size:16px;
-  font-weight: normal;
+    opacity: 1;
 }
 .forgetPassword{
     position: absolute;
-    top: 240px;
-    left: 32px;
+    top: 223px;
+    left: 240px;
     border-bottom: 1px solid black;
 }
 
@@ -78,29 +68,29 @@
     height: 50px;
     margin-left: 32px;
     margin-right: 32px;
-    background: #1F1E1F;
+    background: black;
     color: white;
     position: absolute;
-    top: 302px;
+    top: 284px;
     font-size: 20px;
     font-weight: 500;
-    border-color: #1F1E1F;
+    border-color: black;
 
 }
 
 .signUpSubmitButton{
     width: 326px;
     height: 50px;
-    border: solid 2px blackbean;
+    border: solid 2px black;
     margin-left: 32px;
     margin-right: 32px;
     background-color: #F4F4F4;
-    color: #1E281E;
+    color: black;
     position: absolute;
-    top: 402px;
+    top: 384px;
     font-size: 20px;
     font-weight: 500;
-    border-color: #1E281E;
+    border-color: black;
     text-align: center;
     line-height: 45px;
     text-decoration: none;
@@ -112,8 +102,7 @@
     display: flex;
     justify-content: space-between;
     position: absolute;
-    top: 378px;
-    
+    top:360px;
     width: 326px;
     height: 24px;
     
@@ -151,9 +140,7 @@
     border-bottom: 1px solid black;
     position: absolute;
     top: 461px;
-    left: 32px;
-    font-size: 16px;
-    font-weight: normal;
+    left: 130px;
 
 
 }
@@ -171,4 +158,3 @@
     font-size: 36px;
     line-height: 40px;
 }
-
