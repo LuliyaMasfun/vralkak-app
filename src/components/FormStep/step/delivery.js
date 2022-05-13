@@ -188,7 +188,9 @@ export const Delivery = ({formData, setForm, navigation}) => {
       />
 
     
-    <select name="deliveryWay" style={{
+    <select 
+    
+    style={{
       position: "absolute",
       top:"763px",
       left: "32px",

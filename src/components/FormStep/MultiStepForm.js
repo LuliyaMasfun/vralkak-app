@@ -21,9 +21,6 @@ const defaultData = {
     city: '',
     zip: '',
     phone: '',
-    deliveryDate: '',
-    deliveryWay: '',
-    noteToDriver: '',
 };
 
 

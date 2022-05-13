@@ -1,13 +1,13 @@
 import React,{useState} from 'react'
 
 import '../../Body.css'
-import { Link } from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import Navbar from '../../Navbar/Navbar';
 import {Progressbar} from '../../Progressbar/Progressbar';
 import klarnaLogo from '../../assets/klarnalogos.svg';
 import cardLogos from '../../assets/cardpayment.svg';
 import swishLogo from '../../assets/Swish.svg';
-export const Payment = () => {
+export const Payment = ({navigation}) => {
   const [show, setShow] = useState(true);
 
   return (
@@ -21,7 +21,7 @@ export const Payment = () => {
       top: "163px",
       height: "993px",
       width: "390px"
-    }} >
+    }}>
 
       <span className="paymentsHeading" style={{
         position: "absolute",
@@ -201,7 +201,9 @@ export const Payment = () => {
         </div>
         </div>
 
-        <button style={{
+        <button 
+        onClick={()=>navigation.next()}
+        style={{
       width:"326px",
       height:"50px",
       position: "absolute",

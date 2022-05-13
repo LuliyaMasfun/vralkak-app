@@ -30,7 +30,6 @@ export const Checkout = ({navigation}) => {
       top: "163px",
       height: "1062px",
       width: "390px"
-      
       }}>
         <span style={{
           position: "absolute",
@@ -124,7 +123,6 @@ export const Checkout = ({navigation}) => {
             position: "absolute",
             top: "35.29px",
             left: "295.96px",
-            
           }}/>
             
             <div style={{
