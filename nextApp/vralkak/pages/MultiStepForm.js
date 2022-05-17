@@ -1,12 +1,12 @@
 import React from 'react'
 import  {useForm,useStep } from 'react-hooks-helper'
-import { Checkout } from '../../checkout';
-import { Delivery } from './step/delivery';
-import { Login } from './step/login';
-import { Review } from './step/review';
-import { Signup } from './step/signup';
-import { Submit } from './step/submit';
-import { Payment } from './step/payment';
+import { Checkout } from '../components/FormStep/step/checkout';
+import { Delivery } from '../components/FormStep/step/delivery';
+import { Login } from '../components/FormStep/step/login';
+import { Review } from '../components/FormStep/step/review';
+import { Signup } from '../components/FormStep/step/signup';
+import { Submit } from '../components/FormStep/step/submit';
+import { Payment } from '../components/FormStep/step/payment';
 
 
 const defaultData = {

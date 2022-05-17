@@ -1,9 +1,9 @@
 import React,{useState} from 'react'
 import Navbar from '../../Navbar/Navbar'
 import {Progressbar} from '../../Progressbar/Progressbar';
-import sweFlag from '../../assets/sweflag.png'
-import DatePicker from 'react-date-picker';
-import 'react-datepicker/dist/react-datepicker.css';
+import sweFlag from '../../../public/assets/sweflag.png'
+
+
 
 
 export const Delivery = ({formData, setForm, navigation}) => {
@@ -174,18 +174,7 @@ export const Delivery = ({formData, setForm, navigation}) => {
         fontWeight: "600"
       }}>Välj leverans</p>
 
-      <DatePicker 
-      selected={selectedDate} 
-      onChange={selectedDate => setSelectedDate(selectedDate)}
-      minDate={new Date()}
-      dateFormat="dd/MM/yyyy"
-      className="datePicker"
       
-      
-      
-      
-      
-      />
 
     
     <select 

@@ -1,4 +1,4 @@
-import React from 'react'
+/*import React from 'react'
 import Navbar from '../../Navbar/Navbar'
 import { Progressbar } from '../../Progressbar/Progressbar'
 import Container from '@material-ui/core/Container';
@@ -10,6 +10,8 @@ import  ListItemText  from '@material-ui/core/ListItemText';
 import IconButton from '@material-ui/core/IconButton';
 import EditIcon from '@material-ui/icons/Edit';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
+
+
 
 
 export const Review = ({formData, navigation}) => {
@@ -178,3 +180,4 @@ export const RenderAccordion = ({summary, details, go}) => (
       </AccordionDetail>
   </Accordion>
 )
+*/

@@ -1,5 +1,5 @@
 import React from 'react'
-import './Progressbar.module.css'
+
 
 
 export const Progressbar = () => {
@@ -52,7 +52,7 @@ export const Progressbar = () => {
         }}></div>
 
 
-<span style={{
+        <span style={{
             position: "absolute",
             fontSize: "12px",
             fontWeight: "600",

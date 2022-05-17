@@ -1,13 +1,13 @@
 import React,{useState} from 'react'
-import Navbar from '../components/Navbar/Navbar';
-import Arrow from '../public/assets/arrowCheckOut.png'
-import Veganen from '../public/assets/veganenCheckOut.png'
-import {Progressbar} from '../components/Progressbar/Progressbar';
-import innehall from '../public/assets/innehall.png'
-import Greta from '../public/assets/gretaDish.png'
-import Ekonomen from '../public/assets/ekonomenDish.png'
-import dish1 from '../public/assets/dish1.png'
-import dish2 from '../public/assets/dish2.png'
+import Navbar from '../../Navbar/Navbar'
+import Arrow from '../../../public/assets/arrowCheckOut.png'
+import Veganen from '../../../public/assets/veganenCheckOut.png'
+import {Progressbar} from '../../Progressbar/Progressbar'
+import innehall from '../../../public/assets/innehall.png'
+import Greta from '../../../public/assets/gretaDish.png'
+import Ekonomen from '../../../public/assets/ekonomenDish.png'
+import dish1 from '../../../public/assets/dish1.png'
+import dish2 from '../../../public/assets/dish2.png'
 
 export const Checkout = ({navigation}) => {
 

@@ -1,6 +1,5 @@
 import React from 'react'
 import '../css/Login.module.css'
-import '../../Body.css'
 import Navbar from '../../Navbar/Navbar';
 import {Progressbar} from '../../Progressbar/Progressbar';
 import EmailIcon from '../../../public/assets/mailIcon.png';
