@@ -18,7 +18,7 @@ export default function HomePage() {
     <div className={styles.firstPage}>
     <span className={styles.welcomeText}>Ett skepp kommer lastat med <span className={styles.textToChange}></span></span>
             
-            <Image src={StartPagePictureShadows} className={styles.shadowFirstPage}/>
+            <Image className={styles.shadowFirstPage} alt="" height={600} width={360} src={StartPagePictureShadows} />
             <Image src={StartPagePicture} className={styles.lunchBoxImg}/>
 
         <button className={styles.firstPageButton} type="button"><span className={styles.buttonText}>Hitta ditt studentkäk</span>  </button>
