@@ -8,7 +8,7 @@ import {signup} from '../components/FormStep/step/signup'
 import EkonomenCard from '../components/LandingPage/EkonomenCard'
 import GretaCard from '../components/LandingPage/GretaCard'
 import VeganenCard from '../components/LandingPage/VeganenCard'
-import { MulitStepForm } from './MultiStepForm';
+
 import Navbar from '../components/Navbar/Navbar';
 import HomePage from '../components/LandingPage/HomePage'
 

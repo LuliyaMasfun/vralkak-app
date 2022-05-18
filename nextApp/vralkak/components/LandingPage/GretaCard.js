@@ -12,22 +12,22 @@ import Image from 'next/image';
 
 export default function GretaCard() {
   return (
-    <div className="ekonomen" id="greta">
-    <div className="foodCardName">“Greta”</div>
-    <Image className="ekonomenShadow" src={ekonomenShadow}/>
-    <Image className="ekonomenFood" id="gretaFood" src={gretaFood} />
-    <div className="priceBorder">fr. 400 kr</div>
-    <div className="textBelowPicture">Miljömärkt kasse för dig som har fullt upp med att rädda världen likt Greta.</div>
-    <div className="ekonomLine"></div>
-    <div className="foodDescription1"><Image className="pictureToDescription1"src={imgDescription1} /><span className="textToDescription1">Mat för två veckor på två timmar</span></div>
-    <div className="foodDescription2"><Image className="pictureToDescription2"src={imgDescription2} /><span className="textToDescription2">Arnes chili con carne, Farmors lasagne, Bengans korvstroganoff</span></div>
-    <div className="foodDescription3"><Image className="pictureToDescription3"src={imgDescription3} /><span className="textToDescription3">8 min tillagning per portion</span></div>
+    <div className={styles.ekonomen} id={styles.greta}>
+    <div className={styles.foodCardName}>“Greta”</div>
+    <Image className={ekonomenShadow} src={ekonomenShadow}/>
+    <Image className={styles.ekonomenFood} id={styles.gretaFood} src={gretaFood} />
+    <div className={styles.priceBorder}>fr. 400 kr</div>
+    <div className={styles.textBelowPicture}>Miljömärkt kasse för dig som har fullt upp med att rädda världen likt Greta.</div>
+    <div className={styles.ekonomLine}></div>
+    <div className={styles.foodDescription1}><Image className={styles.pictureToDescription1} src={imgDescription1} /><span className={styles.textToDescription1}>Mat för två veckor på två timmar</span></div>
+    <div className={styles.foodDescription2}><Image className={styles.pictureToDescription2} src={imgDescription2} /><span className={styles.textToDescription2}>Arnes chili con carne, Farmors lasagne, Bengans korvstroganoff</span></div>
+    <div className={styles.foodDescription3}><Image className={styles.pictureToDescription3}src={imgDescription3} /><span className={styles.textToDescription3}>8 min tillagning per portion</span></div>
 
-    <div className="foodDescription4"><Image className="pictureToDescriptionEkonomen" src={imgDescription4} /><span className="textToDescriptionEkonomen">Prispressade varor</span></div>
-    <Link className="gretaCallToAction" href="/MultiStepForm">Beställ
+    <div className={styles.foodDescription4}><Image className={styles.pictureToDescriptionEkonomen} src={imgDescription4} /><span className={styles.textToDescriptionEkonomen}>Prispressade varor</span></div>
+    <Link className={styles.gretaCallToAction} href="/StepForm">Beställ
     
     </Link>
-    <Image className="orderArrowRight2" src={arrow} />   
+    <Image className={styles.orderArrowRight2} src={arrow} />   
     </div>
   )
 }
