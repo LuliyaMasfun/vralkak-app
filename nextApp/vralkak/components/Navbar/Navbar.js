@@ -3,9 +3,14 @@ import companyLogo from '../../public/assets/logo.png';
 import hamburgerMenu from '../../public/assets/Frame135.png';
 import Image from 'next/image';
 import Link from 'next/Link';
+import Head from 'next/head';
 
 export default function Navbar() {
   return (
+    <>
+    <Head>
+    <link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'/>
+    </Head>
     <div className="navbar" style={{
       display: "grid",
       zIndex: "3",
@@ -38,7 +43,7 @@ export default function Navbar() {
           textdecoration: "none"
       
         }}>
-        <Image src={companyLogo} className="companyLogo"  style={{
+        <Image src={companyLogo} className="companyLogo" layout="raw"  style={{
           position: "absolute",
           left:"260px",
           top:"17px",
@@ -47,5 +52,6 @@ export default function Navbar() {
         }}/>Vrålkäk</span></Link>
         </div>
     </div>
+    </>
   )
 }

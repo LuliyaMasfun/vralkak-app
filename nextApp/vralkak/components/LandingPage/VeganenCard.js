@@ -13,21 +13,21 @@ import Image from 'next/image';
 
 export default function VeganenCard() {
   return (
-    <div className={styles.foodCard} id={styles.veganen}>
+    <div id={styles.veganen}>
         <div className={styles.foodCardName}>“Veganen”</div>
-        <Image src={veganenShadow} className={styles.ekonomenShadow}/>
-        <Image className={styles.ekonomenFood} id={styles.veganFood} src={veganenFood} />
+        <Image src={veganenShadow} className={styles.ekonomenShadow} layout="raw"/>
+        <Image className={styles.ekonomenFood} src={veganenFood} layout="raw" />
         <div className={styles.priceBorder}>fr. 389 kr</div>
         <div className={styles.textBelowPicture}>Kassen för dig som oavsett anledning valt en en växtbaserad kost.</div>
         <div className = {styles.ekonomLine}></div> 
-        <div className={styles.foodDescription1}><Image className={styles.pictureToDescription1}src={imgDescription1} /><span className={styles.textToDescription1}>Mat för 2 veckor på 2 timmar</span></div>
-        <div className={styles.foodDescription2}><Image className={styles.pictureToDescription2}src={imgDescription2} /><span className={styles.textToDescription2}>Het vegansk chili, Zaras zucchinilasagne, Sonjas sojastroganoff</span></div> 
-        <div className={styles.foodDescription3}><Image className={styles.pictureToDescription3}src={imgDescription3} /><span className={styles.textToDescription3}>8 min tillagning per portion</span></div>
-        <div className={styles.foodDescription4}><Image className={styles.pictureToDescriptionVeganen}src={imgDescription4} /><span className={styles.textToDescriptionVeganen}>Helt fritt från animaliska produkter</span></div>
-        <Link className={styles.veganenCallToAction} href="/StepForm">Beställ
+        <Image className={styles.pictureToDescription1}src={imgDescription1} layout="raw"/><span className={styles.textToDescription1}>Mat för 2 veckor på 2 timmar</span>
+        <Image className={styles.pictureToDescription2}src={imgDescription2} layout="raw"/><span className={styles.textToDescription2}>Het vegansk chili, Zaras zucchinilasagne, Sonjas sojastroganoff</span>
+        <Image className={styles.pictureToDescription3}src={imgDescription3} layout="raw"/><span className={styles.textToDescription3}>8 min tillagning per portion</span>
+        <Image className={styles.pictureToDescriptionVeganen}src={imgDescription4} layout="raw"/><span className={styles.textToDescriptionVeganen}>Helt fritt från animaliska produkter</span>
+        <button className={styles.veganenCallToAction} href="/StepForm">Beställ
         
-        </Link>
-        <Image className={styles.orderArrowRight3} src={arrow} />  
+        </button>
+        <Image className={styles.orderArrowRight3} src={arrow} layout="raw" />  
     </div>
   )
 }

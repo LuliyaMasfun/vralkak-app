@@ -1,23 +1,31 @@
+
+
 #ekonomen{
-    display: grid;
-    grid-column: 1;
-    grid-row: 11/21;
+    position: absolute;
+    height: 853px;
+    width: 390px;
+    top: 844px;
+   
     
     background-image: linear-gradient(-145deg, #0939BB 30%, #2652C9 30%);
 }
 
 #greta{
-   display: grid;
-   grid-column: 1;
-   grid-row: 21/31;
+    position: absolute;
+    height: 853px;
+    width: 390px;
+    top: 1697px;
    
 background-image: -webkit-linear-gradient(-125deg, #3EA962 30%, #2CBB76 30%);
 }
 
+
+
 #veganen {
-    display: grid;
-    grid-column: 1;
-    grid-row: 31/41;
+    position: absolute;
+    height: 853px;
+    width: 390px;
+    top: 2550px;
     background-color: #CD4141;
     background-image: -webkit-linear-gradient(-125deg, #CD4141 30%, #E35153 30%);
 }
@@ -35,11 +43,9 @@ background-image: -webkit-linear-gradient(-125deg, #3EA962 30%, #2CBB76 30%);
     font-weight: 600;
     color: white;
     font-size: 36px;
-    width: 323px;
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 24px;
-    margin-left: 25px;
+    position: absolute;
+    top: 24px;
+    left: 24px;
 }
 
 .ekonomenFood{
@@ -98,18 +104,12 @@ background-image: -webkit-linear-gradient(-125deg, #3EA962 30%, #2CBB76 30%);
     
 }
 
-.foodDescription1{
-    position: absolute;
-    width: 316px;
-    height: 40px;
-    margin-left: 32px;
-    margin-top: 456px;   
-}
+
 
 .pictureToDescription1{
-    position: relative;
-    margin-top: 6px;
-    margin-left:2px;
+   position: absolute;
+   top: 454px;
+   left: 32px;
     
 }
 
@@ -117,28 +117,22 @@ background-image: -webkit-linear-gradient(-125deg, #3EA962 30%, #2CBB76 30%);
     height: 40px;
     width: 269px;
     position: absolute;
-    margin-top: 10px;
-    margin-left: 14px;
+    top: 460px;
+    left: 76px;
     color: white;
-    font-weight: 700;
+    font-weight: bold;
     font-size: 16px;
+    
     
 }
 
-.foodDescription2{
-    position: absolute;
-    width: 316px;
-    height: 40px;
-    padding-top: 10px;
-    margin-left: 32px;
-    margin-top: 508px;
-}
+
 
 .pictureToDescription2{
     position: absolute;
     
-    margin-top: 10px;
-    margin-right: 1px;
+    top: 508px;
+    left: 32px;
 
 }
 
@@ -146,26 +140,20 @@ background-image: -webkit-linear-gradient(-125deg, #3EA962 30%, #2CBB76 30%);
     height: 20px;
     width: 300px;
     position: absolute;
-    margin-left: 43.5px;
-    padding-top: 5px;
+    top: 509px;
+    left: 76px;
     color: white;
     font-weight: normal;
     font-size: 16px;
 }
 
-.foodDescription3{
-    position: absolute;
-    width: 316px;
-    height: 40px;
-    margin-left: 32px;
-    margin-top: 572px;
-}
+
 
 
 .pictureToDescription3{
     position: relative;
-    margin-top: 24px;
-    margin-left: 2px;
+    top: 573px;
+    left: 32px;
    
 }
 
@@ -173,29 +161,20 @@ background-image: -webkit-linear-gradient(-125deg, #3EA962 30%, #2CBB76 30%);
     height: 20px;
     width: 200px;
     position: absolute;
-
-    margin-top: 5px;
-
-    margin-top: 24px;
-
-    margin-left: 15px;
+    top: 579px;
+    left: 76px;
     color: white;
     font-weight: normal;
     font-size: 16px;
 }
 
-.foodDescription4{
-    position: absolute;
-    width: 316px;
-    height: 40px;
-    margin-left: 32px;
-    margin-top: 628px;
-}
+
 
 .pictureToDescriptionEkonomen{
-    position: relative;
-    margin-top: 24px;
-    margin-left: 6px;
+    position: absolute;
+    
+    top: 629px;
+    left: 32px;
    
 }
 
@@ -203,43 +182,23 @@ background-image: -webkit-linear-gradient(-125deg, #3EA962 30%, #2CBB76 30%);
     height: 20px;
     width: 300px;
     position: absolute;
-
-    margin-top: 8px;
-
-    margin-top: 24px;
-
-    margin-left: 18px;
+    top: 634px;
+    left: 76px;
+    
     color: white;
     font-weight: normal;
     font-size: 16px;
 }
 
-.pictureToDescriptionEkonomen{
-    position: relative;
-    margin-top: 24px;
-    margin-left: 6px;
-   
-}
 
-.textToDescriptionEkonomen{
-    height: 20px;
-    width: 300px;
-    position: absolute;
 
-    margin-top: 8px;
 
-    margin-top: 24px;
-
-    margin-left: 18px;
-    color: white;
-    font-weight: normal;
-    font-size: 16px;
-}
 
 .pictureToDescriptionGreta{
-    position: relative;
-    margin-top: 20px;
-    margin-left: 1px;
+    position: absolute;
+    
+    top: 629px;
+    left: 32px;
    
 }
 
@@ -247,12 +206,9 @@ background-image: -webkit-linear-gradient(-125deg, #3EA962 30%, #2CBB76 30%);
     height: 20px;
     width: 300px;
     position: absolute;
-
+    top: 634px;
+    left: 76px;
     
-
-    margin-top: 24px;
-
-    margin-left: 13px;
     color: white;
     font-weight: normal;
     font-size: 16px;
@@ -260,9 +216,10 @@ background-image: -webkit-linear-gradient(-125deg, #3EA962 30%, #2CBB76 30%);
 
 
 .pictureToDescriptionVeganen{
-    position: relative;
-    margin-top: 24px;
-    margin-left: 4px;
+    position: absolute;
+    
+    top: 629px;
+    left: 32px;
    
 }
 
@@ -270,97 +227,75 @@ background-image: -webkit-linear-gradient(-125deg, #3EA962 30%, #2CBB76 30%);
     height: 20px;
     width: 300px;
     position: absolute;
-
-    margin-top: 8px;
-
-    margin-top: 24px;
-
-    margin-left: 16px;
+    top: 634px;
+    left: 76px;
+    
     color: white;
     font-weight: normal;
     font-size: 16px;
 }
 
 .ekonomenCallToAction{
-    border: solid 1px #1F1E1F;
-    background: #1F1E1F;
-    color: white;
-    width: 326px;
-    height: 50px;
-    position: absolute;
-    margin-left: 33px;
-    margin-top: 736px;
-    text-indent: 2px;
-    font-weight: 400;
-    font-size: 20px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    line-height: 45px;
+    width:326px;
+    height:50px;
+          position: absolute;
+          top: 747px;
+          left: 32px;
+          box-sizing:border-box;
+          border: 1px solid #1F1E1F;
+          background-color: #1F1E1F;
+          color: white;
+          font-weight: 500;
+          font-Size: 20px;
 }
 
 .gretaCallToAction{
-    border: solid 1px #1F1E1F;
-    background: #1F1E1F;
-    color: white;
-    width: 326px;
-    height: 50px;
-    position: absolute;
-    margin-left: 33px;
-    margin-top: 736px;
-    text-indent: 2px;
-    font-weight: 400;
-    font-size: 20px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    line-height: 45px;
+    width:326px;
+    height:50px;
+          position: absolute;
+          top: 747px;
+          left: 32px;
+          box-sizing:border-box;
+          border: 1px solid #1F1E1F;
+          background-color: #1F1E1F;
+          color: white;
+          font-weight: 500;
+          font-Size: 20px;
 }
-
 
 .orderArrowRight1{
     position: absolute;
-    top: 1595px;
-    left: 240.5px;
+    top: 763.04px;
+    left: 238.46px;
 }
 .orderArrowRight2{
     position: absolute;
-    top: 2440px;
-    left: 240.5px;
+    top: 763.04px;
+    left: 238.46px;
 }
 .orderArrowRight3{
     position: absolute;
-    top: 3283px;
-    left: 240.5px;
+    top: 763.04px;
+    left: 238.46px;
 }
 
 
 
 
 .veganenCallToAction{
-    border: solid 1px #1F1E1F;
-    background: #1F1E1F;
-    color: white;
-    width: 326px;
-    height: 50px;
-    position: absolute;
-    margin-left: 33px;
-    margin-top: 736px;
-    text-indent: 2px;
-    
-    font-weight: 400;
-    font-size: 20px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    line-height: 45px;
+    width:326px;
+    height:50px;
+          position: absolute;
+          top: 747px;
+          left: 32px;
+          box-sizing:border-box;
+          border: 1px solid #1F1E1F;
+          background-color: #1F1E1F;
+          color: white;
+          font-weight: 500;
+          font-Size: 20px;
 }
 
-.orderArrowRight{
-    position: relative;
-    padding-left: 240px;
-    padding-top: 610px
-}
 
 .imgShadow{
     position: absolute;
