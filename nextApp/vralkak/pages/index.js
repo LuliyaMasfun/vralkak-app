@@ -11,6 +11,7 @@ import VeganenCard from '../components/LandingPage/VeganenCard'
 
 import Navbar from '../components/Navbar/Navbar';
 import HomePage from '../components/LandingPage/HomePage'
+import { LandingPage } from '../components/LandingPage/LandingPage';
 
 
 
@@ -19,12 +20,8 @@ function App() {
   return (
     <>
     
-    <Navbar />
-    <HomePage />
-    <EkonomenCard />
-    <GretaCard />
-    <VeganenCard />
-
+    <LandingPage/>
+    
     {/* <Route exact path="/" component={LandingPage} />
     <Route exact path="/ekonomen" component={EkonomenCard} />
     <Route exact path="/greta" component={GretaCard} />
