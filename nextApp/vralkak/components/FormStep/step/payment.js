@@ -4,6 +4,7 @@ import {Progressbar} from '../../Progressbar/Progressbar';
 import klarnaLogo from '../../../public/assets/klarnalogos.svg';
 import cardLogos from '../../../public/assets/cardpayment.svg';
 import swishLogo from '../../../public/assets/Swish.svg';
+import Image from 'next/image';
 
 
 export const Payment = ({formData,setForm,navigation}) => {
@@ -52,7 +53,7 @@ export const Payment = ({formData,setForm,navigation}) => {
             top: "32px",
             left: "95.96px"
           }}> Klarna </span>
-          <img className="klarnaPic" src={klarnaLogo}  style={{
+          <Image layout="raw" className="klarnaPic" src={klarnaLogo}  style={{
             position: "absolute",
             top: "27.5px",
             left: "166.96px"
@@ -82,7 +83,7 @@ export const Payment = ({formData,setForm,navigation}) => {
             marginLeft : "51px",
             marginTop : "32px"
           }}> Kortbetalning </div>
-          <img className="cardPic" src={cardLogos}  alt=""
+          <Image layout="raw" className="cardPic" src={cardLogos}  alt=""
           style={{
             position: "absolute",
             marginTop : "-30px",
@@ -215,7 +216,7 @@ export const Payment = ({formData,setForm,navigation}) => {
             marginTop: "-30px",
             marginLeft: "142.5px"
            }} >
-            <img className="swishPic" src={swishLogo} alt=""/>
+            <Image layout="raw" className="swishPic" src={swishLogo} alt=""/>
         </div>
         </div>
 

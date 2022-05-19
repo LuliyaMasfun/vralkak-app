@@ -1,4 +1,4 @@
-/*import React from 'react'
+import React from 'react'
 import Navbar from '../../Navbar/Navbar'
 import { Progressbar } from '../../Progressbar/Progressbar'
 import Container from '@material-ui/core/Container';
@@ -180,4 +180,3 @@ export const RenderAccordion = ({summary, details, go}) => (
       </AccordionDetail>
   </Accordion>
 )
-*/

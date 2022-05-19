@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import Navbar from '../../Navbar/Navbar'
 import {Progressbar} from '../../Progressbar/Progressbar';
 import sweFlag from '../../../public/assets/sweflag.png'
+import Image from 'next/image';
 
 
 
@@ -143,7 +144,7 @@ export const Delivery = ({formData, setForm, navigation}) => {
         top: "464px",
         left: "32px",
       }} >Mobilnummer</p>
-      <img 
+      <Image  layout = "raw" 
        src={sweFlag} 
        className="sweFlag"
        style={{

@@ -1,45 +1,46 @@
 import React from 'react'
-import '../css/Login.module.css'
+import styles from '../css/Login.module.css'
 import Navbar from '../../Navbar/Navbar';
 import {Progressbar} from '../../Progressbar/Progressbar';
 import EmailIcon from '../../../public/assets/mailIcon.png';
 import PasswordIcon from '../../../public/assets/passwordIcon.png';
+import Image from 'next/image'
 
 export const Login = ({formData, setForm, navigation}) => {
   return (
     <>
     <Navbar />
     <Progressbar />
-    <div className="login"> 
-    <span className="loginHeading">
+    <div className={styles.login}> 
+    <span className={styles.loginHeading}>
         Logga in
     </span>
     
     
-        <input className="emailForm1" type="text" placeholder="E-post" id="formEmail"/>
+        <input className={styles.emailForm1} type="text" placeholder="E-post" id="formEmail"/>
 
-<img style={{
+<Image layout="raw" style={{
         position:"absolute",
         top:"126px",
         left: "48px"
       }} src={EmailIcon} />
-        <input className="passwordForm1" type="password" placeholder="Lösenord" id="formPassword"/>
+        <input className={styles.passwordForm1} type="password" placeholder="Lösenord" id="formPassword"/>
 
-        <img style={{
+        <Image layout="raw" style={{
         position:"absolute",
         top:"193.69px",
         left: "50px"
       }} src={PasswordIcon} />
 
-        <p className="forgetPassword"> Glömt lösenord? </p>
-        <button className="loginSubmitButton" type="button" >Logga in</button>
-        <div className="option">
-        <div className="border1"></div>
-        <p className="orText">eller</p>
-        <div className="border2"></div>
+        <p className={styles.forgetPassword}> Glömt lösenord? </p>
+        <button className={styles.loginSubmitButton} type="button" >Logga in</button>
+        <div className={styles.option}>
+        <div className={styles.border1}></div>
+        <p className={styles.orText}>eller</p>
+        <div className={styles.border2}></div>
     </div>
-    <button className="signUpSubmitButton" onClick={()=> navigation.next()}>Skapa ett konto</button>
-    <p className="continueGuest"> Fortsätt som gäst </p>
+    <button className={styles.signUpSubmitButton} onClick={()=> navigation.next()}>Skapa ett konto</button>
+    <p className={styles.continueGuest}> Fortsätt som gäst </p>
 
       </div>
 

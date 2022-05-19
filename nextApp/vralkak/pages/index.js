@@ -12,6 +12,8 @@ import VeganenCard from '../components/LandingPage/VeganenCard'
 import Navbar from '../components/Navbar/Navbar';
 import HomePage from '../components/LandingPage/HomePage'
 import { LandingPage } from '../components/LandingPage/LandingPage';
+import {StepForm} from './StepForm/StepForm'
+import { MulitStepForm } from '../components/FormStep/MultiStepForm';
 
 
 

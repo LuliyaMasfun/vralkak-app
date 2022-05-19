@@ -28,8 +28,9 @@ export default function EkonomenCard() {
     <Image className={styles.pictureToDescription3}src={imgDescription3} layout="raw"/><span className={styles.textToDescription3}>8 min tillagning per portion</span>
 
     <img className={styles.pictureToDescriptionEkonomen} src={imgDescription4}  layout="raw"/><span className={styles.textToDescriptionEkonomen}>Prispressade varor</span>
-
-    <button className={styles.ekonomenCallToAction} href="/MultiStepForm">Beställ</button>
+    <Link href="/StepForm">
+    <button className={styles.ekonomenCallToAction} >Beställ</button>
+    </Link>
     <Image className={styles.orderArrowRight1} src={arrow} layout="raw" />   
     </div>
 

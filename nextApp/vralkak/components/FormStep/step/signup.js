@@ -1,9 +1,10 @@
 import React,{Component, useState} from 'react'
-import '../css/SignUp.module.css'
+import styles from '../css/SignUp.module.css' 
+
 import Navbar from '../../Navbar/Navbar';
 import {Progressbar} from '../../Progressbar/Progressbar';
 import logo from '../../../public/assets/VectorSignUpInfo.png';
-
+import Image from 'next/image'
 
 
 
@@ -91,36 +92,36 @@ export const Signup = ({formData, setForm, navigation}) => {
     <Navbar />
     <Progressbar />
     
-    <form className="login" id="signup"> 
-    <span className="loginHeading">
+    <form className={styles.login} id={styles.signup}> 
+    <span className={styles.loginHeading}>
         Skapa ett konto
     </span>
    
         
       
-        <p className="firstNameNote">Förnamn*</p>
-        <input className="firstName" type="text" name='firstName' value={firstName} onChange={setForm}  id="firstName" required />
-        <p id="errorFirstName">{firstNameError}</p>
-        <p className="lastNameNote">Efternamn*</p>
-        <input className="lastName" name='lastName'value={lastName} onChange={setForm} type="text" id="lastName" required/>
-        <p id="errorLastName">{lastNameError}</p>
+        <p className={styles.firstNameNote}>Förnamn*</p>
+        <input className={styles.firstName} type="text" name='firstName' value={firstName} onChange={setForm}  id="firstName" required />
+        <p id={styles.errorFirstName}>{firstNameError}</p>
+        <p className={styles.lastNameNote}>Efternamn*</p>
+        <input className={styles.lastName} name='lastName'value={lastName} onChange={setForm} type="text" id="lastName" required/>
+        <p id={styles.errorLastNam}>{lastNameError}</p>
 
-      <p className="emailNote">Email*</p>
-      <input className="emailForm" name='email'value={email} onChange={setForm} type="email" id="email"  required/>
-      <p id="errorCheckEmail">{emailError}</p>
+      <p className={styles.emailNote}>Email*</p>
+      <input className={styles.emailForm} name='email'value={email} onChange={setForm} type="email" id="email"  required/>
+      <p id={styles.errorCheckEmail}>{emailError}</p>
 
-      <p className="passwordNote">Lösenord*</p>
-      <input className="passwordForm" name='password'value={password} onChange={setForm} type="password"  id="passwordForm"  required/>
-      <span id="errorCheckPassword">{passwordError}</span>
+      <p className={styles.passwordNote}>Lösenord*</p>
+      <input className={styles.passwordForm} name='password'value={password} onChange={setForm} type="password"  id="passwordForm"  required/>
+      <span id={styles.errorCheckPassword}>{passwordError}</span>
 
-      <img className="signUpInfo" src={logo} alt="" />
-      <p className="infoText">Ange minst 6 tecken</p>
+      <Image layout="raw" className={styles.signUpInfo} src={logo} alt="" />
+      <p className={styles.infoText}>Ange minst 6 tecken</p>
 
-      <p className="confirmPasswordNote">Bekräfta lösenord*</p>
-      <input className="confirmPasswordForm" type="password"  />
-      <p id="errorCheckConfirmedPassword">{confirmPasswordError}</p>
+      <p className={styles.confirmPasswordNote}>Bekräfta lösenord*</p>
+      <input className={styles.confirmPasswordForm} type="password"  />
+      <p id={styles.errorCheckConfirmedPassword}>{confirmPasswordError}</p>
 
-      <button className="signUpSubmitButton1" type="button" onClick={validation} >Skapa ett konto</button>
+      <button className={styles.signUpSubmitButton1} type="button" onClick={validation} >Skapa ett konto</button>
     
     </form>
     </>
