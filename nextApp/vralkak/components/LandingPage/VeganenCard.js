@@ -24,9 +24,9 @@ export default function VeganenCard() {
         <Image className={styles.pictureToDescription2}src={imgDescription2} layout="raw"/><span className={styles.textToDescription2}>Het vegansk chili, Zaras zucchinilasagne, Sonjas sojastroganoff</span>
         <Image className={styles.pictureToDescription3}src={imgDescription3} layout="raw"/><span className={styles.textToDescription3}>8 min tillagning per portion</span>
         <Image className={styles.pictureToDescriptionVeganen}src={imgDescription4} layout="raw"/><span className={styles.textToDescriptionVeganen}>Helt fritt från animaliska produkter</span>
-        <button className={styles.veganenCallToAction} href="/StepForm">Beställ
-        
-        </button>
+        <Link href="/StepForm">
+        <button className={styles.veganenCallToAction} href="/StepForm">Beställ</button>
+        </Link>
         <Image className={styles.orderArrowRight3} src={arrow} layout="raw" />  
     </div>
   )
