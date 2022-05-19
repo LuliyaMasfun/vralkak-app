@@ -43,7 +43,7 @@ export const Checkout = ({navigation}) => {
         style={{
           height: "88px",
           width: "326px",
-          backgroundColor: "#CD4141",
+          backgroundColor: "#AB3C3C",
           position: "relative",
           top: "120px", 
           left: "32px",
@@ -73,7 +73,7 @@ export const Checkout = ({navigation}) => {
             
             <div style={{
               position: "relative",
-              backgroundColor: "#D55D5D",
+              backgroundColor: "#B85959",
               marginTop:"88px",
               width: "326px",
               height: "446px",
@@ -96,7 +96,7 @@ export const Checkout = ({navigation}) => {
         style={{
           height: "88px",
           width: "326px",
-          backgroundColor: "#3EA962",
+          backgroundColor: "#006740",
           position: "absolute",
           top: show1?  "232px":"678px", 
           left: "32px",
@@ -127,7 +127,7 @@ export const Checkout = ({navigation}) => {
             
             <div style={{
               position: "relative",
-              backgroundColor: "#5BB67A",
+              backgroundColor: "#267E5D",
               marginTop:"88px",
               width: "326px",
               height: "446px",
