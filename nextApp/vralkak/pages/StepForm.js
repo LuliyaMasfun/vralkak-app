@@ -3,7 +3,7 @@ import { MulitStepForm } from '../components/FormStep/MultiStepForm'
 import { Navbar } from '../components/Navbar/Navbar'
 import { Progressbar } from '../components/Progressbar/Progressbar'
 
-const StepForm =()=>{
+export default function StepForm(){
 return (
   <>
   <Navbar />
@@ -12,4 +12,3 @@ return (
   </>
 )
 }
-export default StepForm;
