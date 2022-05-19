@@ -1,0 +1,306 @@
+
+
+#ekonomen{
+    position: absolute;
+    height: 853px;
+    width: 390px;
+    top: 844px;
+   
+    
+    background-image: linear-gradient(-145deg, #0939BB 30%, #2E57C5 30%);
+}
+
+#greta{
+    position: absolute;
+    height: 853px;
+    width: 390px;
+    top: 1697px;
+   
+background-image: -webkit-linear-gradient(-125deg, #006740 30%, #267E5D 30%);
+}
+
+
+
+#veganen {
+    position: absolute;
+    height: 853px;
+    width: 390px;
+    top: 2550px;
+    background-color: #CD4141;
+    background-image: -webkit-linear-gradient(-125deg, #AB3C3C 30%, #B85959 30%);
+}
+
+.tutorialCard{
+    display: grid;
+    grid-column: 1;
+    grid-row: 41/51;
+    background-color: #1F1E1F;
+}
+
+
+
+.foodCardName{
+    font-weight: 600;
+    color: white;
+    font-size: 36px;
+    position: absolute;
+    top: 24px;
+    left: 24px;
+}
+
+.ekonomenFood{
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 81px;   
+}
+
+.ekonomenShadow{
+    position: absolute;
+    margin-top: 82px;
+    margin-left: 98px
+}
+
+.priceBorder{
+    color: white;
+    font-weight: 600;
+    font-size: 36px;
+    border: solid 1px #1F1E1F;
+    width: 174px;
+    height: 56px;
+    line-height: 48px;
+    text-align: center;
+    align-items: center;
+    background: #1F1E1F;
+    position: absolute;
+    margin-left: 184px;
+    margin-top: 272px;
+    
+}
+
+#gretaFood{
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 81px;
+}
+.textBelowPicture{
+    color: white;
+    font-size: 16px;
+    width: 326px;
+    height: 68px;
+    font-weight: normal;
+    position: absolute;
+    line-height: 24px;
+    margin-left: 32px;
+    margin-top: 368px;
+    
+}
+
+.ekonomLine{
+    border-bottom: solid 1px white;
+    width: 326px;
+    position: absolute;
+    margin-left: 32px;
+    margin-top: 432px;
+    
+}
+
+
+
+.pictureToDescription1{
+   position: absolute;
+   top: 454px;
+   left: 32px;
+    
+}
+
+.textToDescription1{
+    height: 40px;
+    width: 269px;
+    position: absolute;
+    top: 460px;
+    left: 76px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    
+    
+}
+
+
+
+.pictureToDescription2{
+    position: absolute;
+    
+    top: 508px;
+    left: 32px;
+
+}
+
+.textToDescription2{
+    height: 20px;
+    width: 300px;
+    position: absolute;
+    top: 509px;
+    left: 76px;
+    color: white;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+
+
+
+.pictureToDescription3{
+    position: relative;
+    top: 573px;
+    left: 32px;
+   
+}
+
+.textToDescription3{
+    height: 20px;
+    width: 200px;
+    position: absolute;
+    top: 579px;
+    left: 76px;
+    color: white;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+
+
+.pictureToDescriptionEkonomen{
+    position: absolute;
+    
+    top: 629px;
+    left: 32px;
+   
+}
+
+.textToDescriptionEkonomen{
+    height: 20px;
+    width: 300px;
+    position: absolute;
+    top: 634px;
+    left: 76px;
+    
+    color: white;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+
+
+
+
+.pictureToDescriptionGreta{
+    position: absolute;
+    
+    top: 629px;
+    left: 32px;
+   
+}
+
+.textToDescriptionGreta{
+    height: 20px;
+    width: 300px;
+    position: absolute;
+    top: 634px;
+    left: 76px;
+    
+    color: white;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+
+.pictureToDescriptionVeganen{
+    position: absolute;
+    
+    top: 629px;
+    left: 32px;
+   
+}
+
+.textToDescriptionVeganen{
+    height: 20px;
+    width: 300px;
+    position: absolute;
+    top: 634px;
+    left: 76px;
+    
+    color: white;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.ekonomenCallToAction{
+    width:326px;
+    height:50px;
+          position: absolute;
+          top: 747px;
+          left: 32px;
+          box-sizing:border-box;
+          border: 1px solid #1F1E1F;
+          background-color: #1F1E1F;
+          color: white;
+          font-weight: 500;
+          font-Size: 20px;
+}
+
+.gretaCallToAction{
+    width:326px;
+    height:50px;
+          position: absolute;
+          top: 747px;
+          left: 32px;
+          box-sizing:border-box;
+          border: 1px solid #1F1E1F;
+          background-color: #1F1E1F;
+          color: white;
+          font-weight: 500;
+          font-Size: 20px;
+}
+
+.orderArrowRight1{
+    position: absolute;
+    top: 763.04px;
+    left: 238.46px;
+}
+.orderArrowRight2{
+    position: absolute;
+    top: 763.04px;
+    left: 238.46px;
+}
+.orderArrowRight3{
+    position: absolute;
+    top: 763.04px;
+    left: 238.46px;
+}
+
+
+
+
+.veganenCallToAction{
+    width:326px;
+    height:50px;
+          position: absolute;
+          top: 747px;
+          left: 32px;
+          box-sizing:border-box;
+          border: 1px solid #1F1E1F;
+          background-color: #1F1E1F;
+          color: white;
+          font-weight: 500;
+          font-Size: 20px;
+}
+
+
+.imgShadow{
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 81px;
+}
+
+
