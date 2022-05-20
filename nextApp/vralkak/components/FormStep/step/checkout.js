@@ -18,11 +18,40 @@ export const Checkout = ({navigation}) => {
   const [show3, setShow3] = useState(true);
   const [show1help, setShow1help] = useState(true);
 
+  const [amount, setAmount] = useState(true)
+  const [amount2, setAmount2] = useState(true)
+  
+  const [price, setPrice] = useState("Lägg till (399,00SEK)")
+  
+
  function both () {
    setShow1((s) => !s)
    setShow1help((s) => !s)
-  
  }
+
+
+ function addToCart8(){
+  setAmount((s) => !s)
+setPrice(("Lägg till (399,00SEK)"))
+setAmount2
+ }
+ function addToCart12(){
+ setAmount((s) => !s) 
+setPrice(("Lägg till (899,00SEK)"))
+ }
+ function addToCart16(){
+  setAmount((s) => !s)
+setPrice(("Lägg till (1099,00SEK)"))
+ }
+ function addToCart20(){
+  setAmount((s) => !s)
+setPrice(("Lägg till (1399,00SEK)"))
+  }
+  
+  
+
+  
+
 
   return (
     <>
@@ -109,7 +138,7 @@ export const Checkout = ({navigation}) => {
           color:"white",
           
         }}>
-          <Image  layout = "raw"src={Greta} style={{
+          <Image layout = "raw"src={Greta} style={{
             position: "absolute",
             top: "16px",
             left: "16px",
@@ -147,6 +176,7 @@ export const Checkout = ({navigation}) => {
                 left: "16px",
               }}>Välj antal portioner</span>
 
+
               <div style={{
                 width:"294px",
                 height:"45px",
@@ -155,45 +185,57 @@ export const Checkout = ({navigation}) => {
                 top:"64px",
                 display: "flex",
                 flexDirection:"row",
-
               }}>
-                <div style={{ 
+                <div 
+                onClick={()=> addToCart8()}
+                style={{   
                 height:"45px",
                 width:"73.95px",
-              background: "black",
-              border: "2px solid black",
-              color:"white",
-              textAlign: "center",
-              lineHeight: "45px",
+                background: amount ? "black" : "none",
+                border: "2px solid black",
+                color: amount ? "white" : "black",
+                textAlign: "center",
+                lineHeight: "45px",
+                borderRight:"none"
+                
+          
               
               }}>8
               </div>
-              <div style={{ 
+              <div onClick={()=> addToCart12()} 
+              
+              style={{ 
                 height:"45px",
                 width:"73.95px",
               
+              background: amount ? "none" : "black",
               border: "2px solid black",
-              color:"black",
+              color: amount ? "black" : "white",
               textAlign: "center",
               lineHeight: "45px",
+              borderRight:"none"
               }}>12
               </div>
-              <div style={{ 
+              <div onClick={()=> addToCart16()} 
+              
+              style={{ 
                 height:"45px",
                 width:"73.95px",
-              
+              background: amount ? "none" : "black",
               border: "2px solid black",
-              color:"black",
+              color: amount ? "black" : "white",
               textAlign: "center",
               lineHeight: "45px",
+              borderRight:"none"
               }}>16
               </div>
-              <div style={{ 
+              <div  onClick={()=> addToCart20()}
+              style={{ 
                 height:"45px",
                 width:"73.95px",
-              
               border: "2px solid black",
-              color:"black",
+              background: amount ? "none" : "black",
+              color: amount ? "black" : "white",
               textAlign: "center",
               lineHeight: "45px",
               }}>20
@@ -278,6 +320,7 @@ export const Checkout = ({navigation}) => {
 
             <div 
             onClick={()=> navigation.next()}
+            
             style={{
               width: "259px",
               height: "45px",
@@ -289,7 +332,10 @@ export const Checkout = ({navigation}) => {
               lineHeight: "45px",
               fontSize: "20px",
               fontWeight: "500",
-            }}>Lägg till (399,00 SEK)</div>
+              
+            }}>
+              {price}
+            </div>
 
             </div>
             </div>
@@ -298,7 +344,7 @@ export const Checkout = ({navigation}) => {
 
 
             <div 
-        onClick={()=>setShow3((s) => !s)}
+        onClick={()=>setAmount((s) => !s)}
         style={{
           height: "88px",
           width: "326px",
@@ -323,7 +369,7 @@ export const Checkout = ({navigation}) => {
             position: "absolute",
             top: "32px",
             left: "84px",
-          }}>Veganen</span>
+          }}>Ekonomen</span>
 
           <Image  layout = "raw" src={Arrow} 
           
@@ -342,7 +388,7 @@ export const Checkout = ({navigation}) => {
               display: show3 ? "none" : "block",
             }}>
 
-<span style={{
+          <span style={{
                 fontSize:"20px",
                 fontWeight:"500",
                 position: "absolute",
@@ -368,6 +414,7 @@ export const Checkout = ({navigation}) => {
               color:"white",
               textAlign: "center",
               lineHeight: "45px",
+              borderRight:"none"
               
               }}>8
               </div>
@@ -379,6 +426,7 @@ export const Checkout = ({navigation}) => {
               color:"black",
               textAlign: "center",
               lineHeight: "45px",
+              borderRight:"none"
               }}>12
               </div>
               <div style={{ 
@@ -389,6 +437,7 @@ export const Checkout = ({navigation}) => {
               color:"black",
               textAlign: "center",
               lineHeight: "45px",
+              borderRight:"none"
               }}>16
               </div>
               <div style={{ 
@@ -507,3 +556,4 @@ export const Checkout = ({navigation}) => {
     
   )
 }
+
