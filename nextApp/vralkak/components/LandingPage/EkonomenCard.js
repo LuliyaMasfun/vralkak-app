@@ -27,7 +27,7 @@ export default function EkonomenCard() {
     <Image className={styles.pictureToDescription2}src={imgDescription2} layout="raw"/><span className={styles.textToDescription2}>Arnes chili con carne, Farmors lasagne, Bengans korvstroganoff</span>
     <Image className={styles.pictureToDescription3}src={imgDescription3} layout="raw"/><span className={styles.textToDescription3}>8 min tillagning per portion</span>
 
-    <img className={styles.pictureToDescriptionEkonomen} src={imgDescription4}  layout="raw"/><span className={styles.textToDescriptionEkonomen}>Prispressade varor</span>
+    <Image className={styles.pictureToDescriptionEkonomen} src={imgDescription4}  layout="raw"/><span className={styles.textToDescriptionEkonomen}>Prispressade varor</span>
     <Link href="/StepForm">
     <button className={styles.ekonomenCallToAction} >Beställ</button>
     </Link>
