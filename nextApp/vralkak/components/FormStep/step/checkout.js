@@ -18,11 +18,16 @@ export const Checkout = ({navigation}) => {
   const [show3, setShow3] = useState(true);
   const [show1help, setShow1help] = useState(true);
 
-  const [amount, setAmount] = useState(true)
-  const [amount2, setAmount2] = useState(true)
+  const [amount8, setAmount8] = useState(true)
+  const [amount12, setAmount12] = useState(true)
+  const [amount16, setAmount16] = useState(true)
+  const [amount20, setAmount20] = useState(true)
+  
   
   const [price, setPrice] = useState("Lägg till (399,00SEK)")
   
+
+
 
  function both () {
    setShow1((s) => !s)
@@ -31,28 +36,23 @@ export const Checkout = ({navigation}) => {
 
 
  function addToCart8(){
-  setAmount((s) => !s)
+  setAmount8((s) => !s)
 setPrice(("Lägg till (399,00SEK)"))
-setAmount2
+
  }
  function addToCart12(){
- setAmount((s) => !s) 
+ setAmount12((s) => !s) 
 setPrice(("Lägg till (899,00SEK)"))
  }
  function addToCart16(){
-  setAmount((s) => !s)
+  setAmount16((s) => !s)
 setPrice(("Lägg till (1099,00SEK)"))
  }
  function addToCart20(){
-  setAmount((s) => !s)
+  setAmount20((s) => !s)
 setPrice(("Lägg till (1399,00SEK)"))
   }
   
-  
-
-  
-
-
   return (
     <>
     <Navbar />
@@ -114,18 +114,9 @@ setPrice(("Lägg till (1399,00SEK)"))
               height: "446px",
               display: show1 ? "none" : "block"
             }}>
-              
-
-
-
 
             </div>
             </div>
-        
-
-
-
-
             <div 
         
         style={{
@@ -152,7 +143,7 @@ setPrice(("Lägg till (1399,00SEK)"))
             left: "84px",
           }}>Greta</span>
 
-          <Image  layout = "raw"src={Arrow} 
+          <Image layout = "raw"src={Arrow} 
           onClick={()=>setShow2((s) => !s)}
           style={{
             position: "absolute",
@@ -191,14 +182,12 @@ setPrice(("Lägg till (1399,00SEK)"))
                 style={{   
                 height:"45px",
                 width:"73.95px",
-                background: amount ? "black" : "none",
+                background: amount8 ? "black" : "none",
                 border: "2px solid black",
-                color: amount ? "white" : "black",
+                color: amount8 ? "white" : "black",
                 textAlign: "center",
                 lineHeight: "45px",
                 borderRight:"none"
-                
-          
               
               }}>8
               </div>
@@ -207,23 +196,24 @@ setPrice(("Lägg till (1399,00SEK)"))
               style={{ 
                 height:"45px",
                 width:"73.95px",
-              
-              background: amount ? "none" : "black",
+                background: amount12 ? "none" : "black",
+                color: amount12 ? "black" : "white",
               border: "2px solid black",
-              color: amount ? "black" : "white",
+                value: "back",
               textAlign: "center",
               lineHeight: "45px",
               borderRight:"none"
               }}>12
               </div>
+
               <div onClick={()=> addToCart16()} 
               
               style={{ 
                 height:"45px",
                 width:"73.95px",
-              background: amount ? "none" : "black",
+              background: amount16 ? "none" : "black",
               border: "2px solid black",
-              color: amount ? "black" : "white",
+              color: amount16 ? "black" : "white",
               textAlign: "center",
               lineHeight: "45px",
               borderRight:"none"
@@ -234,8 +224,8 @@ setPrice(("Lägg till (1399,00SEK)"))
                 height:"45px",
                 width:"73.95px",
               border: "2px solid black",
-              background: amount ? "none" : "black",
-              color: amount ? "black" : "white",
+              background: amount20 ? "none" : "black",
+              color: amount20 ? "black" : "white",
               textAlign: "center",
               lineHeight: "45px",
               }}>20
