@@ -16,41 +16,241 @@ export const Checkout = ({navigation}) => {
   const [show1, setShow1] = useState(true);
   const [show2, setShow2] = useState(true);
   const [show3, setShow3] = useState(true);
-  const [show1help, setShow1help] = useState(true);
+  
 
-  const [amount8, setAmount8] = useState(true)
-  const [amount12, setAmount12] = useState(true)
-  const [amount16, setAmount16] = useState(true)
-  const [amount20, setAmount20] = useState(true)
+  
   
   
   const [price, setPrice] = useState("Lägg till (399,00SEK)")
+  const [amount, setAmount] = useState("4x");
   
 
 
 
- function both () {
-   setShow1((s) => !s)
-   setShow1help((s) => !s)
- }
+  const [style1, setStyle1] = useState({
+    height:"45px",
+    width:"73.95px",
+    background: "black",
+    color: "white",
+    border: "2px solid black",
+    value: "back",
+    textAlign: "center",
+    lineHeight: "45px",
+    borderRight:"none"
+  })
 
+  const [style2, setStyle2] = useState({
+    height:"45px",
+    width:"73.95px",
+    background: "none",
+    color: "black",
+    border: "2px solid black",
+    value: "back",
+    textAlign: "center",
+    lineHeight: "45px",
+    borderRight:"none"
+  })
 
- function addToCart8(){
-  setAmount8((s) => !s)
-setPrice(("Lägg till (399,00SEK)"))
+  const [style3, setStyle3] = useState({
+    height:"45px",
+    width:"73.95px",
+    background: "none",
+    color: "black",
+    border: "2px solid black",
+    value: "back",
+    textAlign: "center",
+    lineHeight: "45px",
+    borderRight:"none"
+  })
 
- }
- function addToCart12(){
- setAmount12((s) => !s) 
-setPrice(("Lägg till (899,00SEK)"))
- }
- function addToCart16(){
-  setAmount16((s) => !s)
-setPrice(("Lägg till (1099,00SEK)"))
- }
- function addToCart20(){
-  setAmount20((s) => !s)
-setPrice(("Lägg till (1399,00SEK)"))
+  const [style4, setStyle4] = useState({
+    height:"45px",
+    width:"73.95px",
+    background: "none",
+    color: "black",
+    border: "2px solid black",
+    value: "back",
+    textAlign: "center",
+    lineHeight: "45px",
+    
+  })
+
+  function addAmount1(){
+    setStyle1({height:"45px",
+    width:"73.95px",
+    background: "black",
+    color: "white",
+    border: "2px solid black",
+    value: "back",
+    textAlign: "center",
+    lineHeight: "45px",
+    borderRight:"none"})
+
+    setStyle2({height:"45px",
+    width:"73.95px",
+    background: "none",
+    color: "black",
+    border: "2px solid black",
+    value: "back",
+    textAlign: "center",
+    lineHeight: "45px",
+    borderRight:"none"})
+
+    setStyle3({height:"45px",
+    width:"73.95px",
+    background: "none",
+    color: "black",
+    border: "2px solid black",
+    value: "back",
+    textAlign: "center",
+    lineHeight: "45px",
+    borderRight:"none"})
+
+    setStyle4({height:"45px",
+    width:"73.95px",
+    background: "none",
+    color: "black",
+    border: "2px solid black",
+    value: "back",
+    textAlign: "center",
+    lineHeight: "45px",
+    })
+
+    setPrice(("Lägg till (399,00SEK)"))
+    setAmount(("4x"))
+  }
+
+  function addAmount2(){
+    setStyle1({height:"45px",
+    width:"73.95px",
+    background: "none",
+    color: "black",
+    border: "2px solid black",
+    value: "back",
+    textAlign: "center",
+    lineHeight: "45px",
+    borderRight:"none"})
+
+    setStyle2({height:"45px",
+    width:"73.95px",
+    background: "black",
+    color: "white",
+    border: "2px solid black",
+    value: "back",
+    textAlign: "center",
+    lineHeight: "45px",
+    borderRight:"none"})
+
+    setStyle3({height:"45px",
+    width:"73.95px",
+    background: "none",
+    color: "black",
+    border: "2px solid black",
+    value: "back",
+    textAlign: "center",
+    lineHeight: "45px",
+    borderRight:"none"})
+
+    setStyle4({height:"45px",
+    width:"73.95px",
+    background: "none",
+    color: "black",
+    border: "2px solid black",
+    value: "back",
+    textAlign: "center",
+    lineHeight: "45px",
+    })
+    setPrice(("Lägg till (899,00SEK)"))
+    setAmount(("6x"))
+  }
+
+  function addAmount3(){
+    setStyle1({height:"45px",
+    width:"73.95px",
+    background: "none",
+    color: "black",
+    border: "2px solid black",
+    value: "back",
+    textAlign: "center",
+    lineHeight: "45px",
+    borderRight:"none"})
+
+    setStyle2({height:"45px",
+    width:"73.95px",
+    background: "none",
+    color: "black",
+    border: "2px solid black",
+    value: "back",
+    textAlign: "center",
+    lineHeight: "45px",
+    borderRight:"none"})
+
+    setStyle3({height:"45px",
+    width:"73.95px",
+    background: "black",
+    color: "white",
+    border: "2px solid black",
+    value: "back",
+    textAlign: "center",
+    lineHeight: "45px",
+    borderRight:"none"})
+
+    setStyle4({height:"45px",
+    width:"73.95px",
+    background: "none",
+    color: "black",
+    border: "2px solid black",
+    value: "back",
+    textAlign: "center",
+    lineHeight: "45px",
+    })
+
+    setPrice(("Lägg till (1099,00SEK)"))
+    setAmount(("8x"))
+  }
+
+  function addAmount4(){
+    setStyle1({height:"45px",
+    width:"73.95px",
+    background: "none",
+    color: "black",
+    border: "2px solid black",
+    value: "back",
+    textAlign: "center",
+    lineHeight: "45px",
+    borderRight:"none"})
+
+    setStyle2({height:"45px",
+    width:"73.95px",
+    background: "none",
+    color: "black",
+    border: "2px solid black",
+    value: "back",
+    textAlign: "center",
+    lineHeight: "45px",
+    borderRight:"none"})
+
+    setStyle3({height:"45px",
+    width:"73.95px",
+    background: "none",
+    color: "black",
+    border: "2px solid black",
+    value: "back",
+    textAlign: "center",
+    lineHeight: "45px",
+    borderRight:"none"})
+
+    setStyle4({height:"45px",
+    width:"73.95px",
+    background: "black",
+    color: "white",
+    border: "2px solid black",
+    value: "back",
+    textAlign: "center",
+    lineHeight: "45px",
+    })
+    setPrice(("Lägg till (1399,00SEK)"))
+    setAmount(("10x"))
   }
   
   return (
@@ -178,57 +378,24 @@ setPrice(("Lägg till (1399,00SEK)"))
                 flexDirection:"row",
               }}>
                 <div 
-                onClick={()=> addToCart8()}
-                style={{   
-                height:"45px",
-                width:"73.95px",
-                background: amount8 ? "black" : "none",
-                border: "2px solid black",
-                color: amount8 ? "white" : "black",
-                textAlign: "center",
-                lineHeight: "45px",
-                borderRight:"none"
+                onClick={()=> addAmount1()}
+                style={style1}
+                
               
-              }}>8
+              >8
               </div>
-              <div onClick={()=> addToCart12()} 
+              <div onClick={()=> addAmount2()} 
               
-              style={{ 
-                height:"45px",
-                width:"73.95px",
-                background: amount12 ? "none" : "black",
-                color: amount12 ? "black" : "white",
-              border: "2px solid black",
-                value: "back",
-              textAlign: "center",
-              lineHeight: "45px",
-              borderRight:"none"
-              }}>12
+              style={style2}>12
               </div>
 
-              <div onClick={()=> addToCart16()} 
+              <div onClick={()=> addAmount3()} 
               
-              style={{ 
-                height:"45px",
-                width:"73.95px",
-              background: amount16 ? "none" : "black",
-              border: "2px solid black",
-              color: amount16 ? "black" : "white",
-              textAlign: "center",
-              lineHeight: "45px",
-              borderRight:"none"
-              }}>16
+              style={style3}> 
+              16
               </div>
-              <div  onClick={()=> addToCart20()}
-              style={{ 
-                height:"45px",
-                width:"73.95px",
-              border: "2px solid black",
-              background: amount20 ? "none" : "black",
-              color: amount20 ? "black" : "white",
-              textAlign: "center",
-              lineHeight: "45px",
-              }}>20
+              <div  onClick={()=> addAmount4()}
+              style={style4}>20
               </div>
               </div>
 
@@ -265,7 +432,7 @@ setPrice(("Lägg till (1399,00SEK)"))
                 position: "absolute",
                 top: "207.5px",
                 left: "16px"
-              }}>4x</div>
+              }}>{amount}</div>
 
             <div style={{
                 width: "34px",
@@ -276,7 +443,7 @@ setPrice(("Lägg till (1399,00SEK)"))
                 position: "absolute",
                 top: "265.5px",
                 left: "16px"
-              }}>4x</div>
+              }}>{amount}</div>
 
               <Image  layout = "raw" src={dish1} style={{
                 position: "absolute",
