@@ -13,9 +13,8 @@ import Image from 'next/image'
 export const Checkout = ({navigation}) => {
 
   
-  const [show1, setShow1] = useState(true);
-  const [show2, setShow2] = useState(true);
-  const [show3, setShow3] = useState(true);
+  
+  
 
   const [dropDown1, setDropDown1] = useState({
     position: "relative",
@@ -224,6 +223,93 @@ export const Checkout = ({navigation}) => {
     display: "none",
   })
 
+  const [disableAddButton, setDisableAddButton] = useState({
+    width: "259px",
+    height: "45px",
+    backgroundColor: "black",
+    color:"white",
+    position: "absolute",
+    top: "369px",
+    left: "33px",
+    textAlign: "center",
+    lineHeight: "45px",
+    fontSize: "20px",
+    fontWeight: "500",
+    border: "2px solid black",
+    display: "block",
+
+  })
+
+  const [addRemoveButton, setAddRemoveButton] = useState({
+    width: "259px",
+    height: "45px",
+    backgroundColor: "none",
+    color:"black",
+    position: "absolute",
+    top: "369px",
+    left: "33px",
+    textAlign: "center",
+    lineHeight: "45px",
+    fontSize: "20px",
+    fontWeight: "500",
+    border: "2px solid black",
+    display: "none",
+
+  })
+
+  function removeFromCart(){
+    setCheckOut({
+      position: "fixed",
+      bottom: "0px",
+      width:"390px",
+      height:"80px",
+      color: "white",
+      border: "1px solid black",
+      backgroundColor: "black",
+      fontSize: "20px",
+      fontWeight: "500",
+      textAlign: "center",
+      lineHeight: "75px",
+      display: "none",
+    })
+
+    setAddRemoveButton({
+      width: "259px",
+  height: "45px",
+  backgroundColor: "none",
+  color:"black",
+  position: "absolute",
+  top: "369px",
+  left: "33px",
+  textAlign: "center",
+  lineHeight: "45px",
+  fontSize: "20px",
+  fontWeight: "500",
+  border: "2px solid black",
+  display: "none",
+
+    })
+
+    setDisableAddButton({
+      width: "259px",
+  height: "45px",
+  backgroundColor: "black",
+  color:"white",
+  position: "absolute",
+  top: "369px",
+  left: "33px",
+  textAlign: "center",
+  lineHeight: "45px",
+  fontSize: "20px",
+  fontWeight: "500",
+  border: "1px solid black",
+  display: "block",
+
+    })
+    setLastPrice((""))
+
+  }
+
 
   function addToCart(){
 
@@ -243,6 +329,38 @@ export const Checkout = ({navigation}) => {
       lineHeight: "75px",
       display: "",
     })
+
+    
+      setDisableAddButton({
+        width: "259px",
+        height: "45px",
+        backgroundColor: "black",
+        position: "absolute",
+        top: "369px",
+        left: "33px",
+        textAlign: "center",
+        lineHeight: "45px",
+        fontSize: "20px",
+        fontWeight: "500",
+        display: "none",
+      })
+
+      setAddRemoveButton({
+        width: "259px",
+        height: "45px",
+        backgroundColor: "none",
+        color:"black",
+        position: "absolute",
+        top: "369px",
+        left: "33px",
+        textAlign: "center",
+        lineHeight: "45px",
+        fontSize: "20px",
+        fontWeight: "500",
+        border: "2px solid black",
+        display: "block",
+      })
+    
   }
   
 
@@ -347,6 +465,82 @@ export const Checkout = ({navigation}) => {
 
     setPrice(("(399,00SEK)"))
     setAmount(("4x"))
+
+    if(lastPrice != "(399,00SEK)"){
+      setAddRemoveButton({
+        width: "259px",
+    height: "45px",
+    backgroundColor: "none",
+    color:"black",
+    position: "absolute",
+    top: "369px",
+    left: "33px",
+    textAlign: "center",
+    lineHeight: "45px",
+    fontSize: "20px",
+    fontWeight: "500",
+    border: "2px solid black",
+    display: "none",
+
+      })
+
+      setDisableAddButton({
+        width: "259px",
+    height: "45px",
+    backgroundColor: "black",
+    color:"white",
+    position: "absolute",
+    top: "369px",
+    left: "33px",
+    textAlign: "center",
+    lineHeight: "45px",
+    fontSize: "20px",
+    fontWeight: "500",
+    border: "1px solid black",
+    display: "block",
+
+      })
+    }
+    else {
+
+      setAddRemoveButton({
+        width: "259px",
+    height: "45px",
+    backgroundColor: "none",
+    color:"black",
+    position: "absolute",
+    top: "369px",
+    left: "33px",
+    textAlign: "center",
+    lineHeight: "45px",
+    fontSize: "20px",
+    fontWeight: "500",
+    border: "2px solid black",
+    display: "block",
+
+      })
+
+      setDisableAddButton({
+        width: "259px",
+    height: "45px",
+    backgroundColor: "black",
+    color:"white",
+    position: "absolute",
+    top: "369px",
+    left: "33px",
+    textAlign: "center",
+    lineHeight: "45px",
+    fontSize: "20px",
+    fontWeight: "500",
+    border: "1px solid black",
+    display: "none",
+
+      })
+
+    }
+    
+
+    
   }
 
   function addAmount2(){
@@ -391,6 +585,79 @@ export const Checkout = ({navigation}) => {
     })
     setPrice(("(899,00SEK)"))
     setAmount(("6x"))
+
+    if(lastPrice != "(899,00SEK)"){
+      setAddRemoveButton({
+        width: "259px",
+    height: "45px",
+    backgroundColor: "none",
+    color:"black",
+    position: "absolute",
+    top: "369px",
+    left: "33px",
+    textAlign: "center",
+    lineHeight: "45px",
+    fontSize: "20px",
+    fontWeight: "500",
+    border: "2px solid black",
+    display: "none",
+
+      })
+
+      setDisableAddButton({
+        width: "259px",
+    height: "45px",
+    backgroundColor: "black",
+    color:"white",
+    position: "absolute",
+    top: "369px",
+    left: "33px",
+    textAlign: "center",
+    lineHeight: "45px",
+    fontSize: "20px",
+    fontWeight: "500",
+    border: "1px solid black",
+    display: "block",
+
+      })
+    }
+    else {
+
+      setAddRemoveButton({
+        width: "259px",
+    height: "45px",
+    backgroundColor: "none",
+    color:"black",
+    position: "absolute",
+    top: "369px",
+    left: "33px",
+    textAlign: "center",
+    lineHeight: "45px",
+    fontSize: "20px",
+    fontWeight: "500",
+    border: "2px solid black",
+    display: "block",
+
+      })
+
+      setDisableAddButton({
+        width: "259px",
+    height: "45px",
+    backgroundColor: "black",
+    color:"white",
+    position: "absolute",
+    top: "369px",
+    left: "33px",
+    textAlign: "center",
+    lineHeight: "45px",
+    fontSize: "20px",
+    fontWeight: "500",
+    border: "1px solid black",
+    display: "none",
+
+      })
+
+    }
   }
 
   function addAmount3(){
@@ -436,6 +703,79 @@ export const Checkout = ({navigation}) => {
 
     setPrice(("(1099,00SEK)"))
     setAmount(("8x"))
+
+    if(lastPrice != "(1099,00SEK)"){
+      setAddRemoveButton({
+        width: "259px",
+    height: "45px",
+    backgroundColor: "none",
+    color:"black",
+    position: "absolute",
+    top: "369px",
+    left: "33px",
+    textAlign: "center",
+    lineHeight: "45px",
+    fontSize: "20px",
+    fontWeight: "500",
+    border: "2px solid black",
+    display: "none",
+
+      })
+
+      setDisableAddButton({
+        width: "259px",
+    height: "45px",
+    backgroundColor: "black",
+    color:"white",
+    position: "absolute",
+    top: "369px",
+    left: "33px",
+    textAlign: "center",
+    lineHeight: "45px",
+    fontSize: "20px",
+    fontWeight: "500",
+    border: "1px solid black",
+    display: "block",
+
+      })
+    }
+    else {
+
+      setAddRemoveButton({
+        width: "259px",
+    height: "45px",
+    backgroundColor: "none",
+    color:"black",
+    position: "absolute",
+    top: "369px",
+    left: "33px",
+    textAlign: "center",
+    lineHeight: "45px",
+    fontSize: "20px",
+    fontWeight: "500",
+    border: "2px solid black",
+    display: "block",
+
+      })
+
+      setDisableAddButton({
+        width: "259px",
+    height: "45px",
+    backgroundColor: "black",
+    color:"white",
+    position: "absolute",
+    top: "369px",
+    left: "33px",
+    textAlign: "center",
+    lineHeight: "45px",
+    fontSize: "20px",
+    fontWeight: "500",
+    border: "1px solid black",
+    display: "none",
+
+      })
+
+    }
   }
 
   function addAmount4(){
@@ -480,6 +820,79 @@ export const Checkout = ({navigation}) => {
     })
     setPrice(("(1399,00SEK)"))
     setAmount(("10x"))
+
+    if(lastPrice != "(1399,00SEK)"){
+      setAddRemoveButton({
+        width: "259px",
+    height: "45px",
+    backgroundColor: "none",
+    color:"black",
+    position: "absolute",
+    top: "369px",
+    left: "33px",
+    textAlign: "center",
+    lineHeight: "45px",
+    fontSize: "20px",
+    fontWeight: "500",
+    border: "2px solid black",
+    display: "none",
+
+      })
+
+      setDisableAddButton({
+        width: "259px",
+    height: "45px",
+    backgroundColor: "black",
+    color:"white",
+    position: "absolute",
+    top: "369px",
+    left: "33px",
+    textAlign: "center",
+    lineHeight: "45px",
+    fontSize: "20px",
+    fontWeight: "500",
+    border: "1px solid black",
+    display: "block",
+
+      })
+    }
+    else {
+
+      setAddRemoveButton({
+        width: "259px",
+    height: "45px",
+    backgroundColor: "none",
+    color:"black",
+    position: "absolute",
+    top: "369px",
+    left: "33px",
+    textAlign: "center",
+    lineHeight: "45px",
+    fontSize: "20px",
+    fontWeight: "500",
+    border: "2px solid black",
+    display: "block",
+
+      })
+
+      setDisableAddButton({
+        width: "259px",
+    height: "45px",
+    backgroundColor: "black",
+    color:"white",
+    position: "absolute",
+    top: "369px",
+    left: "33px",
+    textAlign: "center",
+    lineHeight: "45px",
+    fontSize: "20px",
+    fontWeight: "500",
+    border: "1px solid black",
+    display: "none",
+
+      })
+
+    }
   }
   
   return (
@@ -684,21 +1097,12 @@ export const Checkout = ({navigation}) => {
             <div 
             onClick={()=> addToCart()}
             
-            style={{
-              width: "259px",
-              height: "45px",
-              backgroundColor: "black",
-              position: "absolute",
-              top: "369px",
-              left: "33px",
-              textAlign: "center",
-              lineHeight: "45px",
-              fontSize: "20px",
-              fontWeight: "500",
-              
-            }}>
+            style={disableAddButton}>
               Lägg till {price}
             </div>
+
+            <div onClick={()=> removeFromCart()} 
+            style={addRemoveButton}>Ta bort</div>
 
             </div>
             </div>
