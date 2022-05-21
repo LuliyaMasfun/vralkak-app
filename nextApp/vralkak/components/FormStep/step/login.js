@@ -6,10 +6,10 @@ import EmailIcon from '../../../public/assets/mailIcon.png';
 import PasswordIcon from '../../../public/assets/passwordIcon.png';
 import Image from 'next/image'
 
-export const Login = ({formData, setForm, navigation}) => {
+export const Login = ({formData, setForm, navigation, step}) => {
   return (
     <>
-    <Navbar />
+    <Navbar {...step}/>
     <Progressbar />
     <div className={styles.login}> 
     <span className={styles.loginHeading}>

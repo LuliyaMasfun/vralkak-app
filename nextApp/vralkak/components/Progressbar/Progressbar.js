@@ -1,32 +1,33 @@
-import React from 'react'
+import React,{useState} from 'react'
+
 
 
 
 export const Progressbar = () => {
-
-  
-
- 
-
-  return (
-    <div style={{
-        width: "390px",
-        height: "103px",
-        position: "absolute",
-        top: "60px",
-        background:"white"
-    }}>
-
-        <span style={{
-            position: "absolute",
-            fontSize: "12px",
+    
+    function steppin(steg){
+        if(steg = 1){
+            setCircle2({
+            background: "#FBA497",
+            color: "white",
+            fontSize: "14px",
             fontWeight: "600",
-            color: "#FBA497",
-            top: "26px",
-            left: "45px"
-        }}>Kasse</span>
+            borderRadius: "50%",
+            position: "absolute",
+            top: "45px",
+            left: "135px",
+            width: "32px",
+            height: "32px",
+            textAlign: "center",
+            lineHeight: "30px"
+            })
+                
+            }
+        }
+        
+    
 
-        <div style={{
+    const [circle1, setCircle1] = useState({
         background: "#FBA497",
         color: "white",
         fontSize: "14px",
@@ -39,52 +40,78 @@ export const Progressbar = () => {
         height: "32px",
         textAlign: "center",
         lineHeight: "30px"
+    })
 
-        }}>1</div>
+    const [text1, setText1] = useState({
+        position: "absolute",
+        fontSize: "12px",
+        fontWeight: "600",
+        color: "#FBA497",
+        top: "26px",
+        left: "45px"
+    })
 
-        <div style={{
-            borderBottom: "2px solid #C4C4C4",
-            width: "30px",
+    const [line1, setline1] = useState({
+        borderBottom: "2px solid #C4C4C4",
+        width: "30px",
+        position: "absolute",
+        top: "61px",
+        left: "92px",
+    })
+
+    const [circle2, setCircle2] = useState({
+            background: "#C4C4C4",
+            color: "white",
+            fontSize: "14px",
+            fontWeight: "600",
+            borderRadius: "50%",
             position: "absolute",
-            top: "61px",
-            left: "92px",
-
-        }}></div>
-
-
-        <span style={{
+            top: "45px",
+            left: "135px",
+            width: "32px",
+            height: "32px",
+            textAlign: "center",
+            lineHeight: "30px"
+    })
+    
+    const [text2, setText2] = useState({
             position: "absolute",
             fontSize: "12px",
             fontWeight: "600",
-            color: "#FBA497",
+            color: "#C4C4C4",
             top: "26px",
             left: "135px"
-        }}>Konto</span>
+    })
 
-        <div style={{
-        background: "#C4C4C4",
-        color: "white",
-        fontSize: "14px",
-        fontWeight: "600",
-        borderRadius: "50%",
+    const[line2, setLine2] = useState({
+        borderBottom: "2px solid #C4C4C4",
+        width: "30px",
         position: "absolute",
-        top: "45px",
-        left: "135px",
-        width: "32px",
-        height: "32px",
-        textAlign: "center",
-        lineHeight: "30px"
+        top: "61px",
+        left: "180px",
+    })
 
-        }}>2</div>
+  return (
+    <div style={{
+        width: "390px",
+        height: "103px",
+        position: "absolute",
+        top: "60px",
+        background:"white"
+    }}>
 
-        <div style={{
-            borderBottom: "2px solid #C4C4C4",
-            width: "30px",
-            position: "absolute",
-            top: "61px",
-            left: "180px",
+        <span style={text1}>Kasse</span>
 
-        }}></div>
+        <div style={circle1}>1</div>
+
+        <div style={line1}></div>
+
+
+        <span style={text2}>Konto</span>
+        
+        <div style={circle2}>2</div>
+
+        <div style={line2}></div>
 
 
     <span style={{
@@ -95,6 +122,8 @@ export const Progressbar = () => {
             top: "26px",
             left: "213px"
         }}>Leverans</span>
+
+        
 
         <div style={{
         background: "#C4C4C4",
