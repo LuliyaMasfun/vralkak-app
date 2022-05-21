@@ -106,11 +106,11 @@ export default function HomePage() {
         }}>Hitta ditt vrålkäk</button>
 
       
-      <Link  href="ekonomenCard" smooth={true} duration={1000}>
+      <Link href="ekonomenCard" smooth={true} duration={1000}>
       <Image src={arrow} layout="raw" style={{
         position: "absolute",
-        top: "660.67px",
-        left: "173.66px"
+        top: "657px",
+        left: "163px"
       }} /> 
       </Link>
     

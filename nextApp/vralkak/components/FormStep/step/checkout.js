@@ -16,12 +16,241 @@ export const Checkout = ({navigation}) => {
   const [show1, setShow1] = useState(true);
   const [show2, setShow2] = useState(true);
   const [show3, setShow3] = useState(true);
+
+  const [dropDown1, setDropDown1] = useState({
+    position: "relative",
+    backgroundColor: "#B85959",
+    marginTop:"88px",
+    width: "326px",
+    height: "446px",
+    display: "none" 
+  });
+  const [dropDown2, setDropDown2] = useState({
+    position: "relative",
+    backgroundColor: "#267E5D",
+    marginTop:"88px",
+    width: "326px",
+    height: "446px",
+    display: "none",
+  });
+  const [dropDown3, setDropDown3] = useState({
+    position: "relative",
+    backgroundColor: "#0939BB",
+    marginTop:"88px",
+    width: "326px",
+    height: "446px",
+    display: "none",
+  });
+
+  const [move1, setMove1] = useState({
+    height: "88px",
+    width: "326px",
+    backgroundColor: "#006740",
+    position: "absolute",
+    top: "232px", 
+    left: "32px",
+    color:"white",
+  })
+
+  const [move2, setMove2] = useState({
+    height: "88px",
+    width: "326px",
+    backgroundColor: "#0939BB",
+    position: "absolute",
+    top: "334px", 
+    left: "32px",
+    color:"white",
+  })
+
+  function drop1(){
+    if(dropDown1.display == "none"){
+      setDropDown1({
+      position: "relative",
+      backgroundColor: "#B85959",
+      marginTop:"88px",
+      width: "326px",
+      height: "446px",
+      display: "" 
+      })
+
+      setMove1({
+        height: "88px",
+      width: "326px",
+      backgroundColor: "#006740",
+      position: "absolute",
+      top: "678px", 
+      left: "32px",
+      color:"white",
+      })
+
+      setMove2({
+        height: "88px",
+      width: "326px",
+      backgroundColor: "#006740",
+      position: "absolute",
+      top: "790px", 
+      left: "32px",
+      color:"white",
+      })
+    }
+      else {
+        setDropDown1({position: "relative",
+      backgroundColor: "#B85959",
+      marginTop:"88px",
+      width: "326px",
+      height: "446px",
+      display: "none" 
+      })
+
+      setMove1({
+        height: "88px",
+      width: "326px",
+      backgroundColor: "#006740",
+      position: "absolute",
+      top: "232px", 
+      left: "32px",
+      color:"white",
+      })
+
+      setMove2({
+        height: "88px",
+      width: "326px",
+      backgroundColor: "#006740",
+      position: "absolute",
+      top: "334px", 
+      left: "32px",
+      color:"white",
+      })
+
+      }
+      
+
+    }
+
+    function drop2(){
+      if(dropDown2.display == "none"){
+        setDropDown2({
+        position: "relative",
+        backgroundColor: "#B85959",
+        marginTop:"88px",
+        width: "326px",
+        height: "446px",
+        display: "" 
+        })
+  
+        
+  
+        setMove2({
+          height: "88px",
+        width: "326px",
+        backgroundColor: "#006740",
+        position: "absolute",
+        top: "790px", 
+        left: "32px",
+        color:"white",
+        })
+      }
+        else {
+          setDropDown2({position: "relative",
+        backgroundColor: "#B85959",
+        marginTop:"88px",
+        width: "326px",
+        height: "446px",
+        display: "none" 
+        })
+  
+        
+  
+        setMove2({
+          height: "88px",
+        width: "326px",
+        backgroundColor: "#006740",
+        position: "absolute",
+        top: "334px", 
+        left: "32px",
+        color:"white",
+        })
+  
+        }
+        
+  
+      }
+
+      function drop3(){
+        if(dropDown3.display == "none"){
+          setDropDown3({
+          position: "relative",
+          backgroundColor: "#B85959",
+          marginTop:"88px",
+          width: "326px",
+          height: "446px",
+          display: "" 
+          })
+    
+          
+        }
+          else {
+            setDropDown3({position: "relative",
+          backgroundColor: "#B85959",
+          marginTop:"88px",
+          width: "326px",
+          height: "446px",
+          display: "none" 
+          })
+    
+         
+    
+          }
+          
+    
+        }
+  
+
+
+
+
+  const [checkOut, setCheckOut] = useState({
+    position: "fixed",
+    bottom: "0px",
+    width:"390px",
+    height:"80px",
+    color: "white",
+    border: "1px solid black",
+    backgroundColor: "black",
+    fontSize: "20px",
+    fontWeight: "500",
+    textAlign: "center",
+    lineHeight: "75px",
+    display: "none",
+  })
+
+
+  function addToCart(){
+
+    setLastPrice(price)
+    
+    setCheckOut({
+      position: "fixed",
+      bottom: "0px",
+      width:"390px",
+      height:"80px",
+      color: "white",
+      border: "1px solid black",
+      backgroundColor: "black",
+      fontSize: "20px",
+      fontWeight: "500",
+      textAlign: "center",
+      lineHeight: "75px",
+      display: "",
+    })
+  }
   
 
   
   
   
-  const [price, setPrice] = useState("Lägg till (399,00SEK)")
+  const [price, setPrice] = useState("(399,00SEK)")
+  const [lastPrice, setLastPrice] = useState("");
   const [amount, setAmount] = useState("4x");
   
 
@@ -116,7 +345,7 @@ export const Checkout = ({navigation}) => {
     lineHeight: "45px",
     })
 
-    setPrice(("Lägg till (399,00SEK)"))
+    setPrice(("(399,00SEK)"))
     setAmount(("4x"))
   }
 
@@ -160,7 +389,7 @@ export const Checkout = ({navigation}) => {
     textAlign: "center",
     lineHeight: "45px",
     })
-    setPrice(("Lägg till (899,00SEK)"))
+    setPrice(("(899,00SEK)"))
     setAmount(("6x"))
   }
 
@@ -205,7 +434,7 @@ export const Checkout = ({navigation}) => {
     lineHeight: "45px",
     })
 
-    setPrice(("Lägg till (1099,00SEK)"))
+    setPrice(("(1099,00SEK)"))
     setAmount(("8x"))
   }
 
@@ -249,7 +478,7 @@ export const Checkout = ({navigation}) => {
     textAlign: "center",
     lineHeight: "45px",
     })
-    setPrice(("Lägg till (1399,00SEK)"))
+    setPrice(("(1399,00SEK)"))
     setAmount(("10x"))
   }
   
@@ -274,7 +503,7 @@ export const Checkout = ({navigation}) => {
           fontWeight:"600",
         }} >Välj kasse</span>
         <div 
-        onClick={()=>both()}
+        onClick={()=>drop1()}
         style={{
           height: "88px",
           width: "326px",
@@ -306,29 +535,13 @@ export const Checkout = ({navigation}) => {
             left: "295.96px"
           }}/>
             
-            <div style={{
-              position: "relative",
-              backgroundColor: "#B85959",
-              marginTop:"88px",
-              width: "326px",
-              height: "446px",
-              display: show1 ? "none" : "block"
-            }}>
+            <div style={dropDown1}>
 
             </div>
             </div>
             <div 
         
-        style={{
-          height: "88px",
-          width: "326px",
-          backgroundColor: "#006740",
-          position: "absolute",
-          top: show1?  "232px":"678px", 
-          left: "32px",
-          color:"white",
-          
-        }}>
+        style={move1}>
           <Image layout = "raw"src={Greta} style={{
             position: "absolute",
             top: "16px",
@@ -344,21 +557,14 @@ export const Checkout = ({navigation}) => {
           }}>Greta</span>
 
           <Image layout = "raw"src={Arrow} 
-          onClick={()=>setShow2((s) => !s)}
+          onClick={()=>drop2()}
           style={{
             position: "absolute",
             top: "35.29px",
             left: "295.96px",
           }}/>
             
-            <div style={{
-              position: "relative",
-              backgroundColor: "#267E5D",
-              marginTop:"88px",
-              width: "326px",
-              height: "446px",
-              display: show2 ? "none" : "block",
-            }}>
+            <div style={dropDown2}>
               <span style={{
                 fontSize:"20px",
                 fontWeight:"500",
@@ -476,7 +682,7 @@ export const Checkout = ({navigation}) => {
 
 
             <div 
-            onClick={()=> navigation.next()}
+            onClick={()=> addToCart()}
             
             style={{
               width: "259px",
@@ -491,7 +697,7 @@ export const Checkout = ({navigation}) => {
               fontWeight: "500",
               
             }}>
-              {price}
+              Lägg till {price}
             </div>
 
             </div>
@@ -501,19 +707,8 @@ export const Checkout = ({navigation}) => {
 
 
             <div 
-        onClick={()=>setAmount((s) => !s)}
-        style={{
-          height: "88px",
-          width: "326px",
-          backgroundColor: "#0939BB",
-          position: "absolute",
-          //top: show1help? "334px":"790px",
-          top: show2?  "334px":"790px", 
-          
-          left: "32px",
-          color:"white",
-          
-        }}>
+        onClick={()=> drop3()}
+        style={move2}>
           <Image  layout = "raw"src={Ekonomen} style={{
             position: "absolute",
             top: "16px",
@@ -536,14 +731,7 @@ export const Checkout = ({navigation}) => {
             left: "295.96px"
           }}/>
             
-            <div style={{
-              position: "relative",
-              backgroundColor: "#2E57C5",
-              marginTop:"88px",
-              width: "326px",
-              height: "446px",
-              display: show3 ? "none" : "block",
-            }}>
+            <div style={dropDown3}>
 
           <span style={{
                 fontSize:"20px",
@@ -703,12 +891,17 @@ export const Checkout = ({navigation}) => {
             </div>
             </div>
 
+            
 
 
 
 
 
+            <div onClick={()=> navigation.next()}
+            style={checkOut}>Gå vidare {lastPrice}</div>
       </form>
+
+      
     </>
     
   )
