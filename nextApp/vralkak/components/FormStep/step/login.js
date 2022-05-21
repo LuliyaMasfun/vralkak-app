@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import styles from '../css/Login.module.css'
 import Navbar from '../../Navbar/Navbar';
 import {Progressbar} from '../../Progressbar/Progressbar';
@@ -6,11 +6,14 @@ import EmailIcon from '../../../public/assets/mailIcon.png';
 import PasswordIcon from '../../../public/assets/passwordIcon.png';
 import Image from 'next/image'
 
-export const Login = ({formData, setForm, navigation, step}) => {
+export const Login = ({formData, setForm, navigation}) => {
+  
+  
+
   return (
     <>
-    <Navbar {...step}/>
-    <Progressbar />
+    <Navbar />
+    <Progressbar step="1" />
     <div className={styles.login}> 
     <span className={styles.loginHeading}>
         Logga in

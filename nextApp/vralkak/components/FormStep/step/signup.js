@@ -21,6 +21,7 @@ export const Signup = ({formData, setForm, navigation}) => {
     const [firstNameError, setFirstNameError] = useState("")
     const [lastNameError, setLastNameError] = useState("")
     const [confirmPasswordError, setConfirmPasswordError] = useState("")
+    const [confirmPassword, setConfirmPassword] = useState("") 
     
     const pattern = /^\S+@\S+\.\S+$/;
     
@@ -29,30 +30,27 @@ export const Signup = ({formData, setForm, navigation}) => {
     
 
     function validation(){
-      //emailValidation(email);
-     // passwordValidation(password);
-    //  nameValidation(firstName, lastName)
       
-
-      
-        navigation.next();
-      
-      
+      emailValidation(email);
+      passwordValidation(password);
+      nameValidation(firstName, lastName)
+      confirmPasswordValidation(password, confirmPassword);
+    
     }
 
     function nameValidation(firstName, lastName){
       if(firstName===""){
         setFirstNameError("Name must be provided")
-        return true;
+        
       }
       if(lastName===""){
         setLastNameError("Name must be provided")
-        return true;
+        
       }
       else{
         setFirstNameError("")
         setLastNameError("")
-        return true;
+        
       }
     }
     
@@ -82,6 +80,15 @@ export const Signup = ({formData, setForm, navigation}) => {
       }
     }
 
+    function confirmPasswordValidation(confirmPassword, password) {
+      if(confirmPassword != password){
+        setConfirmPasswordError("Password does not match")
+      }
+      else {
+        setConfirmPasswordError("")
+      }
+    }
+
     
     
     
@@ -104,7 +111,7 @@ export const Signup = ({formData, setForm, navigation}) => {
         <p id={styles.errorFirstName}>{firstNameError}</p>
         <p className={styles.lastNameNote}>Efternamn*</p>
         <input className={styles.lastName} name='lastName'value={lastName} onChange={setForm} type="text" id="lastName" required/>
-        <p id={styles.errorLastNam}>{lastNameError}</p>
+        <p id={styles.errorLastName}>{lastNameError}</p>
 
       <p className={styles.emailNote}>Email*</p>
       <input className={styles.emailForm} name='email'value={email} onChange={setForm} type="email" id="email"  required/>
@@ -118,7 +125,7 @@ export const Signup = ({formData, setForm, navigation}) => {
       <p className={styles.infoText}>Ange minst 6 tecken</p>
 
       <p className={styles.confirmPasswordNote}>Bekräfta lösenord*</p>
-      <input className={styles.confirmPasswordForm} type="password"  />
+      <input className={styles.confirmPasswordForm} type="password" name="confirmPassword" value={confirmPassword}  />
       <p id={styles.errorCheckConfirmedPassword}>{confirmPasswordError}</p>
 
       <button className={styles.signUpSubmitButton1} type="button" onClick={validation} >Skapa ett konto</button>

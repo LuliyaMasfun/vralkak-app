@@ -3,12 +3,13 @@ import React,{useState} from 'react'
 
 
 
-export const Progressbar = () => {
-    
-    function steppin(steg){
-        if(steg = 1){
-            setCircle2({
-            background: "#FBA497",
+export const Progressbar = (probs) => {
+
+    const {step} = probs;
+   
+    if(probs.step === "1") {
+    setCircle2({
+        background: "#black",
             color: "white",
             fontSize: "14px",
             fontWeight: "600",
@@ -19,11 +20,11 @@ export const Progressbar = () => {
             width: "32px",
             height: "32px",
             textAlign: "center",
-            lineHeight: "30px"
-            })
-                
-            }
-        }
+            lineHeight: "30px",
+    })
+}
+    
+    
         
     
 
@@ -71,7 +72,7 @@ export const Progressbar = () => {
             width: "32px",
             height: "32px",
             textAlign: "center",
-            lineHeight: "30px"
+            lineHeight: "30px",
     })
     
     const [text2, setText2] = useState({
@@ -91,6 +92,12 @@ export const Progressbar = () => {
         left: "180px",
     })
 
+     
+    
+        
+    
+
+    
   return (
     <div style={{
         width: "390px",

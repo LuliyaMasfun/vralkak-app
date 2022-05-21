@@ -12,7 +12,8 @@ import Image from 'next/image'
 
 export const Checkout = ({navigation}) => {
 
-  
+   
+    
   
   
 
