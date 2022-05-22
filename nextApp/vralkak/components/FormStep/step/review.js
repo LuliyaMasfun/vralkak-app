@@ -27,6 +27,7 @@ export const Review = ({formData, navigation}) => {
     city,
     zip,
     phone,
+    deliveryWay,
     cardName,
     cardNumber,
     cardExpireDate,
@@ -137,6 +138,7 @@ export const Review = ({formData, navigation}) => {
       {'Stad': city},
       {'Postnummer': zip},
       {'Nummer': phone},
+      {'Leveranssätt': deliveryWay},
     ]} />
 
     <RenderAccordion

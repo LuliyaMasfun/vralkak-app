@@ -238,6 +238,7 @@ export const Checkout = ({navigation}) => {
     fontWeight: "500",
     border: "2px solid black",
     display: "block",
+    
 
   })
 
@@ -337,7 +338,7 @@ export const Checkout = ({navigation}) => {
   lineHeight: "45px",
   fontSize: "20px",
   fontWeight: "500",
-  border: "1px solid black",
+  border: "2px solid black",
   display: "block",
 
     })
@@ -390,7 +391,7 @@ export const Checkout = ({navigation}) => {
   lineHeight: "45px",
   fontSize: "20px",
   fontWeight: "500",
-  border: "1px solid black",
+  border: "2px solid black",
   display: "block",
 
     })
@@ -431,6 +432,7 @@ export const Checkout = ({navigation}) => {
         fontSize: "20px",
         fontWeight: "500",
         display: "none",
+        border: "2px solid black",
       })
 
       setAddRemoveButton({
@@ -483,6 +485,7 @@ export const Checkout = ({navigation}) => {
         fontSize: "20px",
         fontWeight: "500",
         display: "none",
+        border: "2px solid black",
       })
 
       setAddRemoveButton2({
@@ -689,7 +692,7 @@ export const Checkout = ({navigation}) => {
     lineHeight: "45px",
     fontSize: "20px",
     fontWeight: "500",
-    border: "1px solid black",
+    border: "2px solid black",
     display: "block",
 
       })
@@ -725,7 +728,7 @@ export const Checkout = ({navigation}) => {
     lineHeight: "45px",
     fontSize: "20px",
     fontWeight: "500",
-    border: "1px solid black",
+    border: "2px solid black",
     display: "none",
 
       })
@@ -809,7 +812,7 @@ export const Checkout = ({navigation}) => {
       lineHeight: "45px",
       fontSize: "20px",
       fontWeight: "500",
-      border: "1px solid black",
+      border: "2px solid black",
       display: "block",
       })
     }
@@ -844,7 +847,7 @@ export const Checkout = ({navigation}) => {
       lineHeight: "45px",
       fontSize: "20px",
       fontWeight: "500",
-      border: "1px solid black",
+      border: "2px solid black",
       display: "none",
 
       })
@@ -926,7 +929,7 @@ export const Checkout = ({navigation}) => {
     lineHeight: "45px",
     fontSize: "20px",
     fontWeight: "500",
-    border: "1px solid black",
+    border: "2px solid black",
     display: "block",
 
       })
@@ -962,7 +965,7 @@ export const Checkout = ({navigation}) => {
     lineHeight: "45px",
     fontSize: "20px",
     fontWeight: "500",
-    border: "1px solid black",
+    border: "2px solid black",
     display: "none",
 
       })
@@ -1043,7 +1046,7 @@ export const Checkout = ({navigation}) => {
     lineHeight: "45px",
     fontSize: "20px",
     fontWeight: "500",
-    border: "1px solid black",
+    border: "2px solid black",
     display: "block",
 
       })
@@ -1079,7 +1082,7 @@ export const Checkout = ({navigation}) => {
     lineHeight: "45px",
     fontSize: "20px",
     fontWeight: "500",
-    border: "1px solid black",
+    border: "2px solid black",
     display: "none",
 
       })
@@ -1161,7 +1164,7 @@ export const Checkout = ({navigation}) => {
     lineHeight: "45px",
     fontSize: "20px",
     fontWeight: "500",
-    border: "1px solid black",
+    border: "2px solid black",
     display: "block",
 
       })
@@ -1197,7 +1200,7 @@ export const Checkout = ({navigation}) => {
     lineHeight: "45px",
     fontSize: "20px",
     fontWeight: "500",
-    border: "1px solid black",
+    border: "2px solid black",
     display: "none",
 
       })
@@ -1281,7 +1284,7 @@ export const Checkout = ({navigation}) => {
     lineHeight: "45px",
     fontSize: "20px",
     fontWeight: "500",
-    border: "1px solid black",
+    border: "2px solid black",
     display: "block",
 
       })
@@ -1317,7 +1320,7 @@ export const Checkout = ({navigation}) => {
     lineHeight: "45px",
     fontSize: "20px",
     fontWeight: "500",
-    border: "1px solid black",
+    border: "2px solid black",
     display: "none",
 
       })
@@ -1399,7 +1402,7 @@ export const Checkout = ({navigation}) => {
     lineHeight: "45px",
     fontSize: "20px",
     fontWeight: "500",
-    border: "1px solid black",
+    border: "2px solid black",
     display: "block",
 
       })
@@ -1435,7 +1438,7 @@ export const Checkout = ({navigation}) => {
     lineHeight: "45px",
     fontSize: "20px",
     fontWeight: "500",
-    border: "1px solid black",
+    border: "2px solid black",
     display: "none",
 
       })
@@ -1516,7 +1519,7 @@ export const Checkout = ({navigation}) => {
     lineHeight: "45px",
     fontSize: "20px",
     fontWeight: "500",
-    border: "1px solid black",
+    border: "2px solid black",
     display: "block",
 
       })
@@ -1552,7 +1555,7 @@ export const Checkout = ({navigation}) => {
     lineHeight: "45px",
     fontSize: "20px",
     fontWeight: "500",
-    border: "1px solid black",
+    border: "2px solid black",
     display: "none",
 
       })
