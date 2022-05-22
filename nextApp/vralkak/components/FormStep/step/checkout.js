@@ -12,11 +12,8 @@ import Image from 'next/image'
 
 export const Checkout = ({navigation}) => {
 
-   
-    
-  
-  
 
+  //Kort förflyttning
   const [dropDown1, setDropDown1] = useState({
     position: "relative",
     backgroundColor: "#B85959",
@@ -41,6 +38,9 @@ export const Checkout = ({navigation}) => {
     height: "446px",
     display: "none",
   });
+
+
+
 
   const [move1, setMove1] = useState({
     height: "88px",
@@ -86,7 +86,7 @@ export const Checkout = ({navigation}) => {
       setMove2({
         height: "88px",
       width: "326px",
-      backgroundColor: "#006740",
+      backgroundColor: "#0939BB",
       position: "absolute",
       top: "790px", 
       left: "32px",
@@ -115,7 +115,7 @@ export const Checkout = ({navigation}) => {
       setMove2({
         height: "88px",
       width: "326px",
-      backgroundColor: "#006740",
+      backgroundColor: "#0939BB",
       position: "absolute",
       top: "334px", 
       left: "32px",
@@ -131,7 +131,7 @@ export const Checkout = ({navigation}) => {
       if(dropDown2.display == "none"){
         setDropDown2({
         position: "relative",
-        backgroundColor: "#B85959",
+        backgroundColor: "#267E5D",
         marginTop:"88px",
         width: "326px",
         height: "446px",
@@ -143,7 +143,7 @@ export const Checkout = ({navigation}) => {
         setMove2({
           height: "88px",
         width: "326px",
-        backgroundColor: "#006740",
+        backgroundColor: "#0939BB",
         position: "absolute",
         top: "790px", 
         left: "32px",
@@ -164,7 +164,7 @@ export const Checkout = ({navigation}) => {
         setMove2({
           height: "88px",
         width: "326px",
-        backgroundColor: "#006740",
+        backgroundColor: "#0939BB",
         position: "absolute",
         top: "334px", 
         left: "32px",
@@ -180,7 +180,7 @@ export const Checkout = ({navigation}) => {
         if(dropDown3.display == "none"){
           setDropDown3({
           position: "relative",
-          backgroundColor: "#B85959",
+          backgroundColor: "#2E57C5",
           marginTop:"88px",
           width: "326px",
           height: "446px",
@@ -207,7 +207,7 @@ export const Checkout = ({navigation}) => {
   
 
 
-
+//CheckOut Meny
 
   const [checkOut, setCheckOut] = useState({
     position: "fixed",
@@ -241,7 +241,41 @@ export const Checkout = ({navigation}) => {
 
   })
 
+  const [disableAddButton2, setDisableAddButton2] = useState({
+    width: "259px",
+    height: "45px",
+    backgroundColor: "black",
+    color:"white",
+    position: "absolute",
+    top: "369px",
+    left: "33px",
+    textAlign: "center",
+    lineHeight: "45px",
+    fontSize: "20px",
+    fontWeight: "500",
+    border: "2px solid black",
+    display: "block",
+
+  })
+
   const [addRemoveButton, setAddRemoveButton] = useState({
+    width: "259px",
+    height: "45px",
+    backgroundColor: "none",
+    color:"black",
+    position: "absolute",
+    top: "369px",
+    left: "33px",
+    textAlign: "center",
+    lineHeight: "45px",
+    fontSize: "20px",
+    fontWeight: "500",
+    border: "2px solid black",
+    display: "none",
+
+  })
+
+  const [addRemoveButton2, setAddRemoveButton2] = useState({
     width: "259px",
     height: "45px",
     backgroundColor: "none",
@@ -292,6 +326,59 @@ export const Checkout = ({navigation}) => {
     })
 
     setDisableAddButton({
+      width: "259px",
+  height: "45px",
+  backgroundColor: "black",
+  color:"white",
+  position: "absolute",
+  top: "369px",
+  left: "33px",
+  textAlign: "center",
+  lineHeight: "45px",
+  fontSize: "20px",
+  fontWeight: "500",
+  border: "1px solid black",
+  display: "block",
+
+    })
+    setLastPrice((""))
+
+  }
+
+  function removeFromCart2(){
+    setCheckOut({
+      position: "fixed",
+      bottom: "0px",
+      width:"390px",
+      height:"80px",
+      color: "white",
+      border: "1px solid black",
+      backgroundColor: "black",
+      fontSize: "20px",
+      fontWeight: "500",
+      textAlign: "center",
+      lineHeight: "75px",
+      display: "none",
+    })
+
+    setAddRemoveButton2({
+      width: "259px",
+  height: "45px",
+  backgroundColor: "none",
+  color:"black",
+  position: "absolute",
+  top: "369px",
+  left: "33px",
+  textAlign: "center",
+  lineHeight: "45px",
+  fontSize: "20px",
+  fontWeight: "500",
+  border: "2px solid black",
+  display: "none",
+
+    })
+
+    setDisableAddButton2({
       width: "259px",
   height: "45px",
   backgroundColor: "black",
@@ -364,6 +451,57 @@ export const Checkout = ({navigation}) => {
     
   }
   
+  function addToCart2(){
+
+    setLastPrice(price2)
+    
+    setCheckOut({
+      position: "fixed",
+      bottom: "0px",
+      width:"390px",
+      height:"80px",
+      color: "white",
+      border: "1px solid black",
+      backgroundColor: "black",
+      fontSize: "20px",
+      fontWeight: "500",
+      textAlign: "center",
+      lineHeight: "75px",
+      display: "",
+    })
+
+    
+      setDisableAddButton2({
+        width: "259px",
+        height: "45px",
+        backgroundColor: "black",
+        position: "absolute",
+        top: "369px",
+        left: "33px",
+        textAlign: "center",
+        lineHeight: "45px",
+        fontSize: "20px",
+        fontWeight: "500",
+        display: "none",
+      })
+
+      setAddRemoveButton2({
+        width: "259px",
+        height: "45px",
+        backgroundColor: "none",
+        color:"black",
+        position: "absolute",
+        top: "369px",
+        left: "33px",
+        textAlign: "center",
+        lineHeight: "45px",
+        fontSize: "20px",
+        fontWeight: "500",
+        border: "2px solid black",
+        display: "block",
+      })
+    
+  }
 
   
   
@@ -371,6 +509,10 @@ export const Checkout = ({navigation}) => {
   const [price, setPrice] = useState("(399,00SEK)")
   const [lastPrice, setLastPrice] = useState("");
   const [amount, setAmount] = useState("4x");
+
+  const [price2, setPrice2] = useState("(399,00SEK)")
+  
+  const [amount2, setAmount2] = useState("4x");
   
 
 
@@ -422,6 +564,528 @@ export const Checkout = ({navigation}) => {
     lineHeight: "45px",
     
   })
+
+  //3:e kortet
+
+  const [style12, setStyle12] = useState({
+    height:"45px",
+    width:"73.95px",
+    background: "black",
+    color: "white",
+    border: "2px solid black",
+    value: "back",
+    textAlign: "center",
+    lineHeight: "45px",
+    borderRight:"none"
+  })
+
+  const [style22, setStyle22] = useState({
+    height:"45px",
+    width:"73.95px",
+    background: "none",
+    color: "black",
+    border: "2px solid black",
+    value: "back",
+    textAlign: "center",
+    lineHeight: "45px",
+    borderRight:"none"
+  })
+
+  const [style32, setStyle32] = useState({
+    height:"45px",
+    width:"73.95px",
+    background: "none",
+    color: "black",
+    border: "2px solid black",
+    value: "back",
+    textAlign: "center",
+    lineHeight: "45px",
+    borderRight:"none"
+  })
+
+  const [style42, setStyle42] = useState({
+    height:"45px",
+    width:"73.95px",
+    background: "none",
+    color: "black",
+    border: "2px solid black",
+    value: "back",
+    textAlign: "center",
+    lineHeight: "45px",
+    
+  })
+
+  function addAmount12(){
+    setStyle12({height:"45px",
+    width:"73.95px",
+    background: "black",
+    color: "white",
+    border: "2px solid black",
+    value: "back",
+    textAlign: "center",
+    lineHeight: "45px",
+    borderRight:"none"})
+
+    setStyle22({height:"45px",
+    width:"73.95px",
+    background: "none",
+    color: "black",
+    border: "2px solid black",
+    value: "back",
+    textAlign: "center",
+    lineHeight: "45px",
+    borderRight:"none"})
+
+    setStyle32({height:"45px",
+    width:"73.95px",
+    background: "none",
+    color: "black",
+    border: "2px solid black",
+    value: "back",
+    textAlign: "center",
+    lineHeight: "45px",
+    borderRight:"none"})
+
+    setStyle42({height:"45px",
+    width:"73.95px",
+    background: "none",
+    color: "black",
+    border: "2px solid black",
+    value: "back",
+    textAlign: "center",
+    lineHeight: "45px",
+    })
+
+    setPrice2(("(399,00SEK)"))
+    setAmount2(("4x"))
+
+    if(lastPrice != "(399,00SEK)"){
+      setAddRemoveButton2({
+        width: "259px",
+    height: "45px",
+    backgroundColor: "none",
+    color:"black",
+    position: "absolute",
+    top: "369px",
+    left: "33px",
+    textAlign: "center",
+    lineHeight: "45px",
+    fontSize: "20px",
+    fontWeight: "500",
+    border: "2px solid black",
+    display: "none",
+
+      })
+
+      setDisableAddButton2({
+        width: "259px",
+    height: "45px",
+    backgroundColor: "black",
+    color:"white",
+    position: "absolute",
+    top: "369px",
+    left: "33px",
+    textAlign: "center",
+    lineHeight: "45px",
+    fontSize: "20px",
+    fontWeight: "500",
+    border: "1px solid black",
+    display: "block",
+
+      })
+    }
+    else {
+
+      setAddRemoveButton2({
+        width: "259px",
+    height: "45px",
+    backgroundColor: "none",
+    color:"black",
+    position: "absolute",
+    top: "369px",
+    left: "33px",
+    textAlign: "center",
+    lineHeight: "45px",
+    fontSize: "20px",
+    fontWeight: "500",
+    border: "2px solid black",
+    display: "block",
+
+      })
+
+      setDisableAddButton2({
+        width: "259px",
+    height: "45px",
+    backgroundColor: "black",
+    color:"white",
+    position: "absolute",
+    top: "369px",
+    left: "33px",
+    textAlign: "center",
+    lineHeight: "45px",
+    fontSize: "20px",
+    fontWeight: "500",
+    border: "1px solid black",
+    display: "none",
+
+      })
+
+    }
+    
+
+    
+  }
+
+  function addAmount22(){
+    setStyle12({height:"45px",
+    width:"73.95px",
+    background: "none",
+    color: "black",
+    border: "2px solid black",
+    value: "back",
+    textAlign: "center",
+    lineHeight: "45px",
+    borderRight:"none"})
+
+    setStyle22({height:"45px",
+    width:"73.95px",
+    background: "black",
+    color: "white",
+    border: "2px solid black",
+    value: "back",
+    textAlign: "center",
+    lineHeight: "45px",
+    borderRight:"none"})
+
+    setStyle32({height:"45px",
+    width:"73.95px",
+    background: "none",
+    color: "black",
+    border: "2px solid black",
+    value: "back",
+    textAlign: "center",
+    lineHeight: "45px",
+    borderRight:"none"})
+
+    setStyle42({height:"45px",
+    width:"73.95px",
+    background: "none",
+    color: "black",
+    border: "2px solid black",
+    value: "back",
+    textAlign: "center",
+    lineHeight: "45px",
+    })
+    setPrice2(("(899,00SEK)"))
+    setAmount2(("6x"))
+
+    if(lastPrice != "(899,00SEK)"){
+      setAddRemoveButton2({
+        width: "259px",
+        height: "45px",
+        backgroundColor: "none",
+        color:"black",
+        position: "absolute",
+        top: "369px",
+        left: "33px",
+        textAlign: "center",
+        lineHeight: "45px",
+        fontSize: "20px",
+        fontWeight: "500",
+        border: "2px solid black",
+        display: "none",
+
+      })
+
+      setDisableAddButton2({
+      width: "259px",
+      height: "45px",
+      backgroundColor: "black",
+      color:"white",
+      position: "absolute",
+      top: "369px",
+      left: "33px",
+      textAlign: "center",
+      lineHeight: "45px",
+      fontSize: "20px",
+      fontWeight: "500",
+      border: "1px solid black",
+      display: "block",
+      })
+    }
+    else {
+
+      setAddRemoveButton2({
+        width: "259px",
+    height: "45px",
+    backgroundColor: "none",
+    color:"black",
+    position: "absolute",
+    top: "369px",
+    left: "33px",
+    textAlign: "center",
+    lineHeight: "45px",
+    fontSize: "20px",
+    fontWeight: "500",
+    border: "2px solid black",
+    display: "block",
+
+      })
+
+    setDisableAddButton2({
+      width: "259px",
+      height: "45px",
+      backgroundColor: "black",
+      color:"white",
+      position: "absolute",
+      top: "369px",
+      left: "33px",
+      textAlign: "center",
+      lineHeight: "45px",
+      fontSize: "20px",
+      fontWeight: "500",
+      border: "1px solid black",
+      display: "none",
+
+      })
+
+    }
+  }
+
+  function addAmount32(){
+    setStyle12({height:"45px",
+    width:"73.95px",
+    background: "none",
+    color: "black",
+    border: "2px solid black",
+    value: "back",
+    textAlign: "center",
+    lineHeight: "45px",
+    borderRight:"none"})
+
+    setStyle22({height:"45px",
+    width:"73.95px",
+    background: "none",
+    color: "black",
+    border: "2px solid black",
+    value: "back",
+    textAlign: "center",
+    lineHeight: "45px",
+    borderRight:"none"})
+
+    setStyle32({height:"45px",
+    width:"73.95px",
+    background: "black",
+    color: "white",
+    border: "2px solid black",
+    value: "back",
+    textAlign: "center",
+    lineHeight: "45px",
+    borderRight:"none"})
+
+    setStyle42({height:"45px",
+    width:"73.95px",
+    background: "none",
+    color: "black",
+    border: "2px solid black",
+    value: "back",
+    textAlign: "center",
+    lineHeight: "45px",
+    })
+
+    setPrice2(("(1099,00SEK)"))
+    setAmount2(("8x"))
+
+    if(lastPrice != "(1099,00SEK)"){
+      setAddRemoveButton2({
+        width: "259px",
+    height: "45px",
+    backgroundColor: "none",
+    color:"black",
+    position: "absolute",
+    top: "369px",
+    left: "33px",
+    textAlign: "center",
+    lineHeight: "45px",
+    fontSize: "20px",
+    fontWeight: "500",
+    border: "2px solid black",
+    display: "none",
+
+      })
+
+      setDisableAddButton2({
+        width: "259px",
+    height: "45px",
+    backgroundColor: "black",
+    color:"white",
+    position: "absolute",
+    top: "369px",
+    left: "33px",
+    textAlign: "center",
+    lineHeight: "45px",
+    fontSize: "20px",
+    fontWeight: "500",
+    border: "1px solid black",
+    display: "block",
+
+      })
+    }
+    else {
+
+      setAddRemoveButton2({
+        width: "259px",
+    height: "45px",
+    backgroundColor: "none",
+    color:"black",
+    position: "absolute",
+    top: "369px",
+    left: "33px",
+    textAlign: "center",
+    lineHeight: "45px",
+    fontSize: "20px",
+    fontWeight: "500",
+    border: "2px solid black",
+    display: "block",
+
+      })
+
+      setDisableAddButton2({
+        width: "259px",
+    height: "45px",
+    backgroundColor: "black",
+    color:"white",
+    position: "absolute",
+    top: "369px",
+    left: "33px",
+    textAlign: "center",
+    lineHeight: "45px",
+    fontSize: "20px",
+    fontWeight: "500",
+    border: "1px solid black",
+    display: "none",
+
+      })
+
+    }
+  }
+
+  function addAmount42(){
+    setStyle12({height:"45px",
+    width:"73.95px",
+    background: "none",
+    color: "black",
+    border: "2px solid black",
+    value: "back",
+    textAlign: "center",
+    lineHeight: "45px",
+    borderRight:"none"})
+
+    setStyle22({height:"45px",
+    width:"73.95px",
+    background: "none",
+    color: "black",
+    border: "2px solid black",
+    value: "back",
+    textAlign: "center",
+    lineHeight: "45px",
+    borderRight:"none"})
+
+    setStyle32({height:"45px",
+    width:"73.95px",
+    background: "none",
+    color: "black",
+    border: "2px solid black",
+    value: "back",
+    textAlign: "center",
+    lineHeight: "45px",
+    borderRight:"none"})
+
+    setStyle42({height:"45px",
+    width:"73.95px",
+    background: "black",
+    color: "white",
+    border: "2px solid black",
+    value: "back",
+    textAlign: "center",
+    lineHeight: "45px",
+    })
+    setPrice2(("(1399,00SEK)"))
+    setAmount2(("10x"))
+
+    if(lastPrice != "(1399,00SEK)"){
+      setAddRemoveButton2({
+        width: "259px",
+    height: "45px",
+    backgroundColor: "none",
+    color:"black",
+    position: "absolute",
+    top: "369px",
+    left: "33px",
+    textAlign: "center",
+    lineHeight: "45px",
+    fontSize: "20px",
+    fontWeight: "500",
+    border: "2px solid black",
+    display: "none",
+
+      })
+
+      setDisableAddButton2({
+        width: "259px",
+    height: "45px",
+    backgroundColor: "black",
+    color:"white",
+    position: "absolute",
+    top: "369px",
+    left: "33px",
+    textAlign: "center",
+    lineHeight: "45px",
+    fontSize: "20px",
+    fontWeight: "500",
+    border: "1px solid black",
+    display: "block",
+
+      })
+    }
+    else {
+
+      setAddRemoveButton2({
+        width: "259px",
+    height: "45px",
+    backgroundColor: "none",
+    color:"black",
+    position: "absolute",
+    top: "369px",
+    left: "33px",
+    textAlign: "center",
+    lineHeight: "45px",
+    fontSize: "20px",
+    fontWeight: "500",
+    border: "2px solid black",
+    display: "block",
+
+      })
+
+      setDisableAddButton2({
+        width: "259px",
+    height: "45px",
+    backgroundColor: "black",
+    color:"white",
+    position: "absolute",
+    top: "369px",
+    left: "33px",
+    textAlign: "center",
+    lineHeight: "45px",
+    fontSize: "20px",
+    fontWeight: "500",
+    border: "1px solid black",
+    display: "none",
+
+      })
+
+    }
+  }
 
   function addAmount1(){
     setStyle1({height:"45px",
@@ -922,7 +1586,7 @@ export const Checkout = ({navigation}) => {
           fontWeight:"600",
         }} >Välj kasse</span>
         <div 
-        onClick={()=>drop1()}
+        
         style={{
           height: "88px",
           width: "326px",
@@ -946,7 +1610,8 @@ export const Checkout = ({navigation}) => {
             left: "84px",
           }}>Veganen</span>
 
-          <Image  layout = "raw" src={Arrow} 
+          <Image  onClick={()=>drop1()}
+          layout = "raw" src={Arrow} 
           
           style={{
             position: "absolute",
@@ -955,9 +1620,138 @@ export const Checkout = ({navigation}) => {
           }}/>
             
             <div style={dropDown1}>
+            
+              <span style={{
+                fontSize:"20px",
+                fontWeight:"500",
+                position: "absolute",
+                top: "16px",
+                left: "16px",
+              }}>Välj antal portioner</span>
+
+
+              <div style={{
+                width:"294px",
+                height:"45px",
+                position: "absolute",
+                left: "16px",
+                top:"64px",
+                display: "flex",
+                flexDirection:"row",
+              }}>
+                <div 
+                onClick={()=> addAmount1()}
+                style={style1}
+                
+              
+              >8
+              </div>
+              <div onClick={()=> addAmount2()} 
+              
+              style={style2}>12
+              </div>
+
+              <div onClick={()=> addAmount3()} 
+              
+              style={style3}> 
+              16
+              </div>
+              <div  onClick={()=> addAmount4()}
+              style={style4}>20
+              </div>
+              </div>
+
+              <div style={{
+                borderBottom: "2px solid white",
+                position: "absolute",
+                top: "133px",
+                left: "16px",
+                width: "294px",
+
+              }}></div>
+
+              <Image  layout = "raw"src={innehall} style={{
+                position: "absolute",
+                left: "16px",
+                top: "161px",
+              }} />
+
+              <span style={{
+                fontSize: "20px",
+                fontWeight: "500",
+                position: "absolute",
+                top: "161px",
+                left: "58px",
+
+              }}>Innehåll</span>
+
+              <div style={{
+                width: "34px",
+                height: "45px",
+                backgroundColor: "#3EA962",
+                textAlign: "center",
+                lineHeight: "45px",
+                position: "absolute",
+                top: "207.5px",
+                left: "16px"
+              }}>{amount}</div>
+
+            <div style={{
+                width: "34px",
+                height: "45px",
+                backgroundColor: "#3EA962",
+                textAlign: "center",
+                lineHeight: "45px",
+                position: "absolute",
+                top: "265.5px",
+                left: "16px"
+              }}>{amount}</div>
+
+              <Image  layout = "raw" src={dish1} style={{
+                position: "absolute",
+                left: "60px",
+                top: "206px",
+              }} />
+
+<Image  layout = "raw" src={dish2} style={{
+                position: "absolute",
+                left: "60px",
+                top: "264px",
+              }} />
+
+
+              <span style={{
+                fontSize: "16px",
+                fontWeight: "normal",
+                position: "absolute",
+                left: "118px",
+                top: "218px",
+              }}>Sonjas Sojastroganoff</span>
+
+<span style={{
+                fontSize: "16px",
+                fontWeight: "normal",
+                position: "absolute",
+                left: "118px",
+                top: "276px",
+              }}>Het vegansk chili</span>
+
+
+            <div 
+            onClick={()=> addToCart()}
+            
+            style={disableAddButton}>
+              Lägg till {price}
+            </div>
+
+            <div onClick={()=> removeFromCart()} 
+            style={addRemoveButton}>Ta bort</div>
 
             </div>
             </div>
+
+            
+            
             <div 
         
         style={move1}>
@@ -1117,7 +1911,7 @@ export const Checkout = ({navigation}) => {
 
 
             <div 
-        onClick={()=> drop3()}
+        
         style={move2}>
           <Image  layout = "raw"src={Ekonomen} style={{
             position: "absolute",
@@ -1133,7 +1927,8 @@ export const Checkout = ({navigation}) => {
             left: "84px",
           }}>Ekonomen</span>
 
-          <Image  layout = "raw" src={Arrow} 
+          <Image  onClick={()=> drop3()}
+          layout = "raw" src={Arrow} 
           
           style={{
             position: "absolute",
@@ -1161,49 +1956,17 @@ export const Checkout = ({navigation}) => {
                 flexDirection:"row",
 
               }}>
-                <div style={{ 
-                height:"45px",
-                width:"73.95px",
-              background: "black",
-              border: "2px solid black",
-              color:"white",
-              textAlign: "center",
-              lineHeight: "45px",
-              borderRight:"none"
-              
-              }}>8
+                <div onClick={()=> addAmount12()} 
+                style={style12}>8
               </div>
-              <div style={{ 
-                height:"45px",
-                width:"73.95px",
-              
-              border: "2px solid black",
-              color:"black",
-              textAlign: "center",
-              lineHeight: "45px",
-              borderRight:"none"
-              }}>12
+              <div onClick={()=> addAmount22()} 
+                style={style22}>12
               </div>
-              <div style={{ 
-                height:"45px",
-                width:"73.95px",
-              
-              border: "2px solid black",
-              color:"black",
-              textAlign: "center",
-              lineHeight: "45px",
-              borderRight:"none"
-              }}>16
+              <div onClick={()=> addAmount32()} 
+                style={style32}>16
               </div>
-              <div style={{ 
-                height:"45px",
-                width:"73.95px",
-              
-              border: "2px solid black",
-              color:"black",
-              textAlign: "center",
-              lineHeight: "45px",
-              }}>20
+              <div onClick={()=> addAmount42()} 
+                style={style42}>20
               </div>
               </div>
 
@@ -1240,7 +2003,7 @@ export const Checkout = ({navigation}) => {
                 position: "absolute",
                 top: "207.5px",
                 left: "16px"
-              }}>4x</div>
+              }}>{amount2}</div>
 
             <div style={{
                 width: "34px",
@@ -1251,7 +2014,7 @@ export const Checkout = ({navigation}) => {
                 position: "absolute",
                 top: "265.5px",
                 left: "16px"
-              }}>4x</div>
+              }}>{amount2}</div>
 
               <Image  layout = "raw" src={dish1} style={{
                 position: "absolute",
@@ -1283,18 +2046,12 @@ export const Checkout = ({navigation}) => {
               }}>Het vegansk chili</span>
 
 
-            <div style={{
-              width: "259px",
-              height: "45px",
-              backgroundColor: "black",
-              position: "absolute",
-              top: "369px",
-              left: "33px",
-              textAlign: "center",
-              lineHeight: "45px",
-              fontSize: "20px",
-              fontWeight: "500",
-            }}>Lägg till (399,00 SEK)</div>
+            <div 
+            onClick={()=> addToCart2()}
+            style={disableAddButton2}>Lägg till {price2}</div>
+
+            <div onClick={()=> removeFromCart2()} 
+            style={addRemoveButton2}>Ta bort</div>
 
 
 

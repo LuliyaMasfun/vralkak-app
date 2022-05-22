@@ -41,7 +41,7 @@ export const Review = ({formData, navigation}) => {
                  lineColor1="2px solid #FBA497" lineColor2="2px solid #FBA497" lineColor3="2px solid #FBA497" 
                  display1="block" display2="block" display3="block" display4="block"
                  textColor1="#FBA497" textColor2="#FBA497" textColor3="#FBA497" textColor4="#FBA497"
-                 borderColor1="2px solid #FBA497" borderColor2="2px solid #FBA497" borderColor3="2px solid #FBA497" borderColor4="2px solid #FBA497"/>
+                 borderColor1="2px solid #FBA497" borderColor2="2px solid #FBA497" borderColor3="2px solid #FBA497" borderColor4="2px solid #FBA497" navigation={navigation}/>
 
     <div style={{
       height: "1415px",
