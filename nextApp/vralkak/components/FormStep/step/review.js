@@ -36,7 +36,12 @@ export const Review = ({formData, navigation}) => {
   return (
     <>
     <Navbar />
-    <Progressbar />
+    <Progressbar img="/assets/checkMark.png" color1="none" color2="none" color3="none" color4="#none"
+                 number1="" number2="" number3="" number4=""
+                 lineColor1="2px solid #FBA497" lineColor2="2px solid #FBA497" lineColor3="2px solid #FBA497" 
+                 display1="block" display2="block" display3="block" display4="block"
+                 textColor1="#FBA497" textColor2="#FBA497" textColor3="#FBA497" textColor4="#FBA497"
+                 borderColor1="2px solid #FBA497" borderColor2="2px solid #FBA497" borderColor3="2px solid #FBA497" borderColor4="2px solid #FBA497"/>
 
     <div style={{
       height: "1415px",

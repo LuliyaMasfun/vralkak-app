@@ -31,11 +31,12 @@ export const Signup = ({formData, setForm, navigation}) => {
 
     function validation(){
       
-      emailValidation(email);
-      passwordValidation(password);
-      nameValidation(firstName, lastName)
-      confirmPasswordValidation(password, confirmPassword);
-    
+      //emailValidation(email);
+      //passwordValidation(password);
+      //nameValidation(firstName, lastName)
+      //confirmPasswordValidation(password, confirmPassword);
+      
+      navigation.next()
     }
 
     function nameValidation(firstName, lastName){
@@ -97,8 +98,14 @@ export const Signup = ({formData, setForm, navigation}) => {
   return (
     <>
     <Navbar />
-    <Progressbar />
-    
+    <Progressbar img="/assets/checkMark.png" color1="none" color2="#FBA497" color3="#C4C4C4" color4="#C4C4C4"
+                 number1="" number2="2" number3="3" number4="4"
+                 lineColor1="2px solid #FBA497" lineColor2="2px solid #C4C4C4" lineColor3="2px solid #C4C4C4" 
+                 display1="block" display2="none" display3="none" display4="none"
+                 textColor1="#FBA497" textColor2="#C4C4C4" textColor3="#C4C4C4" textColor4="#C4C4C4"
+                 borderColor1="2px solid #FBA497" borderColor2="2px solid #FBA497" borderColor3="2px solid #C4C4C4" borderColor4="2px solid #C4C4C4" navigation={navigation}/>
+
+
     <form className={styles.login} id={styles.signup}> 
     <span className={styles.loginHeading}>
         Skapa ett konto
