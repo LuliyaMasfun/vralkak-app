@@ -13,7 +13,7 @@ export const Login = ({formData, setForm, navigation}) => {
   return (
     <>
     <Navbar />
-    <Progressbar step="1" />
+    <Progressbar color1="/assets/checkMark.png" color3="none"  color2="#FBA497" number="1" />
     <div className={styles.login}> 
     <span className={styles.loginHeading}>
         Logga in

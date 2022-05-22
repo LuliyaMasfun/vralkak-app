@@ -1,35 +1,21 @@
 import React,{useState} from 'react'
-
+import checkMark from '../../public/assets/checkMark.png'
+import Image from 'next/image';
 
 
 
 export const Progressbar = (probs) => {
 
-    const {step} = probs;
+    const {color1, color2, number, color3} = probs;
    
-    if(probs.step === "1") {
-    setCircle2({
-        background: "#black",
-            color: "white",
-            fontSize: "14px",
-            fontWeight: "600",
-            borderRadius: "50%",
-            position: "absolute",
-            top: "45px",
-            left: "135px",
-            width: "32px",
-            height: "32px",
-            textAlign: "center",
-            lineHeight: "30px",
-    })
-}
-    
+    const image = "/public/assets/checkMark.png"
+     
     
         
     
 
-    const [circle1, setCircle1] = useState({
-        background: "#FBA497",
+    const circle1 = {
+        background: color2,
         color: "white",
         fontSize: "14px",
         fontWeight: "600",
@@ -40,8 +26,9 @@ export const Progressbar = (probs) => {
         width: "32px",
         height: "32px",
         textAlign: "center",
-        lineHeight: "30px"
-    })
+        lineHeight: "30px",
+        border: "2px solid #FBA497"
+    }
 
     const [text1, setText1] = useState({
         position: "absolute",
@@ -49,7 +36,7 @@ export const Progressbar = (probs) => {
         fontWeight: "600",
         color: "#FBA497",
         top: "26px",
-        left: "45px"
+        left: "46px"
     })
 
     const [line1, setline1] = useState({
@@ -60,8 +47,8 @@ export const Progressbar = (probs) => {
         left: "92px",
     })
 
-    const [circle2, setCircle2] = useState({
-            background: "#C4C4C4",
+    const circle2 = {
+            background: color2,
             color: "white",
             fontSize: "14px",
             fontWeight: "600",
@@ -73,7 +60,8 @@ export const Progressbar = (probs) => {
             height: "32px",
             textAlign: "center",
             lineHeight: "30px",
-    })
+            border: "2px solid #FBA497"
+    }
     
     const [text2, setText2] = useState({
             position: "absolute",
@@ -81,7 +69,7 @@ export const Progressbar = (probs) => {
             fontWeight: "600",
             color: "#C4C4C4",
             top: "26px",
-            left: "135px"
+            left: "136px"
     })
 
     const[line2, setLine2] = useState({
@@ -94,7 +82,7 @@ export const Progressbar = (probs) => {
 
      
     
-        
+    
     
 
     
@@ -106,10 +94,15 @@ export const Progressbar = (probs) => {
         top: "60px",
         background:"white"
     }}>
-
+        
         <span style={text1}>Kasse</span>
 
-        <div style={circle1}>1</div>
+        <div style={circle1}>
+          <Image src={color1} layout="raw" width="18px" height="18px"  style={{
+              display: `${color3}`,
+          }}/>  
+          {number}
+            </div>
 
         <div style={line1}></div>
 
@@ -127,7 +120,7 @@ export const Progressbar = (probs) => {
             fontWeight: "600",
             color: "#C4C4C4",
             top: "26px",
-            left: "213px"
+            left: "217px"
         }}>Leverans</span>
 
         
@@ -144,7 +137,8 @@ export const Progressbar = (probs) => {
         width: "32px",
         height: "32px",
         textAlign: "center",
-        lineHeight: "30px"
+        lineHeight: "30px",
+        border: "2px solid #C4C4C4"
 
         }}>3</div>
 
@@ -163,7 +157,7 @@ export const Progressbar = (probs) => {
             fontWeight: "600",
             color: "#C4C4C4",
             top: "26px",
-            left: "300px"
+            left: "302px"
         }}>Betalning</span>
 
         <div style={{
@@ -178,9 +172,13 @@ export const Progressbar = (probs) => {
         width: "32px",
         height: "32px",
         textAlign: "center",
-        lineHeight: "30px"
+        lineHeight: "30px",
+        border: "2px solid #C4C4C4"
 
-        }}>4</div>
+
+        }}>4
+           
+        </div>
 
         
 
