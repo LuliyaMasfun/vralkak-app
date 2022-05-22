@@ -25,18 +25,22 @@ export const Signup = ({formData, setForm, navigation}) => {
     
     const pattern = /^\S+@\S+\.\S+$/;
     
-    
+    function go (){
+      if(firstNameError == "" && lastNameError == "" && confirmPasswordError == ""
+      && passwordError == "" && emailError == ""){
+        navigation.next()
+      }
+    }
     
     
 
     function validation(){
       
-      //emailValidation(email);
-      //passwordValidation(password);
-      //nameValidation(firstName, lastName)
-      //confirmPasswordValidation(password, confirmPassword);
-      
-      navigation.next()
+      emailValidation(email);
+      passwordValidation(password);
+      nameValidation(firstName, lastName)
+      confirmPasswordValidation(password, confirmPassword);
+      setForm;
     }
 
     function nameValidation(firstName, lastName){
@@ -82,11 +86,11 @@ export const Signup = ({formData, setForm, navigation}) => {
     }
 
     function confirmPasswordValidation(confirmPassword, password) {
-      if(confirmPassword != password){
-        setConfirmPasswordError("Password does not match")
+      if(confirmPassword == password){
+        setConfirmPasswordError("")
       }
       else {
-        setConfirmPasswordError("")
+        setConfirmPasswordError("Password does not match")
       }
     }
 
@@ -106,7 +110,8 @@ export const Signup = ({formData, setForm, navigation}) => {
                  borderColor1="2px solid #FBA497" borderColor2="2px solid #FBA497" borderColor3="2px solid #C4C4C4" borderColor4="2px solid #C4C4C4" navigation={navigation}/>
 
 
-    <form className={styles.login} id={styles.signup}> 
+    <form onChange={()=>validation()}
+    className={styles.login} id={styles.signup}> 
     <span className={styles.loginHeading}>
         Skapa ett konto
     </span>
@@ -125,17 +130,17 @@ export const Signup = ({formData, setForm, navigation}) => {
       <p id={styles.errorCheckEmail}>{emailError}</p>
 
       <p className={styles.passwordNote}>Lösenord*</p>
-      <input className={styles.passwordForm} name='password'value={password} onChange={setForm} type="password"  id="passwordForm"  required/>
+      <input className={styles.passwordForm} name='password'value={password} onChange={setForm}  type="text"  id="passwordForm"  required/>
       <span id={styles.errorCheckPassword}>{passwordError}</span>
 
       <Image layout="raw" className={styles.signUpInfo} src={logo} alt="" />
       <p className={styles.infoText}>Ange minst 6 tecken</p>
 
       <p className={styles.confirmPasswordNote}>Bekräfta lösenord*</p>
-      <input className={styles.confirmPasswordForm} type="password" name="confirmPassword" value={confirmPassword}  />
+      <input className={styles.confirmPasswordForm} type="text" name='confirmPassword' value={confirmPassword} onChange={e=> setConfirmPassword(e.target.value)}  />
       <p id={styles.errorCheckConfirmedPassword}>{confirmPasswordError}</p>
 
-      <button className={styles.signUpSubmitButton1} type="button" onClick={validation} >Skapa ett konto</button>
+      <button className={styles.signUpSubmitButton1} type="button" onClick={()=> go()} >Skapa ett konto</button>
     
     </form>
     </>
