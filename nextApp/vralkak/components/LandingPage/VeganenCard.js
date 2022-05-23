@@ -14,7 +14,7 @@ import Image from 'next/image';
 export default function VeganenCard() {
   return (
     <div id={styles.veganen}>
-        <div className={styles.foodCardName}>“Veganen”</div>
+        <div className={styles.foodCardName}>Veganen</div>
         <Image src={veganenShadow} className={styles.ekonomenShadow} layout="raw"/>
         <Image className={styles.ekonomenFood} src={veganenFood} layout="raw" />
         <div className={styles.priceBorder}>fr. 389 kr</div>

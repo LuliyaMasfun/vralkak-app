@@ -13,7 +13,7 @@ import Image from 'next/image';
 export default function GretaCard() {
   return (
     <div  id={styles.greta}>
-    <div className={styles.foodCardName}>“Greta”</div>
+    <div className={styles.foodCardName}>Greta</div>
     <Image className={styles.ekonomenShadow} src={ekonomenShadow} layout="raw"/>
     <Image className={styles.ekonomenFood} src={gretaFood} layout="raw" />
     <div className={styles.priceBorder}>fr. 400 kr</div>

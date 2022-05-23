@@ -1,7 +1,7 @@
 import React from 'react'
 import StartPagePictureShadows from '../../public/assets/shadowFirstPage.svg';
 import StartPagePicture from '../../public/assets/startingPagePicture.png';
-import arrow from '../../public/assets/arrowDown.png';
+import arrowLanding from '../../public/assets/arrowLanding.png';
 
 
 import {Link} from 'react-scroll'
@@ -107,7 +107,7 @@ export default function HomePage() {
 
       
       <Link href="ekonomenCard" smooth={true} duration={1000}>
-      <Image src={arrow} layout="raw" style={{
+      <Image src={arrowLanding} layout="raw" style={{
         position: "absolute",
         top: "657px",
         left: "163px"
