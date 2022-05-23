@@ -13,7 +13,7 @@ import Image from 'next/image'
 
 export const Signup = ({formData, setForm, navigation}) => {
 
-    const {firstName, lastName, email, password} = formData;
+    const {firstName, lastName, email, password, confirmPassword} = formData;
     
     
     const [emailError, setEmailError] = useState("")
@@ -21,7 +21,7 @@ export const Signup = ({formData, setForm, navigation}) => {
     const [firstNameError, setFirstNameError] = useState("")
     const [lastNameError, setLastNameError] = useState("")
     const [confirmPasswordError, setConfirmPasswordError] = useState("")
-    const [confirmPassword, setConfirmPassword] = useState("") 
+   
     
     const pattern = /^\S+@\S+\.\S+$/;
     
@@ -72,7 +72,7 @@ export const Signup = ({formData, setForm, navigation}) => {
       
     }
 
-    function passwordValidation(password) {
+    function passwordValidation(password,confirmPassword) {
      
       if (password === ""){
         setPasswordError("Password must be provided")
@@ -83,14 +83,16 @@ export const Signup = ({formData, setForm, navigation}) => {
       else {
         setPasswordError("")
       }
+
+      
     }
 
     function confirmPasswordValidation(confirmPassword, password) {
-      if(confirmPassword == password){
-        setConfirmPasswordError("")
+      if(confirmPassword != password){
+        setConfirmPasswordError("Password does not match")
       }
       else {
-        setConfirmPasswordError("Password does not match")
+        setConfirmPasswordError("")
       }
     }
 
@@ -137,7 +139,7 @@ export const Signup = ({formData, setForm, navigation}) => {
       <p className={styles.infoText}>Ange minst 6 tecken</p>
 
       <p className={styles.confirmPasswordNote}>Bekräfta lösenord*</p>
-      <input className={styles.confirmPasswordForm} type="text" name='confirmPassword' value={confirmPassword} onChange={e=> setConfirmPassword(e.target.value)}  />
+      <input className={styles.confirmPasswordForm} type="text" name='confirmPassword' value={confirmPassword} onChange={setForm}  />
       <p id={styles.errorCheckConfirmedPassword}>{confirmPasswordError}</p>
 
       <button className={styles.signUpSubmitButton1} type="button" onClick={()=> go()} >Skapa ett konto</button>

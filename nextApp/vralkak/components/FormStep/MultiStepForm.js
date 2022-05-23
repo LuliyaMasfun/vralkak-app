@@ -15,6 +15,7 @@ const defaultData = {
     lastName: '',
     email: '',
     password: '',
+    confirmPassword :'',
     firstNameDelivery: '',
     lastNameDelivery: '',
     address: '',
