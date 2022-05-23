@@ -2,7 +2,7 @@ import React from 'react'
 import companyLogo from '../../public/assets/logo.png';
 import hamburgerMenu from '../../public/assets/Frame135.png';
 import Image from 'next/image';
-import Link from 'next/Link';
+import Link from 'next/link';
 import Head from 'next/head';
 
 export default function Navbar() {
