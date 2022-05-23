@@ -47,7 +47,7 @@ export const Checkout = ({navigation}) => {
     width: "326px",
     backgroundColor: "#006740",
     position: "absolute",
-    top: "232px", 
+    top: "232px",
     left: "32px",
     color:"white",
   })

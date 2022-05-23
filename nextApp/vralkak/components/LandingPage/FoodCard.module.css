@@ -30,13 +30,19 @@ background-image: -webkit-linear-gradient(-125deg, #006740 30%, #267E5D 30%);
     background-image: -webkit-linear-gradient(-125deg, #AB3C3C 30%, #B85959 30%);
 }
 
-.tutorialCard{
-    display: grid;
-    grid-column: 1;
-    grid-row: 41/51;
-    background-color: #1F1E1F;
-}
 
+.infoCard{
+    position:absolute;
+    height: 354px;
+    width: 390px;
+    top:2895px;
+    background-color: #1F1E1F;
+    background-size: "cover",
+}
+.infoLogo{
+    position: absolute;
+    
+}
 
 
 .foodCardName{

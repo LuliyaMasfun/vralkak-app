@@ -17,7 +17,7 @@ export default function EkonomenCard() {
   return (
 
     <div id={styles.ekonomen} >
-    <div className={styles.foodCardName}>“Ekonomen”</div>
+    <div className={styles.foodCardName}>Ekonomen</div>
     <Image className={styles.ekonomenShadow} src={ekonomenShadow} layout="raw"/>
     <Image className={styles.ekonomenFood}src={ekonomenFood}  layout="raw"/>
     <div className={styles.priceBorder}>fr. 349 kr</div>
