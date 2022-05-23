@@ -1,6 +1,7 @@
 import React from 'react'
-import companyLogo from '../../public/assets/logo.png';
+import companyLogo from '../../public/assets/latestLogo.svg';
 import hamburgerMenu from '../../public/assets/Frame135.png';
+import brandName from '../../public/assets/Vrålkäk.svg';
 import Image from 'next/image';
 import Link from 'next/link';
 import Head from 'next/head';
@@ -34,22 +35,21 @@ export default function Navbar() {
         }}>
         <span className="hamburgermenu">
           <Image src={hamburgerMenu}/></span>
-        <Link href="/" className="textenLängstUpp" style={{
-          textDecoration: "none",
-          color: "black"
-        }} ><span className="titel" style={{
-          fontSize: "24px",
-          fontweight: "500",
-          textdecoration: "none"
-      
-        }}>
+        <Link href="/" className="imgLink">
         <Image src={companyLogo} className="companyLogo" layout="raw"  style={{
           position: "absolute",
           left:"260px",
           top:"17px",
           textDecoration: "none"
 
-        }}/>Vrålkäk</span></Link>
+        }}/></Link>
+        <Link href="/" className="brandNameLink">
+        <Image src={brandName} style={{
+          position : "absolute",
+          left : "10px",
+          right : "26.14px",
+          bottom : "24.29"
+        }}/></Link>
         </div>
     </div>
     </>

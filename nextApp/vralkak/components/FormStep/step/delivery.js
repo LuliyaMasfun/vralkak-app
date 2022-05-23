@@ -98,6 +98,7 @@ const handler = e => {
           position: "absolute",
           top: "152px",
           left: "32px",
+          paddingLeft: "8px",
           boxSizing: "border-box",
           border: "1px solid black",
 
@@ -119,6 +120,7 @@ const handler = e => {
           position: "absolute",
           top: "240px",
           left: "32px",
+          paddingLeft: "8px",
           boxSizing: "border-box",
           border: "1px solid black",
         }}/>
@@ -140,6 +142,7 @@ const handler = e => {
         position: "absolute",
         top: "328px",
         left: "32px",
+        paddingLeft: "8px",
         boxSizing: "border-box",
         border: "1px solid black",
       }} />
@@ -161,6 +164,7 @@ const handler = e => {
         position: "absolute",
         top: "416px",
         left: "32px",
+        paddingLeft: "8px",
         boxSizing: "border-box",
         border: "1px solid black",
       }}/>
@@ -182,6 +186,7 @@ const handler = e => {
         position: "absolute",
         top: "416px",
         left: "203px",
+        paddingLeft: "8px",
         boxSizing: "border-box",
         border: "1px solid black",
       }}/>
@@ -211,6 +216,7 @@ const handler = e => {
         position: "absolute",
         top: "504px",
         left: "81px",
+        paddingLeft: "8px",
         border: "solid 1px black",
         boxSizing: "border-box",
       }}/>
@@ -241,7 +247,7 @@ const handler = e => {
 
     <p style={{
       fontWeight: "normal",
-      fontSize: "12px",
+      fontSize: "16px",
       position: "absolute",
       top: "839px",
       left: "32px",

@@ -120,6 +120,7 @@ export const Payment = ({formData,setForm,navigation}) => {
             position : "absolute",
             top : "360px",
             left : "32px",
+            paddingLeft: "8px",
             boxSizing: "border-box",
             border: "1px solid black",
           }} />
@@ -143,6 +144,7 @@ export const Payment = ({formData,setForm,navigation}) => {
             position : "absolute",
             top : "448px",
             left : "32px",
+            paddingLeft: "8px",
             boxSizing: "border-box",
             border: "1px solid black",
           }} />
@@ -167,6 +169,7 @@ export const Payment = ({formData,setForm,navigation}) => {
             position : "absolute",
             top : "536px",
             left : "32px",
+            paddingLeft: "8px",
           }} />
 
 <span style={{
@@ -189,6 +192,7 @@ export const Payment = ({formData,setForm,navigation}) => {
             position : "absolute",
             top : "536px",
             left : "208px",
+            paddingLeft: "8px",
             
           }} />
           
