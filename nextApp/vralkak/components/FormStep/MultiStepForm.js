@@ -1,12 +1,12 @@
 import React from 'react'
 import  {useForm,useStep } from 'react-hooks-helper'
 import { Checkout } from './step/checkout'
-import { Leverans } from './step/leverans'
+import { Delivery } from './step/delivery'
 import { Login } from './step/login'
 import { Review } from './step/review'
 import { Signup } from './step/signup'
 import { Submit } from './step/submit'
-import { Betalning } from './step/betalning'
+import { Payment } from './step/payment'
 
 
 const defaultData = {
@@ -36,8 +36,8 @@ const steps = [
     {id: 'checkout',},
     {id: 'login',},
     {id: 'signup',},
-    {id: 'leverans',},
-    {id: 'betalning',},
+    {id: 'delivery',},
+    {id: 'payment',},
     {id: 'review',},
     {id: 'submit',},
 ]
@@ -61,10 +61,10 @@ export const MulitStepForm = () => {
             return <Login {...props} />;
         case "signup":
             return <Signup {...props} />;
-        case "leverans":
-            return <Leverans {...props} />;
-        case "betalning":
-            return <Betalning {...props} />;
+        case "delivery":
+            return <Delivery {...props} />;
+        case "payment":
+            return <Payment {...props} />;
         case "review":
             return <Review {...props} />;
         case "submit":
