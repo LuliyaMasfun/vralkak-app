@@ -11,6 +11,12 @@ import IconButton from '@material-ui/core/IconButton';
 import EditIcon from '@material-ui/icons/Edit';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 import { withStyles } from '@material-ui/core/styles';
+import Veganen from '../../../public/assets/veganenCheckOut.png'
+import Image from 'next/image';
+import dish1 from '../../../public/assets/dish1.png'
+import dish2 from '../../../public/assets/dish2.png'
+import Greta from '../../../public/assets/gretaDish.png'
+import Ekonomen from '../../../public/assets/ekonomenDish.png'
 
 
 
@@ -95,21 +101,343 @@ export const Review = ({formData, navigation}) => {
     <div style={{
       height: "88px",
       width: "326px",
-      backgroundColor: "#3EA962",
+      backgroundColor: "#AB3C3C",
       position: "absolute",
       top: "113px",
       left: "32px",
       color:"white",
-    }}></div>
+    }}>
+     
+          <Image  layout = "raw" src={Veganen}  style={{
+            position: "absolute",
+            top: "16px",
+            left: "16px",
+          }} />
+
+          <span style={{
+            fontSize: "20px",
+            fontWeight: "500",
+            position: "absolute",
+            top: "32px",
+            left: "84px",
+          }}>Veganen</span>
+
+    </div>
     <div style={{
       height: "140px",
       width: "326px",
-      backgroundColor: "#3EA346",
+      backgroundColor: "#B85959",
       position: "absolute",
       top: "201px",
       left: "32px",
       color:"white",
-    }}></div>
+    }}>
+       <div style={{
+                width: "34px",
+                height: "45px",
+                backgroundColor: "#CD4141",
+                lineHeight: "45px",
+                top: "207.5px",
+                display: "flex",
+                marginLeft:"16px",
+                marginTop:"18px",
+                left: "16px",
+              }}>
+                 <div style={{
+                marginLeft:"8px"
+              }}>
+                4x
+              </div>
+              </div>
+
+            <div style={{
+                width: "34px",
+                height: "45px",
+                backgroundColor: "#CD4141",
+                lineHeight: "45px",
+                display: "flex",
+                top: "265.5px",
+                left: "16px",
+                marginTop:"15px",
+                marginLeft:"16px",
+                textAlign:"center",
+              }}></div>
+
+              <div style={{
+                 marginTop:"-33px",
+                 marginLeft:"23px"
+              }}>
+                4x
+              </div>
+
+
+              <Image  layout = "raw" src={dish1} style={{
+                position:"absolute",
+                left: "60px",
+                top: "206px",
+                marginTop:"-190px",
+                marginLeft:"5px"
+              }} />
+
+              <Image  layout = "raw" src={dish2} style={{
+                position: "absolute",
+                left: "60px",
+                top: "264px",
+                marginTop:"-188px",
+                marginLeft:"5px"
+              }} />
+
+
+              <span style={{
+                fontSize: "16px",
+                fontWeight: "normal",
+                position: "absolute",
+                left: "118px",
+                top: "218px",
+                marginTop:"-188px",
+                marginLeft:"10px"
+              }}>Sonjas Sojastroganoff</span>
+
+              <span style={{
+                fontSize: "16px",
+                fontWeight: "normal",
+                position: "absolute",
+                left: "118px",
+                top: "276px",
+                marginTop:"-188px",
+                marginLeft:"10px"
+              }}>Het vegansk chili</span>
+
+
+
+    </div>
+    <div style={{
+      height: "88px",
+      width: "326px",
+      backgroundColor: "#006740",
+      position: "absolute",
+      top: "113px",
+      left: "32px",
+      color:"white",
+    }}>
+     
+          <Image  layout = "raw" src={Greta}  style={{
+            position: "absolute",
+            top: "16px",
+            left: "16px",
+          }} />
+
+          <span style={{
+            fontSize: "20px",
+            fontWeight: "500",
+            position: "absolute",
+            top: "32px",
+            left: "84px",
+          }}>Greta</span>
+
+    </div>
+    <div style={{
+      height: "140px",
+      width: "326px",
+      backgroundColor: "#267E5D",
+      position: "absolute",
+      top: "201px",
+      left: "32px",
+      color:"white",
+    }}>
+       <div style={{
+                width: "34px",
+                height: "45px",
+                backgroundColor: "#006740",
+                lineHeight: "45px",
+                top: "207.5px",
+                display: "flex",
+                marginLeft:"16px",
+                marginTop:"18px",
+                left: "16px",
+              }}>
+                 <div style={{
+                marginLeft:"8px"
+              }}>
+                4x
+              </div>
+              </div>
+
+            <div style={{
+                width: "34px",
+                height: "45px",
+                backgroundColor: "#006740",
+                lineHeight: "45px",
+                display: "flex",
+                top: "265.5px",
+                left: "16px",
+                marginTop:"15px",
+                marginLeft:"16px",
+                textAlign:"center",
+              }}></div>
+
+              <div style={{
+                 marginTop:"-33px",
+                 marginLeft:"23px"
+              }}>
+                4x
+              </div>
+
+
+              <Image  layout = "raw" src={dish1} style={{
+                position:"absolute",
+                left: "60px",
+                top: "206px",
+                marginTop:"-190px",
+                marginLeft:"5px"
+              }} />
+
+              <Image  layout = "raw" src={dish2} style={{
+                position: "absolute",
+                left: "60px",
+                top: "264px",
+                marginTop:"-188px",
+                marginLeft:"5px"
+              }} />
+
+
+              <span style={{
+                fontSize: "16px",
+                fontWeight: "normal",
+                position: "absolute",
+                left: "118px",
+                top: "218px",
+                marginTop:"-188px",
+                marginLeft:"10px"
+              }}>Sonjas Sojastroganoff</span>
+
+              <span style={{
+                fontSize: "16px",
+                fontWeight: "normal",
+                position: "absolute",
+                left: "118px",
+                top: "276px",
+                marginTop:"-188px",
+                marginLeft:"10px"
+              }}>Het vegansk chili</span>
+
+
+
+    </div>
+
+    <div style={{
+      height: "88px",
+      width: "326px",
+      backgroundColor: "#0939BB",
+      position: "absolute",
+      top: "113px",
+      left: "32px",
+      color:"white",
+    }}>
+     
+          <Image  layout = "raw" src={Ekonomen}  style={{
+            position: "absolute",
+            top: "16px",
+            left: "16px",
+          }} />
+
+          <span style={{
+            fontSize: "20px",
+            fontWeight: "500",
+            position: "absolute",
+            top: "32px",
+            left: "84px",
+          }}>Ekonomen</span>
+
+    </div>
+    <div style={{
+      height: "140px",
+      width: "326px",
+      backgroundColor: "#2E57C5",
+      position: "absolute",
+      top: "201px",
+      left: "32px",
+      color:"white",
+    }}>
+       <div style={{
+                width: "34px",
+                height: "45px",
+                backgroundColor: "#0939BB",
+                lineHeight: "45px",
+                top: "207.5px",
+                display: "flex",
+                marginLeft:"16px",
+                marginTop:"18px",
+                left: "16px",
+              }}>
+                 <div style={{
+                marginLeft:"8px"
+              }}>
+                4x
+              </div>
+              </div>
+
+            <div style={{
+                width: "34px",
+                height: "45px",
+                backgroundColor: "#0939BB",
+                lineHeight: "45px",
+                display: "flex",
+                top: "265.5px",
+                left: "16px",
+                marginTop:"15px",
+                marginLeft:"16px",
+                textAlign:"center",
+              }}></div>
+
+              <div style={{
+                marginTop:"-33px",
+                marginLeft:"23px"
+              }}>
+                4x
+              </div>
+
+
+              <Image  layout = "raw" src={dish1} style={{
+                position:"absolute",
+                left: "60px",
+                top: "206px",
+                marginTop:"-190px",
+                marginLeft:"5px"
+              }} />
+
+              <Image  layout = "raw" src={dish2} style={{
+                position: "absolute",
+                left: "60px",
+                top: "264px",
+                marginTop:"-188px",
+                marginLeft:"5px"
+              }} />
+
+
+              <span style={{
+                fontSize: "16px",
+                fontWeight: "normal",
+                position: "absolute",
+                left: "118px",
+                top: "218px",
+                marginTop:"-188px",
+                marginLeft:"10px"
+              }}>Sonjas Sojastroganoff</span>
+
+              <span style={{
+                fontSize: "16px",
+                fontWeight: "normal",
+                position: "absolute",
+                left: "118px",
+                top: "276px",
+                marginTop:"-188px",
+                marginLeft:"10px"
+              }}>Het vegansk chili</span>
+
+
+
+    </div>
 
     <span style={{
       position: "absolute",
