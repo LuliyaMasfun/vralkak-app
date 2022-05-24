@@ -10,6 +10,7 @@ import  ListItemText  from '@material-ui/core/ListItemText';
 import IconButton from '@material-ui/core/IconButton';
 import EditIcon from '@material-ui/icons/Edit';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
+import { withStyles } from '@material-ui/core/styles';
 
 
 
@@ -28,11 +29,33 @@ export const Review = ({formData, navigation}) => {
     zip,
     phone,
     deliveryWay,
+    infoToDriver,
     cardName,
     cardNumber,
     cardExpireDate,
     cardCVV
   } = formData;
+
+
+  const muiAccordionSummary = withStyles({
+    root: {
+      backgroundColor: '#21CFFF',
+      borderBottom: '1px solid #12738E',
+      marginBottom: -1,
+      color: '#666666',
+      borderRadius: '30px 0px 30px 0',
+      minHeight: 56,
+      '&$expanded': {
+        minHeight: 56,
+      },
+    },
+    content: {
+      '&$expanded': {
+        margin: '12px 0',
+      },
+    },
+    expanded: {},
+  })(AccordionSummary);
 
   return (
     <>
@@ -122,13 +145,21 @@ export const Review = ({formData, navigation}) => {
         height: "200px"
       }}>
     
+    <div style={{
+      position: "relative",
+      left:"8px"
+       
+    }}>
     <RenderAccordion 
     summary= "Signup" go={go} details={[
       {'Förnamn': firstName},
       {'Efternamn': lastName},
       {'Email': email},
       {'Lösenord': password}
-    ]} />
+    ]}
+    sx={{
+      
+    }} />
 
     <RenderAccordion
     summary= "Delivery" go={go} details={[
@@ -139,6 +170,7 @@ export const Review = ({formData, navigation}) => {
       {'Postnummer': zip},
       {'Nummer': phone},
       {'Leveranssätt': deliveryWay},
+      {'Information till chafförren': infoToDriver},
     ]} />
 
     <RenderAccordion
@@ -148,6 +180,25 @@ export const Review = ({formData, navigation}) => {
       {'MM/ÅÅ' : cardExpireDate},
       {'CVV/CVC' : cardCVV}
     ]} />
+
+</div>
+
+<button 
+        onClick={()=>navigation.next()}
+        style={{
+      width:"326px",
+      height:"50px",
+      position: "relative",
+      top: "50px",
+      boxSizing:"border-box",
+      left:"0px",
+      backgroundColor: "#1F1E1F",
+      color: "white",
+      fontWeight: "500",
+      fontSize: "20px",
+      
+    }} >Beställ</button>
+    
    
    </div>
 

@@ -31,7 +31,7 @@ export default function EkonomenCard() {
     <Image className={styles.pictureToDescription3}src={imgDescription3} layout="raw"/><span className={styles.textToDescription3}>8 min tillagning per portion</span>
 
     <Image className={styles.pictureToDescriptionEkonomen} src={imgDescription4}  layout="raw"/><span className={styles.textToDescriptionEkonomen}>Prispressade varor</span>
-    <Link  scroll={true} href={{
+    <Link  href={{
       pathname: "/StepForm",
       query: { display1: "none" ,
                display2: "none",

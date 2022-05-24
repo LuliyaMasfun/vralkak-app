@@ -13,7 +13,7 @@ import Image from 'next/image'
 
 export const Signup = ({formData, setForm, navigation}) => {
 
-    const {firstName, lastName, email, password, confirmPassword} = formData;
+    const {firstName, lastName, email, password} = formData;
     
     
     const [emailError, setEmailError] = useState("")
@@ -21,6 +21,7 @@ export const Signup = ({formData, setForm, navigation}) => {
     const [firstNameError, setFirstNameError] = useState("")
     const [lastNameError, setLastNameError] = useState("")
     const [confirmPasswordError, setConfirmPasswordError] = useState("")
+    const [confirmPassword, setConfirmPassword] = useState("")
    
     
     const pattern = /^\S+@\S+\.\S+$/;
@@ -39,6 +40,7 @@ export const Signup = ({formData, setForm, navigation}) => {
       emailValidation(email);
       passwordValidation(password);
       nameValidation(firstName, lastName)
+      
       confirmPasswordValidation(password, confirmPassword);
       setForm;
     }
@@ -139,7 +141,7 @@ export const Signup = ({formData, setForm, navigation}) => {
       <p className={styles.infoText}>Ange minst 6 tecken</p>
 
       <p className={styles.confirmPasswordNote}>Bekräfta lösenord*</p>
-      <input className={styles.confirmPasswordForm} type="text" name='confirmPassword' value={confirmPassword} onChange={setForm}  />
+      <input className={styles.confirmPasswordForm} type="text" name='confirmPassword' value={confirmPassword} onChange={e => setConfirmPassword(e.target.value)}  />
       <p id={styles.errorCheckConfirmedPassword}>{confirmPasswordError}</p>
 
       <button className={styles.signUpSubmitButton1} type="button" onClick={()=> go()} >Skapa ett konto</button>

@@ -14,7 +14,7 @@ export const Delivery = ({formData, setForm, navigation}) => {
   
  const [selectedDate, setSelectedDate] = useState(null);
  
- const {firstNameDelivery,lastNameDelivery, address, city,zip, phone,deliveryWay,} = formData;
+ const {firstNameDelivery,lastNameDelivery, address, city,zip, phone,deliveryWay, infoToDriver} = formData;
 
 
 
@@ -254,6 +254,9 @@ const handler = e => {
     }}>Övrig information till chauförren(frivilligt)</p>
       
     <textarea type="text" 
+    name="infoToDriver"
+    value={infoToDriver}
+    onChange={setForm}
     placeholder='Övrig information' 
     style={{
       width: "326px",

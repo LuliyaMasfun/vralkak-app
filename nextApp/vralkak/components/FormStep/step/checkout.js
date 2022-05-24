@@ -21,6 +21,8 @@ export const Checkout = ({navigation}) => {
   const [degree1, setDegree1] = useState("rotate(0deg)")
   const [degree2, setDegree2] = useState("rotate(0deg)")
   const [degree3, setDegree3] = useState("rotate(0deg)")
+
+  
   
   //Kort förflyttning
   const [dropDown1, setDropDown1] = useState({

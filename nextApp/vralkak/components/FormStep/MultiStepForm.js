@@ -23,6 +23,7 @@ const defaultData = {
     zip: '',
     phone: '',
     deliveryWay: '',
+    infoToDriver: '',
     cardName: '',
     cardNumber: '',
     cardExpireDate: '',
