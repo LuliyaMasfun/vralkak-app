@@ -10,6 +10,7 @@ import Image from 'next/image'
 import HomePageImg1 from '../../public/assets/HomePageImg1.png'
 import HomePageImg2 from '../../public/assets/HomePageImg2.png'
 import HomePageImg3 from '../../public/assets/HomePageImg3.png'
+import EkonomenCard from './EkonomenCard';
 
 
 
@@ -90,7 +91,7 @@ export default function HomePage() {
            }}>3. Stapla upp i frysen!</span>
            
             
-
+           <Link to="ekonomen" smooth={true} duration={1000}>
         <button type="button" style={{
           width:"326px",
           height:"50px",
@@ -104,9 +105,10 @@ export default function HomePage() {
           fontWeight: "500",
           fontSize: "20px"
         }}>Hitta ditt vrålkäk</button>
+        </Link>
 
       
-      <Link href="ekonomenCard" smooth={true} duration={1000}>
+      <Link to="ekonomen" smooth={true} duration={1000}>
       <Image src={arrowLanding} layout="raw" style={{
         position: "absolute",
         top: "657px",

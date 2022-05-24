@@ -14,9 +14,12 @@ import Image from 'next/image';
 
 
 export default function EkonomenCard() {
-  return (
 
+  
+  return (
+    
     <div id={styles.ekonomen} >
+    <div id ="ekonomen">
     <div className={styles.foodCardName}>Ekonomen</div>
     <Image className={styles.ekonomenShadow} src={ekonomenShadow} layout="raw"/>
     <Image className={styles.ekonomenFood}src={ekonomenFood}  layout="raw"/>
@@ -28,10 +31,15 @@ export default function EkonomenCard() {
     <Image className={styles.pictureToDescription3}src={imgDescription3} layout="raw"/><span className={styles.textToDescription3}>8 min tillagning per portion</span>
 
     <Image className={styles.pictureToDescriptionEkonomen} src={imgDescription4}  layout="raw"/><span className={styles.textToDescriptionEkonomen}>Prispressade varor</span>
-    <Link href="/StepForm">
+    <Link  scroll={true} href={{
+      pathname: "/StepForm",
+      query: { display1: "none" ,
+               display2: "none",
+               display3: "blocked"}}}>
     <button className={styles.ekonomenCallToAction} >Beställ</button>
     </Link>
     <Image className={styles.orderArrowRight1} src={arrow} layout="raw" />   
+    </div>
     </div>
 
   )

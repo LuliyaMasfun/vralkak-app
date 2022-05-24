@@ -9,8 +9,24 @@ import Ekonomen from '../../../public/assets/ekonomenDish.png'
 import dish1 from '../../../public/assets/dish1.png'
 import dish2 from '../../../public/assets/dish2.png'
 import Image from 'next/image'
+import { useRouter } from 'next/router'
 
-export const Checkout = ({navigation}) => {
+
+
+export const Checkout = (navigation, probs) => {
+  
+  const router = useRouter();
+  const param = router.query
+
+  const [degree1, setDegree1] = useState("rotate(0deg)")
+  const [degree2, setDegree2] = useState("rotate(0deg)")
+  const [degree3, setDegree3] = useState("rotate(0deg)")
+  
+   
+  
+  
+  
+
 
 
   //Kort förflyttning
@@ -20,7 +36,8 @@ export const Checkout = ({navigation}) => {
     marginTop:"88px",
     width: "326px",
     height: "446px",
-    display: "none" 
+    display: router.query.display1,
+    
   });
   const [dropDown2, setDropDown2] = useState({
     position: "relative",
@@ -28,15 +45,15 @@ export const Checkout = ({navigation}) => {
     marginTop:"88px",
     width: "326px",
     height: "446px",
-    display: "none",
+    display: router.query.display2,
   });
   const [dropDown3, setDropDown3] = useState({
     position: "relative",
-    backgroundColor: "#0939BB",
+    backgroundColor: "#2E57C5",
     marginTop:"88px",
     width: "326px",
     height: "446px",
-    display: "none",
+    display: router.query.display3,
   });
 
 
@@ -50,6 +67,7 @@ export const Checkout = ({navigation}) => {
     top: "232px",
     left: "32px",
     color:"white",
+    
   })
 
   const [move2, setMove2] = useState({
@@ -57,7 +75,7 @@ export const Checkout = ({navigation}) => {
     width: "326px",
     backgroundColor: "#0939BB",
     position: "absolute",
-    top: "334px", 
+    top: "344px", 
     left: "32px",
     color:"white",
   })
@@ -92,6 +110,7 @@ export const Checkout = ({navigation}) => {
       left: "32px",
       color:"white",
       })
+      setDegree1("rotate(180deg)")
     }
       else {
         setDropDown1({position: "relative",
@@ -117,10 +136,12 @@ export const Checkout = ({navigation}) => {
       width: "326px",
       backgroundColor: "#0939BB",
       position: "absolute",
-      top: "334px", 
+      top: "344px", 
       left: "32px",
       color:"white",
       })
+
+      setDegree1("rotate(0deg)")
 
       }
       
@@ -149,6 +170,8 @@ export const Checkout = ({navigation}) => {
         left: "32px",
         color:"white",
         })
+
+        setDegree2("rotate(180deg)")
       }
         else {
           setDropDown2({position: "relative",
@@ -166,10 +189,12 @@ export const Checkout = ({navigation}) => {
         width: "326px",
         backgroundColor: "#0939BB",
         position: "absolute",
-        top: "334px", 
+        top: "344px", 
         left: "32px",
         color:"white",
         })
+
+        setDegree2("rotate(0deg)")
   
         }
         
@@ -186,6 +211,8 @@ export const Checkout = ({navigation}) => {
           height: "446px",
           display: "" 
           })
+
+          setDegree3("rotate(180deg)")
     
           
         }
@@ -197,6 +224,8 @@ export const Checkout = ({navigation}) => {
           height: "446px",
           display: "none" 
           })
+
+          setDegree3("rotate(0deg)")
     
          
     
@@ -1588,6 +1617,9 @@ export const Checkout = ({navigation}) => {
           fontSize: "36px",
           fontWeight:"600",
         }} >Välj kasse</span>
+
+        
+
         <div 
         
         style={{
@@ -1598,6 +1630,7 @@ export const Checkout = ({navigation}) => {
           top: "120px", 
           left: "32px",
           color:"white",
+          
         }}>
           <Image  layout = "raw" src={Veganen}  style={{
             position: "absolute",
@@ -1619,7 +1652,8 @@ export const Checkout = ({navigation}) => {
           style={{
             position: "absolute",
             top: "35.29px",
-            left: "295.96px"
+            left: "295.96px",
+            transform: `${degree1}`
           }}/>
             
             <div style={dropDown1}>
@@ -1691,7 +1725,7 @@ export const Checkout = ({navigation}) => {
               <div style={{
                 width: "34px",
                 height: "45px",
-                backgroundColor: "#3EA962",
+                backgroundColor: "#AB3C3C",
                 textAlign: "center",
                 lineHeight: "45px",
                 position: "absolute",
@@ -1702,7 +1736,7 @@ export const Checkout = ({navigation}) => {
             <div style={{
                 width: "34px",
                 height: "45px",
-                backgroundColor: "#3EA962",
+                backgroundColor: "#AB3C3C",
                 textAlign: "center",
                 lineHeight: "45px",
                 position: "absolute",
@@ -1778,6 +1812,7 @@ export const Checkout = ({navigation}) => {
             position: "absolute",
             top: "35.29px",
             left: "295.96px",
+            transform: `${degree2}`
           }}/>
             
             <div style={dropDown2}>
@@ -1936,7 +1971,8 @@ export const Checkout = ({navigation}) => {
           style={{
             position: "absolute",
             top: "35.29px",
-            left: "295.96px"
+            left: "295.96px",
+            transform: `${degree3}`
           }}/>
             
             <div style={dropDown3}>
@@ -2076,4 +2112,5 @@ export const Checkout = ({navigation}) => {
     
   )
 }
+
 

@@ -31,6 +31,7 @@ const defaultData = {
 
 
 const steps = [
+    
     {id: 'checkout',},
     {id: 'login',},
     {id: 'signup',},
