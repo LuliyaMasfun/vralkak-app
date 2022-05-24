@@ -26,9 +26,10 @@ export default function VeganenCard() {
         <Image className={styles.pictureToDescriptionVeganen}src={imgDescription4} layout="raw"/><span className={styles.textToDescriptionVeganen}>Helt fritt från animaliska produkter</span>
         <Link scroll={true} href={{
       pathname: "/StepForm",
-      query: { display1: "blocked" ,
-               display2: "none",
-               display3: "none"}}}>
+      query: { 
+      card: "veganen" ,
+      
+      }}}>
         <button className={styles.veganenCallToAction} href="/StepForm">Beställ</button>
         </Link>
         <Image className={styles.orderArrowRight3} src={arrow} layout="raw" />  

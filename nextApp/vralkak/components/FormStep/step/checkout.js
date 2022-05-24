@@ -10,19 +10,32 @@ import dish1 from '../../../public/assets/dish1.png'
 import dish2 from '../../../public/assets/dish2.png'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
+import { useEffect } from 'react'
 
 
 
 export const Checkout = ({navigation}) => {
   
   const router = useRouter();
-  const param = router.query
+  
 
   const [degree1, setDegree1] = useState("rotate(0deg)")
   const [degree2, setDegree2] = useState("rotate(0deg)")
   const [degree3, setDegree3] = useState("rotate(0deg)")
 
-  
+  useEffect(() => {
+    if(router.query.card == "ekonomen"){
+    drop3();
+    }
+    if(router.query.card == "veganen"){
+    drop1();
+
+    }
+    if(router.query.card == "greta"){
+    drop2();
+      }
+
+  }, []);
   
   //Kort förflyttning
   const [dropDown1, setDropDown1] = useState({
@@ -31,7 +44,7 @@ export const Checkout = ({navigation}) => {
     marginTop:"88px",
     width: "326px",
     height: "446px",
-    display: router.query.display1,
+    display: "none",
     
   });
   const [dropDown2, setDropDown2] = useState({
@@ -40,7 +53,7 @@ export const Checkout = ({navigation}) => {
     marginTop:"88px",
     width: "326px",
     height: "446px",
-    display: router.query.display2,
+    display: "none",
   });
   const [dropDown3, setDropDown3] = useState({
     position: "relative",
@@ -48,7 +61,7 @@ export const Checkout = ({navigation}) => {
     marginTop:"88px",
     width: "326px",
     height: "446px",
-    display: router.query.display3,
+    display: "none",
   });
 
 

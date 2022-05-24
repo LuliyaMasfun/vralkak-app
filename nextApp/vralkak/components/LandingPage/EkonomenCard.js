@@ -33,9 +33,8 @@ export default function EkonomenCard() {
     <Image className={styles.pictureToDescriptionEkonomen} src={imgDescription4}  layout="raw"/><span className={styles.textToDescriptionEkonomen}>Prispressade varor</span>
     <Link  href={{
       pathname: "/StepForm",
-      query: { display1: "none" ,
-               display2: "none",
-               display3: "blocked"}}}>
+      query: { card:"ekonomen"
+               }}}>
     <button className={styles.ekonomenCallToAction} >Beställ</button>
     </Link>
     <Image className={styles.orderArrowRight1} src={arrow} layout="raw" />   

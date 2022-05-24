@@ -26,9 +26,10 @@ export default function GretaCard() {
     <Image className={styles.pictureToDescriptionEkonomen} src={imgDescription4} layout="raw"/><span className={styles.textToDescriptionEkonomen}>Prispressade varor</span>
     <Link scroll={true} href={{
       pathname: "/StepForm",
-      query: { display1: "none" ,
-               display2: "blocked",
-               display3: "none"}}}>
+      query: { 
+      card: "greta"
+        
+      }}}>
     <button className={styles.gretaCallToAction}>Beställ</button>
     </Link>
     <Image className={styles.orderArrowRight2} src={arrow} layout="raw" />   
