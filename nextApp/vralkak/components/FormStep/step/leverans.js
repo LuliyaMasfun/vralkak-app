@@ -10,7 +10,7 @@ import Select from 'react-select';
 
 
 
-export const Delivery = ({formData, setForm, navigation}) => {
+export const Leverans = ({formData, setForm, navigation}) => {
   
  const [selectedDate, setSelectedDate] = useState(null);
  

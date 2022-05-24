@@ -122,16 +122,9 @@ export const Review = ({formData, navigation}) => {
         height: "200px"
       }}>
     
-    <RenderAccordion 
-    summary= "Signup" go={go} details={[
-      {'Förnamn': firstName},
-      {'Efternamn': lastName},
-      {'Email': email},
-      {'Lösenord': password}
-    ]} />
 
     <RenderAccordion
-    summary= "Delivery" go={go} details={[
+    summary= "Leverans" go={go} details={[
       {'Förnamn': firstNameDelivery},
       {'Efternamn': lastNameDelivery},
       {'Address': address},
@@ -142,7 +135,7 @@ export const Review = ({formData, navigation}) => {
     ]} />
 
     <RenderAccordion
-    summary= "Payment" go={go} details={[
+    summary= "Betalning" go={go} details={[
       {'Kort namn' : cardName},
       {'Kortnummer': cardNumber},
       {'MM/ÅÅ' : cardExpireDate},
