@@ -17,10 +17,6 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 export const Review = ({formData, navigation}) => {
   const {go} = navigation;
   const {
-    firstName,
-    lastName,
-    email,
-    password,
     firstNameDelivery,
     lastNameDelivery,
     address,
