@@ -2011,7 +2011,7 @@ export const Checkout = ({navigation}) => {
                 position: "absolute",
                 top: "133px",
                 left: "16px",
-                width: "294px",
+                width: "294px",  
 
               }}></div>
 

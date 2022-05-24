@@ -18,10 +18,6 @@ import { withStyles } from '@material-ui/core/styles';
 export const Review = ({formData, navigation}) => {
   const {go} = navigation;
   const {
-    firstName,
-    lastName,
-    email,
-    password,
     firstNameDelivery,
     lastNameDelivery,
     address,
