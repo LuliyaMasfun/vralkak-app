@@ -7,7 +7,7 @@ import swishLogo from '../../../public/assets/Swish.svg';
 import Image from 'next/image';
 
 
-export const Payment = ({formData,setForm,navigation}) => {
+export const Betalning = ({formData,setForm,navigation}) => {
   const [show, setShow] = useState(true);
 
   const {cardName, cardNumber, cardExpireDate, cardCVV} = formData;
