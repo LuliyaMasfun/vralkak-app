@@ -5,6 +5,10 @@ import imgDescription1 from '../../../public/assets/submitIcon1.png';
 import imgDescription2 from '../../../public/assets/submitIcon2.png';
 import Image from 'next/image';
 import Link from 'next/link';
+import Greta from '../../../public/assets/gretaDish.png'
+import Ekonomen from '../../../public/assets/ekonomenDish.png'
+import Veganen from '../../../public/assets/veganenCheckOut.png'
+
 
 export const Submit = ({navigation, formData}) => {
   const {email} = formData;
@@ -56,27 +60,88 @@ export const Submit = ({navigation, formData}) => {
           <div style={{
       height: "88px",
       width: "326px",
-      backgroundColor: "#3EA962",
+      backgroundColor: "#AB3C3C",
       position: "absolute",
-      top: "244px",
+      top: "113px",
+      left: "32px",
+      marginTop:"100px",
+      color:"white",
+    }}>
+     
+          <Image  layout = "raw" src={Veganen}  style={{
+            position: "absolute",
+            top: "16px",
+            left: "16px",
+          }} />
+
+          <span style={{
+            fontSize: "20px",
+            fontWeight: "500",
+            position: "absolute",
+            top: "32px",
+            left: "84px",
+          }}>Veganen</span>
+</div>
+<div style={{
+      height: "88px",
+      width: "326px",
+      backgroundColor: "#006740",
+      position: "absolute",
+      top: "113px",
       left: "32px",
       color:"white",
-    }}></div>
+      marginTop:"100px",
+    }}>
+     
+          <Image  layout = "raw" src={Greta}  style={{
+            position: "absolute",
+            top: "16px",
+            left: "16px",
+          }} />
 
+          <span style={{
+            fontSize: "20px",
+            fontWeight: "500",
+            position: "absolute",
+            top: "32px",
+            left: "84px",
+          }}>Greta</span>
 
-    <Image src={imgDescription2} layout="raw" style={{
+          </div>
+
+      <div style={{
+      height: "88px",
+      width: "326px",
+      backgroundColor: "#0939BB",
       position: "absolute",
-      top: "360px",
+      top: "113px",
       left: "32px",
+      color:"white",
+      marginTop:"100px",
+    }}>
+     
+          <Image  layout = "raw" src={Ekonomen}  style={{
+            position: "absolute",
+            top: "16px",
+            left: "16px",
+          }} />
 
-    }}/>
+          <span style={{
+            fontSize: "20px",
+            fontWeight: "500",
+            position: "absolute",
+            top: "32px",
+            left: "84px",
+          }}>Ekonomen</span>
+          </div>
+
 
     <span style={{
-      position: "absolute",
       top: "368px",
       left: "70px",
       fontSize: "16px",
       fontWeight: "700",
+      position: "absolute",
     }}>Levereras om 3-4 arbetsdagar</span>
 
 
