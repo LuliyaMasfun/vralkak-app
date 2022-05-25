@@ -172,7 +172,7 @@ export const Checkout = ({navigation}) => {
         setMove2({
           height: "88px",
         width: "326px",
-        backgroundColor: "#0939BB",
+        backgroundColor: "#AB3C3C",
         position: "absolute",
         top: "790px", 
         left: "32px",
@@ -195,7 +195,7 @@ export const Checkout = ({navigation}) => {
         setMove2({
           height: "88px",
         width: "326px",
-        backgroundColor: "#2E57C5",
+        backgroundColor: "#AB3C3C",
         position: "absolute",
         top: "344px", 
         left: "32px",
