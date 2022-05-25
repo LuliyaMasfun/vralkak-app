@@ -195,7 +195,9 @@ export const Leverans = ({formData, setForm, navigation}) => {
         fontWeight: "600"
       }}>Välj leverans</p>
 
-      
+      <div style={{
+       
+      }}>
   <DatePicker
 
     selected={selectedDate}
@@ -210,7 +212,7 @@ export const Leverans = ({formData, setForm, navigation}) => {
 
     />
 
-
+</div>
     
 <select
 

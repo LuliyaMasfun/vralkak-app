@@ -1,9 +1,9 @@
 
 .redborder {
 
-    position: relative !important;
+    position: absolute !important;
     
-    top: 763px !important;
+    top: 687px !important;
     
     left: 32px !important;
     
@@ -13,7 +13,7 @@
     
     border-radius: 0px !important;
     
-    box-sizing: border-box;
+    box-sizing: border-box !important;
     
     border: 1px solid black !important;
     
@@ -21,13 +21,14 @@
     
     .react-datepicker-ignore-onclickoutside {
     
-    width: 326px !important;
+    width: 326px;
     
     }
     
     .react-datepicker__input-container input {
     
     width: 326px;
+    padding-left: 8px;
     
     }
 
