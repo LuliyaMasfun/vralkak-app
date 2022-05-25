@@ -25,7 +25,9 @@ export const Leverans = ({formData, setForm, navigation}) => {
   return (
     <>
     <Navbar />
-    <Progressbar img="/assets/checkMark.png" color1="none" color2="none" color3="#FBA497" color4="#C4C4C4"
+    <Progressbar img="/assets/checkMark.png" color1="none" color2="none" color3="#FBA497" color4="#none"
+                
+                numberColor1="" numberColor2="" numberColor3="#FFFFFF" numberColor4="#C4C4C4"
                  number1="" number2="" number3="3" number4="4"
                  lineColor1="2px solid #FBA497" lineColor2="2px solid #FBA497" lineColor3="2px solid #C4C4C4" 
                  display1="block" display2="block" display3="none" display4="none"

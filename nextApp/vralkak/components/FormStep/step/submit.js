@@ -18,6 +18,7 @@ export const Submit = ({navigation, formData}) => {
     <>
     <Navbar />
     <Progressbar  img="/assets/checkMark.png" color1="none" color2="none" color3="none" color4="#none"
+                  numberColor1="" numberColor2="" numberColor3="" numberColor4=""
                  number1="" number2="" number3="" number4=""
                  lineColor1="2px solid #FBA497" lineColor2="2px solid #FBA497" lineColor3="2px solid #FBA497" 
                  display1="block" display2="block" display3="block" display4="block"
