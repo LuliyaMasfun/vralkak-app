@@ -1605,12 +1605,14 @@ export const Checkout = ({navigation}) => {
   return (
     <>
     <Navbar />
-    <Progressbar img="/assets/checkMark.png" color1="#FBA497" color2="#C4C4C4" color3="#C4C4C4" color4="#C4C4C4"
+    <Progressbar img="/assets/checkMark.png" color1="#FBA497" color2="none" color3="none" color4="none"
                  number1="1" number2="2" number3="3" number4="4"
+                 numberColor1="#FFFFFF" numberColor2="#C4C4C4" numberColor3="#C4C4C4" numberColor4="#C4C4C4"
                  lineColor1="2px solid #C4C4C4" lineColor2="2px solid #C4C4C4" lineColor3="2px solid #C4C4C4" 
                  display1="none" display2="none" display3="none" display4="none"
                  textColor1="#FBA497" textColor2="#C4C4C4" textColor3="#C4C4C4" textColor4="#C4C4C4"
                  borderColor1="2px solid #FBA497" borderColor2="2px solid #C4C4C4" borderColor3="2px solid #C4C4C4" borderColor4="2px solid #C4C4C4" navigation={navigation}/>
+
     <form  
     style={{
       backgroundColor: "#F4F4F4",

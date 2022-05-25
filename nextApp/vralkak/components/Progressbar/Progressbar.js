@@ -9,7 +9,7 @@ export const Progressbar = (probs) => {
     const {img, color1, color2, color3, color4, number1, number2, number3, number4,
          lineColor1, lineColor2, lineColor3, display1, display2, display3, 
          display4, textColor1, textColor2, textColor3, textColor4,
-        borderColor1, borderColor2, borderColor3, borderColor4, navigation} = probs;
+        borderColor1, borderColor2, borderColor3, borderColor4, navigation, numberColor1, numberColor2, numberColor3, numberColor4} = probs;
    
     
      
@@ -17,132 +17,132 @@ export const Progressbar = (probs) => {
         
     
 
-    const circle1 = {
-        background: color1,
-        color: "white",
-        fontSize: "14px",
-        fontWeight: "600",
-        borderRadius: "50%",
-        position: "absolute",
-        top: "45px",
-        left: "45px",
-        width: "32px",
-        height: "32px",
-        textAlign: "center",
-        lineHeight: "30px",
-        border: borderColor1
-    }
-
-    const text1 = {
-        position: "absolute",
-        fontSize: "12px",
-        fontWeight: "600",
-        color: textColor1,
-        top: "26px",
-        left: "46px"
-    }
-
-    const line1 = {
-        borderBottom: lineColor1,
-        width: "30px",
-        position: "absolute",
-        top: "61px",
-        left: "92px",
-    }
-
-    const circle2 = {
-            background: color2,
-            color: "white",
+        const circle1 = {
+            background: color1,
+            color: numberColor1,
             fontSize: "14px",
             fontWeight: "600",
             borderRadius: "50%",
             position: "absolute",
             top: "45px",
-            left: "135px",
+            left: "45px",
             width: "32px",
             height: "32px",
             textAlign: "center",
             lineHeight: "30px",
-            border: borderColor2
-    }
+            border: borderColor1
+        }
     
-    const text2 = {
+        const text1 = {
             position: "absolute",
             fontSize: "12px",
             fontWeight: "600",
-            color: textColor2,
+            color: textColor1,
             top: "26px",
-            left: "136px"
-    }
-
-    const line2 = {
-        borderBottom: lineColor2,
-        width: "30px",
-        position: "absolute",
-        top: "61px",
-        left: "180px",
-    }
-
-    const circle3  = {
-        background: color3,
-        color: "white",
-        fontSize: "14px",
-        fontWeight: "600",
-        borderRadius: "50%",
-        position: "absolute",
-        top: "45px",
-        left: "223px",
-        width: "32px",
-        height: "32px",
-        textAlign: "center",
-        lineHeight: "30px",
-        border: borderColor3
-
-    }
-     
-    const text3 = {
-        position: "absolute",
-            fontSize: "12px",
-            fontWeight: "600",
-            color: textColor3,
-            top: "26px",
-            left: "217px"
-    }
-
-    const line3 = {
-        borderBottom: lineColor3,
-        width: "30px",
-        position: "absolute",
-        top: "61px",
-        left: "268px",
-    }
+            left: "46px"
+        }
     
-    const circle4 = {
-        background: color4,
-        color: "white",
-        fontSize: "14px",
-        fontWeight: "600",
-        borderRadius: "50%",
-        position: "absolute",
-        top: "45px",
-        left: "311px",
-        width: "32px",
-        height: "32px",
-        textAlign: "center",
-        lineHeight: "30px",
-        border: borderColor4
-    }
-
-    const text4 = {
-        position: "absolute",
-            fontSize: "12px",
-            fontWeight: "600",
-            color: textColor4,
-            top: "26px",
-            left: "302px"
-    }
-
+        const line1 = {
+            borderBottom: lineColor1,
+            width: "30px",
+            position: "absolute",
+            top: "61px",
+            left: "92px",
+        }
     
+    
+        
+        const circle2 = {
+                background: color2,
+                color: numberColor2,
+                fontSize: "14px",
+                fontWeight: "600",
+                borderRadius: "50%",
+                position: "absolute",
+                top: "45px",
+                left: "135px",
+                width: "32px",
+                height: "32px",
+                textAlign: "center",
+                lineHeight: "30px",
+                border: borderColor2
+        }
+        
+        const text2 = {
+                position: "absolute",
+                fontSize: "12px",
+                fontWeight: "600",
+                color: textColor2,
+                top: "26px",
+                left: "136px"
+        }
+    
+        const line2 = {
+            borderBottom: lineColor2,
+            width: "30px",
+            position: "absolute",
+            top: "61px",
+            left: "180px",
+        }
+    
+        const circle3  = {
+            background: color3,
+            color: numberColor3,
+            fontSize: "14px",
+            fontWeight: "600",
+            borderRadius: "50%",
+            position: "absolute",
+            top: "45px",
+            left: "223px",
+            width: "32px",
+            height: "32px",
+            textAlign: "center",
+            lineHeight: "30px",
+            border: borderColor3
+    
+        }
+         
+        const text3 = {
+            position: "absolute",
+                fontSize: "12px",
+                fontWeight: "600",
+                color: textColor3,
+                top: "26px",
+                left: "217px"
+        }
+    
+        const line3 = {
+            borderBottom: lineColor3,
+            width: "30px",
+            position: "absolute",
+            top: "61px",
+            left: "268px",
+        }
+        
+        const circle4 = {
+            background: color4,
+            color: numberColor4,
+            fontSize: "14px",
+            fontWeight: "600",
+            borderRadius: "50%",
+            position: "absolute",
+            top: "45px",
+            left: "311px",
+            width: "32px",
+            height: "32px",
+            textAlign: "center",
+            lineHeight: "30px",
+            border: borderColor4
+        }
+    
+        const text4 = {
+            position: "absolute",
+                fontSize: "12px",
+                fontWeight: "600",
+                color: textColor4,
+                top: "26px",
+                left: "302px"
+        }
     
 
     
