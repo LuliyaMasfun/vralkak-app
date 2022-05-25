@@ -25,10 +25,10 @@ export const Checkout = ({navigation}) => {
 
   useEffect(() => {
     if(router.query.card == "ekonomen"){
-    drop3();
+    drop1();
     }
     if(router.query.card == "veganen"){
-    drop1();
+    drop3();
 
     }
     if(router.query.card == "greta"){
@@ -40,7 +40,7 @@ export const Checkout = ({navigation}) => {
   //Kort förflyttning
   const [dropDown1, setDropDown1] = useState({
     position: "relative",
-    backgroundColor: "#B85959",
+    backgroundColor: "#2E57C5",
     marginTop:"88px",
     width: "326px",
     height: "446px",
@@ -57,7 +57,7 @@ export const Checkout = ({navigation}) => {
   });
   const [dropDown3, setDropDown3] = useState({
     position: "relative",
-    backgroundColor: "#2E57C5",
+    backgroundColor: "#AB3C3C",
     marginTop:"88px",
     width: "326px",
     height: "446px",
@@ -81,7 +81,7 @@ export const Checkout = ({navigation}) => {
   const [move2, setMove2] = useState({
     height: "88px",
     width: "326px",
-    backgroundColor: "#0939BB",
+    backgroundColor: "#AB3C3C",
     position: "absolute",
     top: "344px", 
     left: "32px",
@@ -92,7 +92,7 @@ export const Checkout = ({navigation}) => {
     if(dropDown1.display == "none"){
       setDropDown1({
       position: "relative",
-      backgroundColor: "#B85959",
+      backgroundColor: "#2E57C5",
       marginTop:"88px",
       width: "326px",
       height: "446px",
@@ -112,7 +112,7 @@ export const Checkout = ({navigation}) => {
       setMove2({
         height: "88px",
       width: "326px",
-      backgroundColor: "#0939BB",
+        backgroundColor: "#AB3C3C",
       position: "absolute",
       top: "790px", 
       left: "32px",
@@ -122,7 +122,7 @@ export const Checkout = ({navigation}) => {
     }
       else {
         setDropDown1({position: "relative",
-      backgroundColor: "#B85959",
+      backgroundColor: "#2E57C5",
       marginTop:"88px",
       width: "326px",
       height: "446px",
@@ -142,7 +142,7 @@ export const Checkout = ({navigation}) => {
       setMove2({
         height: "88px",
       width: "326px",
-      backgroundColor: "#0939BB",
+        backgroundColor: "#AB3C3C",
       position: "absolute",
       top: "344px", 
       left: "32px",
@@ -195,7 +195,7 @@ export const Checkout = ({navigation}) => {
         setMove2({
           height: "88px",
         width: "326px",
-        backgroundColor: "#0939BB",
+        backgroundColor: "#2E57C5",
         position: "absolute",
         top: "344px", 
         left: "32px",
@@ -213,7 +213,7 @@ export const Checkout = ({navigation}) => {
         if(dropDown3.display == "none"){
           setDropDown3({
           position: "relative",
-          backgroundColor: "#2E57C5",
+          backgroundColor: "#B85959",
           marginTop:"88px",
           width: "326px",
           height: "446px",
@@ -1635,14 +1635,14 @@ export const Checkout = ({navigation}) => {
         style={{
           height: "88px",
           width: "326px",
-          backgroundColor: "#AB3C3C",
+          backgroundColor: "#0939BB",
           position: "relative",
           top: "120px", 
           left: "32px",
           color:"white",
           
         }}>
-          <Image  layout = "raw" src={Veganen}  style={{
+          <Image  layout = "raw" src={Ekonomen}  style={{
             position: "absolute",
             top: "16px",
             left: "16px",
@@ -1654,7 +1654,7 @@ export const Checkout = ({navigation}) => {
             position: "absolute",
             top: "32px",
             left: "84px",
-          }}>Veganen</span>
+          }}>Ekonomen</span>
 
           <Image  onClick={()=>drop1()}
           layout = "raw" src={Arrow} 
@@ -1735,7 +1735,7 @@ export const Checkout = ({navigation}) => {
               <div style={{
                 width: "34px",
                 height: "45px",
-                backgroundColor: "#AB3C3C",
+                backgroundColor: "#0939BB",
                 textAlign: "center",
                 lineHeight: "45px",
                 position: "absolute",
@@ -1746,7 +1746,7 @@ export const Checkout = ({navigation}) => {
             <div style={{
                 width: "34px",
                 height: "45px",
-                backgroundColor: "#AB3C3C",
+                backgroundColor: "#0939BB",
                 textAlign: "center",
                 lineHeight: "45px",
                 position: "absolute",
@@ -1773,7 +1773,7 @@ export const Checkout = ({navigation}) => {
                 position: "absolute",
                 left: "118px",
                 top: "218px",
-              }}>Sonjas Sojastroganoff</span>
+              }}>Sonjas korvstroganoff</span>
 
 <span style={{
                 fontSize: "16px",
@@ -1781,7 +1781,7 @@ export const Checkout = ({navigation}) => {
                 position: "absolute",
                 left: "118px",
                 top: "276px",
-              }}>Het vegansk chili</span>
+              }}>Het chili</span>
 
 
             <div 
@@ -1961,7 +1961,7 @@ export const Checkout = ({navigation}) => {
             <div 
         
         style={move2}>
-          <Image  layout = "raw"src={Ekonomen} style={{
+          <Image  layout = "raw"src={Veganen} style={{
             position: "absolute",
             top: "16px",
             left: "16px",
@@ -1973,7 +1973,7 @@ export const Checkout = ({navigation}) => {
             position: "absolute",
             top: "32px",
             left: "84px",
-          }}>Ekonomen</span>
+          }}>Veganen</span>
 
           <Image  onClick={()=> drop3()}
           layout = "raw" src={Arrow} 
@@ -2046,7 +2046,7 @@ export const Checkout = ({navigation}) => {
               <div style={{
                 width: "34px",
                 height: "45px",
-                backgroundColor: "#0939BB",
+                backgroundColor: "#AB3C3C",
                 textAlign: "center",
                 lineHeight: "45px",
                 position: "absolute",
@@ -2057,7 +2057,7 @@ export const Checkout = ({navigation}) => {
             <div style={{
                 width: "34px",
                 height: "45px",
-                backgroundColor: "#0939BB",
+                backgroundColor: "#AB3C3C",
                 textAlign: "center",
                 lineHeight: "45px",
                 position: "absolute",

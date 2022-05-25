@@ -3,6 +3,9 @@ import Navbar from '../../Navbar/Navbar'
 import {Progressbar} from '../../Progressbar/Progressbar';
 import sweFlag from '../../../public/assets/sweflag.png'
 import Image from 'next/image';
+import DatePicker from 'react-DatePicker'
+import 'react-datepicker/dist/react-datepicker.css'
+import styles from '../../FormStep/css/Login.module.css'
 import Select from 'react-select';
 
 
@@ -18,44 +21,7 @@ export const Leverans = ({formData, setForm, navigation}) => {
 
 
 
- const customStyles = {
-  option: (provided, state) => ({
-    ...provided,
-    
-    color: state.isSelected ? 'red' : 'black',
-    padding: 20,
-  }),
-  control: () => ({
-    // none of react-select's styles are passed to <Control />
-    
-    width: "326px",
-    height: "48px",
-    border: "solid 1px black",
-    boxSizing: "border-box",
-    backgroundColor: "white"
-  }),
-  singleValue: (provided, state) => {
-    const opacity = state.isDisabled ? 0.5 : 1;
-    const transition = 'opacity 300ms';
-
-    return { ...provided, opacity, transition };
-  }
-}
-
-const options = [
-  { value: 'PostNord', label: 'PostNord' },
-  { value: 'Hemleverans', label: 'Hemleverans' },
-  { value: 'InstaBox', label: 'InstaBox' }
-]
  
-const [result, value] =useState(options.label);
-const handler = e => {
-  value(e.label)
-  
-}
-
-
-
   return (
     <>
     <Navbar />
@@ -230,19 +196,59 @@ const handler = e => {
       }}>Välj leverans</p>
 
       
+  <DatePicker
 
-    <div style={{
-    position: "absolute",
-    top:"763px",
-    left: "32px",
-    }}>
+    selected={selectedDate}
+
+    onChange={date => setSelectedDate(date)}
+
+    className={styles.redborder}
+
+    minDate={new Date()}
+
+    placeholderText="Välj leveransdag"
+
+    />
+
 
     
-    <Select styles={customStyles} options={options} onChange={handler} value={deliveryWay} name="deliveryWay">
-    
-    </Select>
+<select
 
-    </div>
+style={{
+
+position: "absolute",
+
+top:"763px",
+
+left: "32px",
+
+width: "326px",
+
+height: "48px",
+
+border: "solid 1px black",
+
+boxSizing: "border-box",
+
+}}>
+
+<option value="volvo"
+
+disabled selected hidden
+
+>Välj leveransalternativ</option>
+
+
+
+<option value="Hemleverans">Hemleverans</option>
+
+<option value="PostNord">PostNord</option>
+
+<option value="InstaBox">InstaBox</option>
+
+</select>
+
+  
     
 
     <p style={{

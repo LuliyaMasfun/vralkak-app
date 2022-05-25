@@ -1,4 +1,36 @@
 
+.redborder {
+
+    position: relative !important;
+    
+    top: 763px !important;
+    
+    left: 32px !important;
+    
+    width: 326px !important;
+    
+    height: 48px !important;
+    
+    border-radius: 0px !important;
+    
+    box-sizing: border-box;
+    
+    border: 1px solid black !important;
+    
+    }
+    
+    .react-datepicker-ignore-onclickoutside {
+    
+    width: 326px !important;
+    
+    }
+    
+    .react-datepicker__input-container input {
+    
+    width: 326px;
+    
+    }
+
 
 .login {
     background-color: #F4F4F4;

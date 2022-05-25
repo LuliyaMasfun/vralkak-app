@@ -134,14 +134,14 @@ export const Signup = ({formData, setForm, navigation}) => {
       <p id={styles.errorCheckEmail}>{emailError}</p>
 
       <p className={styles.passwordNote}>Lösenord*</p>
-      <input className={styles.passwordForm} name='password'value={password} onChange={setForm}  type="text"  id="passwordForm"  required/>
+      <input className={styles.passwordForm} name='password'value={password} onChange={setForm}  type="password"  id="passwordForm"  required/>
       <span id={styles.errorCheckPassword}>{passwordError}</span>
 
       <Image layout="raw" className={styles.signUpInfo} src={logo} alt="" />
       <p className={styles.infoText}>Ange minst 6 tecken</p>
 
       <p className={styles.confirmPasswordNote}>Bekräfta lösenord*</p>
-      <input className={styles.confirmPasswordForm} type="text" name='confirmPassword' value={confirmPassword} onChange={e => setConfirmPassword(e.target.value)}  />
+      <input className={styles.confirmPasswordForm} type="password" name='confirmPassword' value={confirmPassword} onChange={e => setConfirmPassword(e.target.value)}  />
       <p id={styles.errorCheckConfirmedPassword}>{confirmPasswordError}</p>
 
       <button className={styles.signUpSubmitButton1} type="button" onClick={()=> go()} >Skapa ett konto</button>
