@@ -18,7 +18,6 @@ export const Betalning = ({formData,setForm,navigation}) => {
     <Navbar />
     <Progressbar img="/assets/checkMark.png" color1="none" color2="none" color3="none" color4="#FBA497"
                  number1="" number2="" number3="" number4="4"
-                 numberColor1="" numberColor2="" numberColor3="" numberColor4="#FFFFFF"
                  lineColor1="2px solid #FBA497" lineColor2="2px solid #FBA497" lineColor3="2px solid #FBA497" 
                  display1="block" display2="block" display3="block" display4="none"
                  textColor1="#FBA497" textColor2="#FBA497" textColor3="#FBA497" textColor4="#FBA497"

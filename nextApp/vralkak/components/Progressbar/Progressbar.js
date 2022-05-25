@@ -1,8 +1,6 @@
 import React,{useState} from 'react'
 import checkMark from '../../public/assets/checkMark.png'
 import Image from 'next/image';
-import { number } from 'prop-types';
-import { color } from '@material-ui/system';
 
 
 
@@ -11,7 +9,7 @@ export const Progressbar = (probs) => {
     const {img, color1, color2, color3, color4, number1, number2, number3, number4,
          lineColor1, lineColor2, lineColor3, display1, display2, display3, 
          display4, textColor1, textColor2, textColor3, textColor4,
-        borderColor1, borderColor2, borderColor3, borderColor4, navigation, numberColor1, numberColor2, numberColor3, numberColor4} = probs;
+        borderColor1, borderColor2, borderColor3, borderColor4, navigation} = probs;
    
     
      
@@ -21,7 +19,7 @@ export const Progressbar = (probs) => {
 
     const circle1 = {
         background: color1,
-        color: numberColor1,
+        color: "white",
         fontSize: "14px",
         fontWeight: "600",
         borderRadius: "50%",
@@ -52,11 +50,9 @@ export const Progressbar = (probs) => {
         left: "92px",
     }
 
-
-    
     const circle2 = {
             background: color2,
-            color: numberColor2,
+            color: "white",
             fontSize: "14px",
             fontWeight: "600",
             borderRadius: "50%",
@@ -89,7 +85,7 @@ export const Progressbar = (probs) => {
 
     const circle3  = {
         background: color3,
-        color: numberColor3,
+        color: "white",
         fontSize: "14px",
         fontWeight: "600",
         borderRadius: "50%",
@@ -123,7 +119,7 @@ export const Progressbar = (probs) => {
     
     const circle4 = {
         background: color4,
-        color: numberColor4,
+        color: "white",
         fontSize: "14px",
         fontWeight: "600",
         borderRadius: "50%",
@@ -145,7 +141,6 @@ export const Progressbar = (probs) => {
             top: "26px",
             left: "302px"
     }
-
 
     
     
@@ -169,10 +164,7 @@ export const Progressbar = (probs) => {
               top: "7px",
               left: "7px",
           }}/>  
-        
-              {number1}
-          
-          
+          {number1}
             </div>
 
         <div style={line1}></div>
@@ -187,10 +179,8 @@ export const Progressbar = (probs) => {
               top: "7px",
               left: "7px",
           }}/>  
-      
-        
           {number2}
-       
+            
         </div>
 
         <div style={line2}></div>
@@ -207,12 +197,8 @@ export const Progressbar = (probs) => {
               top: "7px",
               left: "7px",
           }}/>  
-        
-         
-          {number3}
-          
-          </div>
-       
+          {number3}</div>
+
         <div style={line3}></div>
 
         <span style={text4}>Betalning</span>
@@ -224,13 +210,9 @@ export const Progressbar = (probs) => {
               top: "7px",
               left: "7px",
           }}/>  
-          
-         
           {number4}
-        
-          </div>
-          
-
+           
+        </div>
 
         
 

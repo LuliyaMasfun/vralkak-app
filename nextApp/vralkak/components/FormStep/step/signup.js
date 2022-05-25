@@ -106,9 +106,8 @@ export const Signup = ({formData, setForm, navigation}) => {
   return (
     <>
     <Navbar />
-    <Progressbar img="/assets/checkMark.png" color1="none" color2="#FBA497" color3="none" color4="none"
-                  numberColor1="" numberColor2="#FFFFFF" numberColor3="#C4C4C4" numberColor4="#C4C4C4"
-                 number1="" number2="2" number3="3" number4="4" number5="5"
+    <Progressbar img="/assets/checkMark.png" color1="none" color2="#FBA497" color3="#C4C4C4" color4="#C4C4C4"
+                 number1="" number2="2" number3="3" number4="4"
                  lineColor1="2px solid #FBA497" lineColor2="2px solid #C4C4C4" lineColor3="2px solid #C4C4C4" 
                  display1="block" display2="none" display3="none" display4="none"
                  textColor1="#FBA497" textColor2="#FBA497" textColor3="#C4C4C4" textColor4="#C4C4C4"
