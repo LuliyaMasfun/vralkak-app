@@ -136,6 +136,12 @@ export const Submit = ({navigation, formData}) => {
           }}>Ekonomen</span>
           </div>
 
+          <Image src={imgDescription2} layout="raw" style={{
+       position: "absolute",
+       top: "360px",
+       left: "32px",
+
+     }}/>
 
     <span style={{
       top: "368px",
