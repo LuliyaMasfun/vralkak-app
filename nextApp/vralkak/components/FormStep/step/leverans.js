@@ -3,7 +3,6 @@ import Navbar from '../../Navbar/Navbar'
 import {Progressbar} from '../../Progressbar/Progressbar';
 import sweFlag from '../../../public/assets/sweflag.png'
 import Image from 'next/image';
-import DatePicker from 'react-DatePicker'
 import 'react-datepicker/dist/react-datepicker.css'
 import styles from '../../FormStep/css/Login.module.css'
 import Select from 'react-select';
@@ -15,7 +14,7 @@ import Select from 'react-select';
 
 export const Leverans = ({formData, setForm, navigation}) => {
   
- const [selectedDate, setSelectedDate] = useState(null);
+ //const [selectedDate, setSelectedDate] = useState(null);
  
  const {firstNameDelivery,lastNameDelivery, address, city,zip, phone,deliveryWay, infoToDriver} = formData;
 
@@ -200,7 +199,7 @@ export const Leverans = ({formData, setForm, navigation}) => {
       <div style={{
        
       }}>
-  <DatePicker
+{/*  <DatePicker
 
     selected={selectedDate}
 
@@ -213,6 +212,8 @@ export const Leverans = ({formData, setForm, navigation}) => {
     placeholderText="Välj leveransdag"
 
     />
+
+    */}
 
 </div>
     
