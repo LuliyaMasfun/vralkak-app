@@ -1,7 +1,7 @@
-School assingment for course in javascript and  frameworks.
+School assignment for course in javascript and  frameworks.
 We worked in a crossfunctional team with 3 developers and 4 ux-designers.
 
-
+Mobile view only.
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
